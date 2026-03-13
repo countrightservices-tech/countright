@@ -1364,3 +1364,11 @@ footer .contact-form button.filled-button:hover {
 .service-item .filled-button {
   margin-top: auto;
 }
+.count-area-content {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
