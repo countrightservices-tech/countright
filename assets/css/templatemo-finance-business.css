@@ -1336,4 +1336,31 @@ footer .contact-form button.filled-button:hover {
 		color: #a4c639!important;
 		border-bottom: none!important;
 	}
+
+}
+/* Service Card Improvements */
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-item .down-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item .filled-button {
+  margin-top: auto;
 }
