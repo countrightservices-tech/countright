@@ -1458,3 +1458,31 @@ color:#333;
 background:#a4c639;
 color:#fff;
 }
+.migration-list{
+margin-top:15px;
+}
+
+.migration-list li{
+margin-bottom:8px;
+font-size:15px;
+}
+
+.migration-list i{
+color:#a4c639;
+margin-right:8px;
+}
+.service-item{
+transition:0.3s;
+}
+
+.service-item:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+.more-info{
+padding:80px 0;
+}
+
+.services{
+padding:80px 0;
+}
