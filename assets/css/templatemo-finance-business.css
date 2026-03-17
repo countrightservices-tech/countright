@@ -1433,3 +1433,28 @@ footer .contact-form button.filled-button:hover {
   background:#a4c639;
   color:#fff;
 }
+/* Navbar dropdown on hover */
+
+.nav-item.dropdown:hover .dropdown-menu{
+display:block;
+margin-top:0;
+}
+
+.dropdown-menu{
+background:#ffffff;
+border:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+border-radius:4px;
+padding:10px 0;
+}
+
+.dropdown-item{
+padding:10px 20px;
+font-size:14px;
+color:#333;
+}
+
+.dropdown-item:hover{
+background:#a4c639;
+color:#fff;
+}
