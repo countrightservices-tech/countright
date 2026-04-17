@@ -1506,3 +1506,31 @@ transition: 0.3s;
   filter: grayscale(0%);
   transform: scale(1.1);
 }
+.logo-box {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.logo-box p {
+  font-size: 14px;
+  margin: 0;
+}
+.logo-box img {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.logo-box img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
