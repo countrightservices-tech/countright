@@ -1494,3 +1494,15 @@ transition: 0.3s;
 transform: translateY(-6px);
 transition: 0.3s;
 }
+.services img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: 0.3s;
+}
+
+.services img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
