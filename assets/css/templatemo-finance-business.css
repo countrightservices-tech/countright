@@ -1509,4 +1509,34 @@ transition: 0.3s;
   width: auto;
   object-fit: contain;
 }
+/* PLATFORM LOGOS FIX */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.logo-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.logo-box:hover {
+  transform: translateY(-5px);
+}
+
+.logo-box img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.logo-box p {
+  font-size: 14px;
+  margin: 0;
+}
