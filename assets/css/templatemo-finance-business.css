@@ -1513,15 +1513,3 @@ transition: 0.3s;
   justify-content: center;
   align-items: center;
 }
-
-.logo-box img {
-  max-height: 40px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.logo-box p {
-  font-size: 14px;
-  margin: 0;
-}
