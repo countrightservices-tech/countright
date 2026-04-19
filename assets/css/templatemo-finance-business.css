@@ -1506,10 +1506,4 @@ transition: 0.3s;
   filter: grayscale(0%);
   transform: scale(1.1);
 }
-.logo-box {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
