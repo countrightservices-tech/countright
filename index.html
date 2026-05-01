@@ -422,11 +422,10 @@
     <!-- PHONE (OPTIONAL) -->
     <div class="col-lg-4">
       <input 
-        name="phone" 
-        type="tel" 
-        class="form-control" 
-        placeholder="Phone Number (optional)"
-        pattern="[0-9]{10}">
+  name="phone" 
+  type="text" 
+  class="form-control" 
+  placeholder="Phone Number">
     </div>
 
     <!-- MESSAGE -->
@@ -442,7 +441,7 @@
   </div>
 
 </form>
-  <div id="result" style="margin-top:15px; text-align:center; font-weight:500;"></div>        
+ <div class="result-box"></div>       
             
             
             
@@ -523,7 +522,8 @@
           <div class="col-md-3 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
-              <form id="footer-contact" action="" method="post">
+              <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
+<input type="hidden" name="subject" value="Footer Enquiry - CountRight">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -547,6 +547,7 @@
                   </div>
                 </div>
               </form>
+              <div class="result-box"></div>
             </div>
           </div>
         </div>
@@ -585,43 +586,47 @@ function clearField(t){
 }
 </script>
     <script>
-const form = document.getElementById('contact');
-const result = document.getElementById('result');
+const forms = document.querySelectorAll("form[action='https://api.web3forms.com/submit']");
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
+forms.forEach(form => {
+  const result = form.querySelector(".result-box");
 
-  const formData = new FormData(form);
-  const button = form.querySelector("button");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  button.disabled = true;
-  button.innerText = "Sending...";
+    const formData = new FormData(form);
+    const button = form.querySelector("button");
 
-  fetch(form.action, {
-    method: "POST",
-    body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      result.innerHTML = "✅ Message sent successfully!";
-      result.style.color = "#155724";
-      form.reset();
-    } else {
-      result.innerHTML = "❌ Something went wrong. Try again.";
-      result.style.color = "red";
-    }
-  })
-  .catch(() => {
-    result.innerHTML = "⚠️ Network error. Please try again.";
-    result.style.color = "orange";
-  })
-  .finally(() => {
-    button.disabled = false;
-    button.innerText = "Send Message";
+    button.disabled = true;
+    button.innerText = "Sending...";
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        result.innerHTML = "✅ Message sent successfully!";
+        result.style.color = "#155724";
+        form.reset();
+      } else {
+        result.innerHTML = "❌ Something went wrong.";
+        result.style.color = "red";
+      }
+    })
+    .catch(() => {
+      result.innerHTML = "⚠️ Network error.";
+      result.style.color = "orange";
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.innerText = "Send Message";
+    });
   });
 });
 </script>
+    
 
   </body>
 
