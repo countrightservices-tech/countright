@@ -1626,7 +1626,7 @@ transition: 0.3s;
 }
 .service-list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 30px;
 }
 
 .service-list li {
@@ -1641,7 +1641,7 @@ transition: 0.3s;
 
 /* KEEP TEXT LEFT */
 .more-info ul {
-  text-align: center;
+  text-align: left;
 }
 
 /* CENTER TEXT BELOW */
