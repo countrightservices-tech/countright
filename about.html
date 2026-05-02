@@ -227,7 +227,6 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-12">
             <div class="owl-testimonials owl-carousel">
               
-              <div class="testimonial-item">
                 <div class="testimonial-item">
   <div class="inner-content">
     <h4>Sarah Johnson</h4>
@@ -391,11 +390,28 @@ https://templatemo.com/tm-545-finance-business
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script>
+$(document).ready(function(){
+  $('.owl-testimonials').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1000: { items: 2 }
+    }
+  });
+});
+</script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
     <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      var cleared = [0,0,0]; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
       if(! cleared[t.id]){                      // function makes it static and global
           cleared[t.id] = 1;  // you could use true and false, but that's more typing
