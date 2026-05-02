@@ -1624,3 +1624,37 @@ transition: 0.3s;
   min-height: 180px;
   width: 100%;
 }
+/* SERVICE LIST FIX */
+.service-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* FIX COLUMN SPACING */
+.more-info .col-md-6:first-child {
+  padding-right: 60px;
+}
+
+.more-info .col-md-6:last-child {
+  padding-left: 60px;
+}
+
+/* ALIGN TEXT PROPERLY */
+.more-info ul {
+  text-align: left;
+}
+
+/* CENTER NOTE TEXT */
+.service-note {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+.more-info .col-md-6 {
+  max-width: 500px;
+}
