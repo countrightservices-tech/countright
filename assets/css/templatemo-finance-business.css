@@ -1612,3 +1612,9 @@ transition: 0.3s;
   color: #666;
   min-height: 50px;
 }
+.owl-testimonials .testimonial-item {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
