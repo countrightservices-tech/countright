@@ -1635,26 +1635,24 @@ transition: 0.3s;
   font-size: 16px;
 }
 
-/* FIX COLUMN SPACING */
-.more-info .col-md-6:first-child {
-  padding-right: 60px;
+/* CENTER WHOLE BLOCK BUT KEEP TEXT LEFT */
+.more-info .row {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.more-info .col-md-6:last-child {
-  padding-left: 60px;
+/* PERFECT COLUMN GAP */
+.more-info .col-md-6 {
+  padding: 0 20px;
 }
 
-/* ALIGN TEXT PROPERLY */
+/* KEEP TEXT CLEAN LEFT */
 .more-info ul {
   text-align: left;
 }
 
-/* CENTER NOTE TEXT */
 .service-note {
   text-align: center;
   margin-top: 25px;
   color: #666;
-}
-.more-info .col-md-6 {
-  max-width: 500px;
 }
