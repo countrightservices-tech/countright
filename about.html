@@ -383,26 +383,23 @@ https://templatemo.com/tm-545-finance-business
    <script src="vendor/jquery/jquery.min.js"></script>
 
 <script src="assets/js/owl.js"></script>
-<script src="assets/js/custom.js"></script>
+<!-- <script src="assets/js/custom.js"></script> -->
 
 <script>
-window.addEventListener('load', function() {
+$(window).on('load', function(){
 
-  var owl = $('.owl-testimonials');
-
-  if (owl.length) {
-    owl.owlCarousel({
-      loop: true,
-      margin: 30,
-      nav: false,
-      dots: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplayHoverPause: true,
-      smartSpeed: 800,
-      items: 1
-    });
-  }
+  $('.owl-testimonials').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 1000,
+    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    items: 1
+  });
 
 });
 </script>
