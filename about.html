@@ -224,59 +224,64 @@ https://templatemo.com/tm-545-finance-business
               <span>testimonials from our greatest clients</span>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="testimonial-item">
-  <div class="inner-content">
-    <h4>Sarah Johnson</h4>
-    <span>Small Business Owner</span>
-    <p>"CountRight helped us clean up our books and gave us clear financial reports."</p>
-  </div>
-  <img src="http://placehold.it/60x60" alt="">
-</div>
+         <div class="col-md-12">
+  <div class="owl-testimonials owl-carousel">
 
-<div class="testimonial-item">
-  <div class="inner-content">
-    <h4>Michael Brown</h4>
-    <span>E-commerce Founder</span>
-    <p>"Reliable, fast, and very professional bookkeeping support."</p>
-  </div>
-  <img src="http://placehold.it/60x60" alt="">
-</div>
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>Sarah Johnson</h4>
+        <span>Small Business Owner</span>
+        <p>"CountRight helped us clean up our books and gave us clear financial reports."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
 
-<div class="testimonial-item">
-  <div class="inner-content">
-    <h4>Emily Davis</h4>
-    <span>Consultant</span>
-    <p>"Their reports are clean and easy to understand. Highly recommended."</p>
-  </div>
-  <img src="http://placehold.it/60x60" alt="">
-</div>
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>Michael Brown</h4>
+        <span>E-commerce Founder</span>
+        <p>"Reliable, fast, and very professional bookkeeping support."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
 
-<div class="testimonial-item">
-  <div class="inner-content">
-    <h4>George Walker</h4>
-    <span>Financial Analyst</span>
-    <p>"Great support and very reliable bookkeeping services."</p>
-  </div>
-  <img src="http://placehold.it/60x60" alt="">
-</div>
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>Emily Davis</h4>
+        <span>Consultant</span>
+        <p>"Their reports are clean and easy to understand. Highly recommended."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
 
-<div class="testimonial-item">
-  <div class="inner-content">
-    <h4>John Smith</h4>
-    <span>Business Owner</span>
-    <p>"Helped us stay organized and understand our financials better."</p>
-  </div>
-  <img src="http://placehold.it/60x60" alt="">
-</div>
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>George Walker</h4>
+        <span>Financial Analyst</span>
+        <p>"Great support and very reliable bookkeeping services."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
 
-<div class="testimonial-item">
-  <div class="inner-content">
-    <h4>David Wood</h4>
-    <span>Chief Accountant</span>
-    <p>"Professional, fast, and very reliable accounting support."</p>
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>John Smith</h4>
+        <span>Business Owner</span>
+        <p>"Helped us stay organized and understand our financials better."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
+
+    <div class="testimonial-item">
+      <div class="inner-content">
+        <h4>David Wood</h4>
+        <span>Chief Accountant</span>
+        <p>"Professional, fast, and very reliable accounting support."</p>
+      </div>
+      <img src="http://placehold.it/60x60" alt="">
+    </div>
+
   </div>
-  <img src="http://placehold.it/60x60" alt="">
 </div>
               
             </div>
@@ -381,20 +386,24 @@ https://templatemo.com/tm-545-finance-business
 <script src="assets/js/custom.js"></script>
 
 <script>
-$(document).ready(function(){
-  $('.owl-testimonials').owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsive: {
-  0: { items: 1 },
-  768: { items: 1 },
-  1000: { items: 1 }
-}
-  });
+window.addEventListener('load', function() {
+
+  var owl = $('.owl-testimonials');
+
+  if (owl.length) {
+    owl.owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 2500,
+      autoplayHoverPause: true,
+      smartSpeed: 800,
+      items: 1
+    });
+  }
+
 });
 </script>
 
