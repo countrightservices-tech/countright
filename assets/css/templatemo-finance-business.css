@@ -1624,7 +1624,6 @@ transition: 0.3s;
   min-height: 180px;
   width: 100%;
 }
-/* SERVICE LIST FIX */
 .service-list {
   list-style: none;
   padding-left: 0;
@@ -1635,22 +1634,17 @@ transition: 0.3s;
   font-size: 16px;
 }
 
-/* CENTER WHOLE BLOCK BUT KEEP TEXT LEFT */
-.more-info .row {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* PERFECT COLUMN GAP */
+/* FIX BALANCE */
 .more-info .col-md-6 {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-/* KEEP TEXT CLEAN LEFT */
+/* KEEP TEXT LEFT */
 .more-info ul {
   text-align: left;
 }
 
+/* CENTER TEXT BELOW */
 .service-note {
   text-align: center;
   margin-top: 25px;
