@@ -1613,8 +1613,14 @@ transition: 0.3s;
   min-height: 50px;
 }
 .owl-testimonials .testimonial-item {
-  height: 220px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+}
+
+.owl-testimonials .inner-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  min-height: 180px;
+  width: 100%;
 }
