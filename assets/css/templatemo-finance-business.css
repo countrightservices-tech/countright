@@ -1641,7 +1641,7 @@ transition: 0.3s;
 
 /* KEEP TEXT LEFT */
 .more-info ul {
-  text-align: left;
+  text-align: center;
 }
 
 /* CENTER TEXT BELOW */
