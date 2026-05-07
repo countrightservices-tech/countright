@@ -1674,3 +1674,11 @@ transition: 0.3s;
 #contact textarea.form-control {
   border-radius: 20px;
 }
+.process-grid {
+  row-gap: 30px;
+}
+
+.process-grid .col-md-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
