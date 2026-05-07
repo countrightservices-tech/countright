@@ -1665,3 +1665,12 @@ transition: 0.3s;
 .section-heading {
   margin-bottom: 60px;
 }
+#contact .form-control {
+  border-radius: 35px;
+  border: none;
+  padding: 14px 20px;
+}
+
+#contact textarea.form-control {
+  border-radius: 20px;
+}
