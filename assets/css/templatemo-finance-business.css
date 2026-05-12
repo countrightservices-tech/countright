@@ -1694,16 +1694,19 @@ transition: 0.3s;
   position: absolute;
   top: 42%;
   transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
+  width: 46px !important;
+  height: 46px !important;
   border-radius: 50% !important;
   background: #a4c639 !important;
   color: #ffffff !important;
   border: none !important;
   outline: none !important;
-  font-size: 22px !important;
-  line-height: 42px !important;
+  font-size: 30px !important;
+  line-height: 1 !important;
   transition: 0.3s ease;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .owl-testimonials .owl-nav button:hover {
@@ -1719,9 +1722,13 @@ transition: 0.3s;
 }
 
 .testimonial-arrow {
-  display: block;
-  line-height: 38px;
-  font-weight: bold;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 30px !important;
+  line-height: 1 !important;
+  font-weight: bold !important;
+  margin-top: -2px !important;
 }
 
 @media (max-width: 768px) {
@@ -1733,17 +1740,9 @@ transition: 0.3s;
     right: 5px;
   }
 
-  .owl-testimonials .owl-nav button {
-    width: 36px;
-    height: 36px;
-    font-size: 18px !important;
+    .owl-testimonials .owl-nav button {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 22px !important;
   }
 }
-
-  .owl-testimonials .owl-nav button {
-    width: 36px;
-    height: 36px;
-    font-size: 18px !important;
-  }
-}
-</style>
