@@ -1682,3 +1682,62 @@ transition: 0.3s;
   padding-left: 12px;
   padding-right: 12px;
 }
+<style>
+.owl-testimonials {
+  position: relative;
+}
+
+.owl-testimonials .owl-nav {
+  display: block !important;
+}
+
+.owl-testimonials .owl-nav button {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50% !important;
+  background: #a4c639 !important;
+  color: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+  font-size: 22px !important;
+  line-height: 42px !important;
+  transition: 0.3s ease;
+}
+
+.owl-testimonials .owl-nav button:hover {
+  background: #222222 !important;
+}
+
+.owl-testimonials .owl-nav .owl-prev {
+  left: -55px;
+}
+
+.owl-testimonials .owl-nav .owl-next {
+  right: -55px;
+}
+
+.testimonial-arrow {
+  display: block;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .owl-testimonials .owl-nav .owl-prev {
+    left: 5px;
+  }
+
+  .owl-testimonials .owl-nav .owl-next {
+    right: 5px;
+  }
+
+  .owl-testimonials .owl-nav button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px !important;
+  }
+}
+</style>
