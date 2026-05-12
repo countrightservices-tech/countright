@@ -392,14 +392,26 @@ setTimeout(function(){
     $('.owl-testimonials').owlCarousel({
       loop: true,
       margin: 30,
-      nav: false,
+      nav: true,
       dots: true,
       autoplay: true,
-      autoplayTimeout: 2500,
+      autoplayTimeout: 3500,
       autoplaySpeed: 800,
       smartSpeed: 800,
       autoplayHoverPause: true,
-      items: 1
+      items: 2,
+      navText: [
+        '<span class="testimonial-arrow">&#10094;</span>',
+        '<span class="testimonial-arrow">&#10095;</span>'
+      ],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        }
+      }
     });
   }
 
