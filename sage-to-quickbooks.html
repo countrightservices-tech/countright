@@ -6,9 +6,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-<title>Convert Sage to QuickBooks | Sage 50, 100 & Intacct Migration | CountRights</title>
+<title>Convert Sage to QuickBooks | Sage 50, 100, 300 & Intacct Migration</title>
 
-<meta name="description" content="Professional Sage to QuickBooks migration services. We securely convert Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks Online or Desktop with 100% data accuracy.">
+<meta name="description" content="Professional Sage to QuickBooks migration services. We securely convert Sage 50, Sage 100, Sage 300, Sage Intacct, and legacy Sage versions to QuickBooks Online or Desktop with 100% data accuracy.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://CountRights.com/sage-to-quickbooks.html" />
@@ -33,17 +33,22 @@
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
+<!-- Nested Dropdown CSS for Sage Variants -->
+<style>
+  .dropdown-submenu { position: relative; }
+  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu:hover .dropdown-menu { display: block; }
+</style>
+
 <!-- Service Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Sage to QuickBooks Migration",
-  "description": "Professional migration of accounting data from Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks. We securely transfer financial records, chart of accounts, customers, suppliers, and transaction history.",
+  "description": "Professional migration of accounting data from Sage 50, Sage 100, Sage 300, Sage Intacct, and legacy Sage versions to QuickBooks. We securely transfer financial records, chart of accounts, customers, suppliers, and transaction history.",
   "url": "https://CountRights.com/sage-to-quickbooks.html",
-  "provider": {
-    "@id": "https://CountRights.com/#business"
-  },
+  "provider": { "@id": "https://CountRights.com/#business" },
   "areaServed": "Worldwide",
   "serviceType": "Accounting Software Migration"
 }
@@ -55,29 +60,14 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://CountRights.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Conversions",
-      "item": "https://CountRights.com/services.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Sage to QuickBooks",
-      "item": "https://CountRights.com/sage-to-quickbooks.html"
-    }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://CountRights.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Conversions", "item": "https://CountRights.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Sage to QuickBooks", "item": "https://CountRights.com/sage-to-quickbooks.html" }
   ]
 }
 </script>
 
-<!-- FAQ Schema for Rich Results -->
+<!-- Expanded FAQ Schema for Rich Results -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -88,7 +78,7 @@
       "name": "Which Sage versions can be migrated to QuickBooks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We support migrations from all major Sage products including Sage 50 (formerly Peachtree), Sage 100 (formerly MAS 90/200), Sage 300 (formerly Accpac), and Sage Intacct. We can convert your data to either QuickBooks Online or QuickBooks Desktop depending on your business needs."
+        "text": "We support migrations from all major Sage products including Sage 50 (formerly Peachtree), Sage 100 (formerly MAS 90/200), Sage 300 (formerly Accpac), and Sage Intacct. We also support legacy versions like Sage Business Vision, Sage PFW, and Sage Simply Accounting."
       }
     },
     {
@@ -129,6 +119,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because Sage 100 and Sage Intacct are complex ERP systems, migrations typically take 7 to 14 business days depending on the volume of your historical transactions, multi-currency requirements, and the complexity of your chart of accounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you extract data directly from a locked Sage SQL database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If you have an older, locked Sage system where the user interface is no longer accessible, we can extract the raw data directly from the SQL backend tables. This allows us to bypass the software and recover your financial history securely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you consolidate multiple Sage entities into one QuickBooks file?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If you no longer wish to maintain separate legal entities, we can consolidate multiple Sage company databases into a single QuickBooks Enterprise file. We use 'Classes' or 'Locations' to track the different branches, giving you consolidated reporting at the click of a button."
       }
     }
   ]
@@ -180,21 +186,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Our Services</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
 
           <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">
-              Conversions
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
-              <a class="dropdown-item active" href="sage-to-quickbooks.html">Sage to QuickBooks <span class="sr-only">(current)</span></a>
+              
+              <!-- SAGE NESTED DROPDOWN -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle active" href="sage-to-quickbooks.html">Sage to QuickBooks <span class="sr-only">(current)</span> &raquo;</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                  <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                  <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                  <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                </div>
+              </div>
+              
               <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
               <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
               <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
@@ -203,15 +214,9 @@
             </div>
           </li>
           
-          <li class="nav-item">
-            <a class="nav-link" href="resources/index.html">Resources</a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -224,18 +229,10 @@
     <div class="row">
       <div class="col-md-12">
         <h1>Sage to QuickBooks Migration Experts</h1>
-        <span style="font-size:18px; display:block; margin-top:10px;">
-          Sage 50, Sage 100, Sage 300 & Sage Intacct Conversion Support
-        </span>
-        <p style="margin-top:15px; max-width:650px;">
-          Move from Sage to QuickBooks securely while preserving financial records, historical transactions, customer data, balances, and reporting accuracy.
-        </p>
-        <a href="#contact" class="filled-button" style="margin-top:20px;">
-          Start Your Free Migration →
-        </a>
-        <p style="margin-top:15px; font-size:14px; opacity:0.8;">
-          ✔ 100% Data Accuracy &nbsp; • &nbsp; ✔ Secure Process &nbsp; • &nbsp; ✔ Quick Turnaround
-        </p>
+        <span style="font-size:18px; display:block; margin-top:10px;">Sage 50, Sage 100, Sage 300, Sage Intacct & Legacy Version Conversion</span>
+        <p style="margin-top:15px; max-width:650px;">Move from Sage to QuickBooks securely while preserving financial records, historical transactions, customer data, balances, and reporting accuracy. We handle complex ERP modules, multi-currency data, and multi-entity consolidations.</p>
+        <a href="#contact" class="filled-button" style="margin-top:20px;">Start Your Free Migration →</a>
+        <p style="margin-top:15px; font-size:14px; opacity:0.8;">✔ 100% Data Accuracy &nbsp; • &nbsp; ✔ Secure Process &nbsp; • &nbsp; ✔ Quick Turnaround</p>
       </div>
     </div>
   </div>
@@ -248,12 +245,8 @@
 
       <!-- LEFT SIDE -->
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <h2 style="font-size:42px; margin-bottom:25px;">
-          Smooth & Secure Sage to QuickBooks Migration
-        </h2>
-        <p style="font-size:18px; line-height:1.9; margin-bottom:30px;">
-          CountRights helps businesses migrate from Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks while maintaining reporting continuity, financial accuracy, and secure accounting data transfer.
-        </p>
+        <h2 style="font-size:42px; margin-bottom:25px;">Smooth & Secure Sage Conversion</h2>
+        <p style="font-size:18px; line-height:1.9; margin-bottom:30px;">CountRights helps businesses migrate from Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks while maintaining reporting continuity, financial accuracy, and secure accounting data transfer.</p>
         <ul style="list-style:none; padding:0; line-height:38px; font-size:17px;">
           <li><i class="fa fa-check" style="color:#28a745; margin-right:10px;"></i> Secure Data Transfer</li>
           <li><i class="fa fa-check" style="color:#28a745; margin-right:10px;"></i> Accurate Financial Records</li>
@@ -262,56 +255,39 @@
         </ul>
       </div>
 
-      <!-- RIGHT SIDE FORM (Upgraded) -->
+      <!-- RIGHT SIDE FORM -->
       <div class="col-lg-6">
-        
         <div style="background: linear-gradient(145deg, #8fb323 0%, #a4c639 100%); padding: 50px 40px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
-          
           <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-
           <h3 style="margin-bottom:10px; color:#fff; font-weight: 700; position: relative;">Request Free Consultation</h3>
           <p style="margin-bottom:35px; color:rgba(255,255,255,0.9); position: relative;">Tell us about your migration requirements.</p>
           
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
-            <input type="hidden" name="subject" value="Sage Migration Enquiry - CountRights">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+            <input type="hidden" name="_subject" value="Sage Migration Enquiry - CountRights">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Tracking Inputs -->
+            <input type="hidden" name="Page Origin" value="sage-to-quickbooks.html">
+            <input type="hidden" name="Form Type" value="Main Consultation Form">
 
             <div class="input-group mb-3" style="height: 50px;">
-              <div class="input-group-prepend">
-                <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span>
-              </div>
+              <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
               <input name="name" type="text" class="form-control" placeholder="Full Name" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
             </div>
-
             <div class="input-group mb-3" style="height: 50px;">
-              <div class="input-group-prepend">
-                <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span>
-              </div>
+              <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span></div>
               <input name="email" type="email" class="form-control" placeholder="Email Address" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
             </div>
-
             <div class="input-group mb-3" style="height: 50px;">
-              <div class="input-group-prepend">
-                <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span>
-              </div>
+              <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span></div>
               <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
             </div>
-
             <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span>
-              </div>
+              <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span></div>
               <textarea name="message" rows="4" class="form-control" placeholder="Tell us about your migration" required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
             </div>
-
             <button type="submit" class="btn w-100" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px;">Get Free Consultation</button>
-            
             <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600;"></div>
-
-            <div style="text-align: center; margin-top: 20px; color: rgba(255,255,255,0.85); font-size: 13px; position: relative;">
-              <i class="fa fa-shield"></i> 100% Secure &nbsp;•&nbsp; <i class="fa fa-clock-o"></i> 24hr Response &nbsp;•&nbsp; <i class="fa fa-check-circle"></i> No Obligation
-            </div>
-
           </form>
         </div>
       </div>
@@ -320,18 +296,16 @@
   </div>
 </div>
 
-<!-- SERVICES / DATA CONVERTED (Redesigned) -->
+<!-- SERVICES / DATA CONVERTED -->
 <div class="more-info" style="padding:80px 0; background: #f9f9f9;">
   <div class="container">
     <div class="row">
       
-      <!-- LEFT CARD: Data We Convert -->
+      <!-- LEFT CARD -->
       <div class="col-md-6 mb-4 mb-md-0">
         <div style="background:#fff; padding:40px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.06); height:100%; border-top: 5px solid #a4c639;">
           <h3 style="margin-bottom:15px; font-size: 24px;">What We Convert</h3>
-          <p style="margin-bottom:25px; color: #555; line-height: 1.8;">
-            We don't just move numbers; we translate complex ERP structures into a streamlined accounting format. Our team meticulously maps your Sage data to QuickBooks' native structure, ensuring every transaction is transferred with 100% accuracy.
-          </p>
+          <p style="margin-bottom:25px; color: #555; line-height: 1.8;">We don't just move numbers; we translate complex ERP structures into a streamlined accounting format. Our team meticulously maps your Sage data to QuickBooks' native structure, ensuring every transaction is transferred with 100% accuracy.</p>
           <h5 style="margin-bottom:15px; text-transform:uppercase; color:#888; letter-spacing:1px; font-size: 13px;">Complete Data Transfer List</h5>
           <ul style="list-style:none; padding:0; margin:0;">
             <li style="margin-bottom:15px;"><i class="fa fa-check-circle" style="color:#a4c639;margin-right:10px; font-size:18px;"></i><strong>Chart of Accounts:</strong> Exact mapping of your ERP accounting structure and categories.</li>
@@ -346,13 +320,11 @@
         </div>
       </div>
 
-      <!-- RIGHT CARD: Why Choose QuickBooks -->
+      <!-- RIGHT CARD -->
       <div class="col-md-6">
         <div style="background:#fff; padding:40px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.06); height:100%; border-top: 5px solid #007bff;">
           <h3 style="margin-bottom:15px; font-size: 24px;">Why Switch to QuickBooks?</h3>
-          <p style="margin-bottom:25px; color: #555; line-height: 1.8;">
-            Sage is a powerful system, but it can be overly complex, rigid, and expensive for mid-sized businesses. QuickBooks provides a streamlined, cost-effective accounting system that scales with your actual needs.
-          </p>
+          <p style="margin-bottom:25px; color: #555; line-height: 1.8;">Sage is a powerful system, but it can be overly complex, rigid, and expensive for mid-sized businesses. QuickBooks provides a streamlined, cost-effective accounting system that scales with your actual needs.</p>
           <h5 style="margin-bottom:15px; text-transform:uppercase; color:#888; letter-spacing:1px; font-size: 13px;">Key Business Benefits</h5>
           <ul style="list-style:none; padding:0; margin:0;">
             <li style="margin-bottom:15px;"><i class="fa fa-check-circle" style="color:#007bff;margin-right:10px; font-size:18px;"></i><strong>Reduced Software Costs:</strong> Significantly lower monthly licensing fees compared to Sage ERP systems.</li>
@@ -371,11 +343,11 @@
   </div>
 </div>
 
-<!-- SAGE PLATFORMS BREAKDOWN (Massive SEO Content) -->
+<!-- SAGE PLATFORMS BREAKDOWN (Clickable Cross-Links) -->
 <div class="services" style="background:#ffffff; padding:90px 0;">
   <div class="container">
     <div class="section-heading text-center">
-      <h2>Sage Platforms <em>We Convert to QuickBooks</em></h2>
+      <h2>Dedicated <em>Sage Conversion Pages</em></h2>
       <span>Expert migration for every version of the Sage ecosystem</span>
     </div>
     
@@ -383,50 +355,74 @@
       
       <!-- Sage 50 -->
       <div class="col-md-6 mb-4">
-        <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #a4c639;">
-          <h4 style="color: #1f272b;">Sage 50 (Peachtree) to QuickBooks</h4>
-          <p style="color: #555; line-height: 1.8;">
-            Sage 50 is a robust desktop tool, but businesses often outgrow its remote access limitations. We convert your Sage 50 chart of accounts, customers, vendors, historical invoices, and payroll setup directly into QuickBooks Online or Desktop. We ensure your historical balances perfectly match your Sage 50 trial balance, making the transition to the cloud seamless.
-          </p>
-        </div>
+        <a href="sage-50-to-quickbooks.html" style="text-decoration: none;">
+          <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #a4c639; transition: transform 0.2s;">
+            <h4 style="color: #1f272b;">Sage 50 (Peachtree) to QuickBooks</h4>
+            <p style="color: #555; line-height: 1.8;">Sage 50 is a robust desktop tool, but businesses often outgrow its remote access limitations. We convert your chart of accounts, customers, vendors, and historical invoices directly into QuickBooks Online or Desktop.</p>
+            <span style="color: #a4c639; font-weight: 600;">View Sage 50 Migration →</span>
+          </div>
+        </a>
       </div>
 
       <!-- Sage 100 -->
       <div class="col-md-6 mb-4">
-        <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #007bff;">
-          <h4 style="color: #1f272b;">Sage 100 (MAS 90/200) to QuickBooks</h4>
-          <p style="color: #555; line-height: 1.8;">
-            Migrating from Sage 100 requires advanced data mapping. We extract your complex ERP modules, including distribution and manufacturing data, and consolidate them into QuickBooks' standard formats. Our team ensures that your historical financial transactions and vendor bills are accurately mapped to your new QuickBooks file without data loss.
-          </p>
-        </div>
+        <a href="sage-100-to-quickbooks.html" style="text-decoration: none;">
+          <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #007bff; transition: transform 0.2s;">
+            <h4 style="color: #1f272b;">Sage 100 (MAS 90/200) to QuickBooks</h4>
+            <p style="color: #555; line-height: 1.8;">Migrating from Sage 100 requires advanced data mapping. We extract your complex ERP modules, including distribution and manufacturing data, and consolidate them into QuickBooks Enterprise.</p>
+            <span style="color: #007bff; font-weight: 600;">View Sage 100 Migration →</span>
+          </div>
+        </a>
       </div>
 
       <!-- Sage 300 -->
       <div class="col-md-6 mb-4">
-        <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #ffc107;">
-          <h4 style="color: #1f272b;">Sage 300 (Accpac) to QuickBooks</h4>
-          <p style="color: #555; line-height: 1.8;">
-            Sage 300 is a powerful system for multi-company and multi-currency operations. We specialize in securely extracting your financial data, consolidating multi-currency balances, and migrating your historical transactions into a clean QuickBooks Online or Enterprise file. We maintain strict data integrity for complex international businesses.
-          </p>
-        </div>
+        <a href="sage-300-to-quickbooks.html" style="text-decoration: none;">
+          <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #ffc107; transition: transform 0.2s;">
+            <h4 style="color: #1f272b;">Sage 300 (Accpac) to QuickBooks</h4>
+            <p style="color: #555; line-height: 1.8;">Sage 300 is a powerful system for multi-company and multi-currency operations. We securely extract your financial data, consolidating international ledgers into a clean QuickBooks file.</p>
+            <span style="color: #ffc107; font-weight: 600;">View Sage 300 Migration →</span>
+          </div>
+        </a>
       </div>
 
       <!-- Sage Intacct -->
       <div class="col-md-6 mb-4">
-        <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #dc3545;">
-          <h4 style="color: #1f272b;">Sage Intacct to QuickBooks</h4>
-          <p style="color: #555; line-height: 1.8;">
-            While Sage Intacct is a top-tier cloud financial management system, many mid-sized businesses find they don't need its full complexity. We help you downgrade efficiently. We map your Intacct dimensions, historical ledgers, and accounts payable/receivable into QuickBooks, significantly reducing your monthly software overhead while maintaining financial continuity.
-          </p>
-        </div>
+        <a href="sage-intacct-to-quickbooks.html" style="text-decoration: none;">
+          <div style="background:#fff; padding:30px; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.05); height:100%; border-left: 5px solid #dc3545; transition: transform 0.2s;">
+            <h4 style="color: #1f272b;">Sage Intacct to QuickBooks</h4>
+            <p style="color: #555; line-height: 1.8;">Many mid-sized businesses find they don't need Sage Intacct's full complexity. We map your dimensions, historical ledgers, and AP/AR into QuickBooks, significantly reducing your monthly SaaS overhead.</p>
+            <span style="color: #dc3545; font-weight: 600;">View Intacct Migration →</span>
+          </div>
+        </a>
       </div>
 
     </div>
   </div>
 </div>
 
+<!-- OTHER LEGACY SAGE VERSIONS (SEO Expansion) -->
+<div class="services" style="background:#f9f9f9; padding:80px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.05); border-top: 5px solid #1f272b;">
+          <h3 style="color: #1f272b; margin-bottom: 20px;">Migrating from Other Legacy Sage Versions?</h3>
+          <p style="font-size: 16px; color: #555; line-height: 1.9;">In addition to the core Sage product line, our accounting data conversion experts have experience extracting data from older, discontinued Sage platforms. If you are running legacy software that is no longer supported, we can pull the raw SQL data and migrate it to a modern QuickBooks environment. We frequently handle migrations from:</p>
+          <ul style="list-style: none; padding: 0; margin-top: 20px;">
+            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage Business Vision:</strong> Securely migrating your inventory and sales history to QuickBooks Enterprise.</li>
+            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage PFW (Paradox for Windows):</strong> Extracting data from outdated DOS-based or legacy Windows platforms.</li>
+            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage Simply Accounting:</strong> Converting Canadian and basic desktop files to QuickBooks Online.</li>
+            <li style="margin-bottom: 0;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage 50 Quantum:</strong> Handling high-volume transaction limits and premium dashboard data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- BENEFITS -->
-<div class="services" style="background:#f8f9fa; padding:90px 0;">
+<div class="services" style="background:#ffffff; padding:90px 0;">
   <div class="container">
     <div class="section-heading text-center">
       <h2>Benefits of <em>QuickBooks Migration</em></h2>
@@ -466,7 +462,7 @@
 </div>
 
 <!-- PROCESS -->
-<div class="services" style="background:#ffffff; padding:90px 0;">
+<div class="services" style="background:#f8f9fa; padding:90px 0;">
   <div class="container">
     <div class="section-heading text-center">
       <h2>Our <em>Migration Process</em></h2>
@@ -520,7 +516,7 @@
 </div>
 
 <!-- TIMELINE -->
-<div class="services" style="background:#f8f9fa; padding:90px 0;">
+<div class="services" style="background:#ffffff; padding:90px 0;">
   <div class="container">
     <div class="section-heading text-center">
       <h2>Migration <em>Timeline & Delivery</em></h2>
@@ -560,7 +556,7 @@
 </div>
 
 <!-- REQUIREMENTS -->
-<div class="services" style="background:#ffffff; padding:90px 0;">
+<div class="services" style="background:#f8f9fa; padding:90px 0;">
   <div class="container">
     <div class="section-heading text-center">
       <h2>Migration <em>Requirements</em></h2>
@@ -589,65 +585,11 @@
   </div>
 </div>
 
-<!-- PLATFORMS -->
-<div class="services" style="padding:80px 0; background:#f9f9f9;">
-  <div class="container">
-    <div class="section-heading text-center">
-      <h2>Supported <em>Platforms</em></h2>
-      <span>We work with leading accounting software</span>
-    </div>
-    <div class="row text-center logos" style="margin-top:40px;">
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/quickbooks.png" alt="QuickBooks migration experts">
-          <p>QuickBooks</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/xero.png" alt="Xero accounting software conversion">
-          <p>Xero</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/zoho.png" alt="Zoho Books to QuickBooks conversion">
-          <p>Zoho Books</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/wave.png" alt="Wave financial data conversion">
-          <p>Wave</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/freshbooks.png" alt="FreshBooks to QuickBooks conversion">
-          <p>FreshBooks</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/sage.png" alt="Sage accounting software migration">
-          <p>Sage</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6 mb-4">
-        <div class="logo-box">
-          <img src="assets/images/accountedge.png" alt="AccountEdge to QuickBooks conversion">
-          <p>AccountEdge</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- EXPANDED MASSIVE SEO CONTENT (Redesigned) -->
+<!-- EXPANDED MASSIVE SEO CONTENT -->
 <div class="services" style="background:#ffffff; padding:90px 0;">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 offset-lg-1"> <!-- Centers the card nicely -->
+      <div class="col-lg-10 offset-lg-1"> 
         
         <!-- The White Premium Card -->
         <div style="background: #ffffff; padding: 60px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border-top: 5px solid #a4c639;">
@@ -683,6 +625,10 @@
             </p>
           </div>
 
+          <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+            We also understand that many businesses have been using Sage for decades. If you are running an older, discontinued version of Sage like Business Vision, Sage PFW, or Simply Accounting, you might think your data is trapped. It's not. We use advanced SQL extraction tools to pull raw data directly from the backend database, bypassing the locked user interface so we can recover your historical financials and migrate them to a modern platform.
+          </p>
+
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 0;">
             By transitioning to QuickBooks, your business gains access to advanced financial reporting, automated bank feeds, and a massive ecosystem of over 700 third-party integrations—without the heavy overhead of a full ERP. Don't let Sage software bloat slow down your business. Trust CountRights to securely handle your <strong style="color: #333;">Sage to QuickBooks data migration</strong> so you can focus on running your business with clear, reliable financial data.
           </p>
@@ -695,7 +641,7 @@
   </div>
 </div>
 
-<!-- PREMIUM FAQ SECTION -->
+<!-- PREMIUM FAQ SECTION (Expanded to 8 Questions) -->
 <div class="services" style="background:#f9f9f9; padding:80px 0;">
   <div class="container">
     <div class="row">
@@ -719,7 +665,7 @@
             </div>
             <div id="faq1" class="collapse show" aria-labelledby="faqHead1" data-parent="#faqAccordion">
               <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                We support migrations from all major Sage products including Sage 50 (formerly Peachtree), Sage 100 (formerly MAS 90/200), Sage 300 (formerly Accpac), and Sage Intacct. We can convert your data to either QuickBooks Online or QuickBooks Desktop depending on your business needs.
+                We support migrations from all major Sage products including Sage 50 (formerly Peachtree), Sage 100 (formerly MAS 90/200), Sage 300 (formerly Accpac), and Sage Intacct. We also support legacy versions like Sage Business Vision, Sage PFW, and Sage Simply Accounting.
               </div>
             </div>
           </div>
@@ -799,19 +745,49 @@
             </div>
           </div>
 
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  Can you extract data directly from a locked Sage SQL database?
+                </button>
+              </h5>
+            </div>
+            <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                Yes. If you have an older, locked Sage system where the user interface is no longer accessible, we can extract the raw data directly from the SQL backend tables. This allows us to bypass the software and recover your financial history securely.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  Do you consolidate multiple Sage entities into one QuickBooks file?
+                </button>
+              </h5>
+            </div>
+            <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                Yes. If you no longer wish to maintain separate legal entities, we can consolidate multiple Sage company databases into a single QuickBooks Enterprise file. We use 'Classes' or 'Locations' to track the different branches, giving you consolidated reporting at the click of a button.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FOOTER (Corrected to match Homepage) -->
+<!-- FOOTER (Corrected with Privacy & Terms) -->
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-md-3 footer-item">
         <h4>CountRights</h4>
-        <p>CountRights provides professional bookkeeping and financial reporting services to help small businesses stay organized, compliant, and financially confident.</p>
+        <p>CountRights provides professional bookkeeping, financial reporting, and accounting support to help small businesses stay organized, compliant, and financially confident.</p>
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -833,20 +809,25 @@
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
-          <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Our Services</a></li>
           <li><a href="resources/index.html">Resources</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item last-item">
         <h4>Contact Us</h4>
         <div class="contact-form">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
-            <input type="hidden" name="subject" value="Footer Enquiry - CountRights">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Tracking Inputs -->
+            <input type="hidden" name="Page Origin" value="sage-to-quickbooks.html">
+            <input type="hidden" name="Form Type" value="Footer Form">
+
             <div class="row">
               <div class="col-lg-12">
                 <input name="name" type="text" class="form-control" placeholder="Full Name" required>
@@ -892,11 +873,17 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
 
+<!-- FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action='https://api.web3forms.com/submit']");
+const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
 
 forms.forEach(form => {
   const result = form.querySelector(".result-box");
+
+  let actionUrl = form.getAttribute('action');
+  if (!actionUrl.includes('/ajax/')) {
+    actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+  }
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -907,22 +894,32 @@ forms.forEach(form => {
     button.disabled = true;
     button.innerText = "Sending...";
 
-    fetch(form.action, {
+    const object = {};
+    formData.forEach((value, key) => {
+      object[key] = value;
+    });
+    const json = JSON.stringify(object);
+
+    fetch(actionUrl, {
       method: "POST",
-      body: formData
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
     })
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
-      if (data.success) {
+      if (data.success === "true" || data.success === true) {
         result.innerHTML = "✅ Message sent successfully!";
         result.style.color = "#155724";
         form.reset();
       } else {
-        result.innerHTML = "❌ Something went wrong.";
+        result.innerHTML = "❌ Something went wrong. Please email us directly.";
         result.style.color = "red";
       }
     })
-    .catch(() => {
+    .catch(error => {
       result.innerHTML = "⚠️ Network error.";
       result.style.color = "orange";
     })
