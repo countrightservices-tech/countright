@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!-- Nested Dropdown CSS & Sliding Animations -->
+    <!-- Custom CSS: Dropdowns, Slider, Floating Form, & Auto-Scroll Logos -->
     <style>
       .dropdown-submenu { position: relative; }
       .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
@@ -45,34 +45,37 @@
         background-color: rgba(0, 0, 0, 0.55); z-index: 1;
       }
       .Modern-Slider .item .text-content { position: relative; z-index: 2; }
-      
       .Modern-Slider .item .text-content h6 { color: #a4c639; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
       .Modern-Slider .item .text-content h1, .Modern-Slider .item .text-content h4 { color: #ffffff; font-weight: 800; text-shadow: 3px 3px 12px rgba(0,0,0,0.9); }
       .Modern-Slider .item .text-content p { color: #f4f4f4; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); font-weight: 400; }
 
-      /* Slide In From Right Animation */
-      .slide-in-right {
-        animation: slideInRight 1.2s ease-out forwards;
-      }
+      /* Slide In From Right Animation for Hero Text */
+      .slide-in-right { animation: slideInRight 1.2s ease-out forwards; }
       @keyframes slideInRight {
         0% { transform: translateX(100px); opacity: 0; }
         100% { transform: translateX(0); opacity: 1; }
       }
 
-      /* Sliding CTA Marquee Bar */
-      .sliding-cta-bar {
-        background: #1f272b; color: #fff; overflow: hidden; white-space: nowrap; padding: 12px 0; border-bottom: 3px solid #a4c639;
+      /* Automatic Right-to-Left Scrolling Logos */
+      .logo-marquee-container { overflow: hidden; white-space: nowrap; padding: 40px 0; background: #f9f9f9; }
+      .logo-marquee-track { display: inline-block; animation: marqueeScroll 30s linear infinite; }
+      .logo-marquee-track:hover { animation-play-state: paused; }
+      @keyframes marqueeScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
       }
-      .marquee-content {
-        display: inline-block; animation: marquee 25s linear infinite;
+      .logo-marquee-item { display: inline-block; width: 160px; margin: 0 25px; vertical-align: middle; }
+      .logo-marquee-item img { max-width: 100%; max-height: 60px; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s; }
+      .logo-marquee-item img:hover { filter: grayscale(0%); opacity: 1; }
+
+      /* Floating Slide-In Form */
+      .floating-lead-form {
+        position: fixed; bottom: 20px; right: -350px; width: 320px; background: #fff;
+        padding: 25px; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        z-index: 9999; transition: right 0.5s ease-in-out; border-top: 5px solid #a4c639;
       }
-      @keyframes marquee {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-      }
-      .sliding-cta-bar span { font-size: 15px; font-weight: 600; margin: 0 30px; }
-      .sliding-cta-bar a { color: #a4c639; text-decoration: none; font-weight: 700; }
-      .sliding-cta-bar a:hover { text-decoration: underline; }
+      .floating-lead-form.show { right: 20px; }
+      .floating-close-btn { position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 22px; color: #888; cursor: pointer; }
     </style>
 
     <!-- Business Schema with US Geo Targeting -->
@@ -87,90 +90,38 @@
       "email": "Contact@CountRights.com",
       "telephone": "+1-000-000-0000",
       "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "37.0902",
-        "longitude": "-95.7129"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "knowsAbout": [
-        "QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/CountRights",
-        "https://www.twitter.com/CountRights",
-        "https://www.linkedin.com/company/CountRights",
-        "https://www.behance.net/CountRights"
-      ]
+      "address": { "@type": "PostalAddress", "addressCountry": "US" },
+      "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "knowsAbout": ["QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"],
+      "sameAs": ["https://www.facebook.com/CountRights", "https://www.twitter.com/CountRights", "https://www.linkedin.com/company/CountRights", "https://www.behance.net/CountRights"]
     }
     </script>
     
     <!-- Website Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://CountRights.com/",
-      "name": "CountRights",
-      "publisher": { "@id": "https://CountRights.com/#business" }
-    }
+    { "@context": "https://schema.org", "@type": "WebSite", "url": "https://CountRights.com/", "name": "CountRights", "publisher": { "@id": "https://CountRights.com/#business" } }
     </script>
 
-    <!-- FAQ Schema for SEO Rich Results -->
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
+      "@context": "https://schema.org", "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What bookkeeping and accounting software do you support?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We support a wide range of industry-leading accounting software including QuickBooks Online, QuickBooks Desktop, Xero, Sage, Zoho Books, AccountEdge, FreshBooks, and NetSuite. Our certified team has deep expertise in managing, optimizing, and migrating data across all these cloud and desktop platforms to ensure your financial records are accurate and accessible." }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you help my business convert or migrate data between accounting platforms?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes, we specialize in seamless accounting software conversion and data migration. Whether you are moving from NetSuite to QuickBooks, Xero to QuickBooks, Sage to QuickBooks, or transitioning from Zoho Books, FreshBooks, Wave, or AccountEdge, we handle the entire process. We securely export, clean, and map your historical data, rebuild your chart of accounts, and reconcile balances to ensure a zero-data-loss migration." }
-        },
-        {
-          "@type": "Question",
-          "name": "How does your outsourced bookkeeping process work for small businesses?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Our outsourced bookkeeping services are designed to be hands-off for business owners. Once onboarded, we securely connect to your bank accounts and credit cards, categorize all monthly transactions, reconcile your accounts, and generate detailed financial reports. This virtual process ensures your books are always tax-ready and provides you with clear financial clarity to make data-driven business decisions." }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you clean up messy bookkeeping records from previous years?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We offer specialized catch-up bookkeeping and bookkeeping clean-up services. If your financial records are months or years behind, or if past bookkeepers made errors, we will reconcile past transactions, reclassify improper expenses, and ensure your historical financial data is accurate and compliant for tax season." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide financial reporting and cash flow management?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide comprehensive financial reporting, including customized Profit and Loss (P&L) statements, Balance Sheets, and Cash Flow Statements. Beyond just data entry, we help you manage accounts payable and accounts receivable, track key performance indicators (KPIs), and offer actionable insights to maintain healthy business cash flow." }
-        },
-        {
-          "@type": "Question",
-          "name": "How much do virtual bookkeeping and software migration services cost?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Our pricing is custom-quoted based on your specific business needs. Monthly outsourced bookkeeping is typically priced based on your monthly transaction volume and the number of bank accounts. Software conversion and data migration projects are quoted as flat-fee projects based on the complexity and volume of historical data being migrated. Contact us for a free consultation and custom quote." }
-        }
+        { "@type": "Question", "name": "What bookkeeping and accounting software do you support?", "acceptedAnswer": { "@type": "Answer", "text": "We support QuickBooks Online, QuickBooks Desktop, Xero, Sage, Zoho Books, AccountEdge, FreshBooks, and NetSuite." } },
+        { "@type": "Question", "name": "Can you help my business convert or migrate data between accounting platforms?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we specialize in seamless accounting software conversion and data migration from NetSuite, Xero, Sage, Zoho Books, FreshBooks, Wave, or AccountEdge to QuickBooks." } },
+        { "@type": "Question", "name": "How does your outsourced bookkeeping process work for small businesses?", "acceptedAnswer": { "@type": "Answer", "text": "Once onboarded, we securely connect to your bank accounts and credit cards, categorize all monthly transactions, reconcile your accounts, and generate detailed financial reports." } },
+        { "@type": "Question", "name": "Can you clean up messy bookkeeping records from previous years?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We offer specialized catch-up bookkeeping and bookkeeping clean-up services to ensure your historical financial data is accurate and compliant for tax season." } },
+        { "@type": "Question", "name": "Do you provide financial reporting and cash flow management?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide comprehensive financial reporting, including customized Profit and Loss (P&L) statements, Balance Sheets, and Cash Flow Statements." } },
+        { "@type": "Question", "name": "How much do virtual bookkeeping and software migration services cost?", "acceptedAnswer": { "@type": "Answer", "text": "Our pricing is custom-quoted based on your specific business needs. Monthly outsourced bookkeeping is based on transaction volume. Software migrations are flat-fee projects." } }
       ]
     }
     </script>
- 
   </head>
 
   <body>
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper"><div></div><div></div><div></div></div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
+    <!-- Preloader -->
+    <div id="preloader"><div class="jumper"><div></div><div></div><div></div></div></div>
 
     <!-- Header -->
     <div class="sub-header">
@@ -198,74 +149,43 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="https://CountRights.com/"><h2>CountRights</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-           <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item active">
-              <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Our Services</a>
-            </li>
-
-            <!-- CONVERSIONS DROPDOWN -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
-                
-                <!-- SAGE NESTED DROPDOWN -->
-                <div class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
-                    <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
-                    <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
-                    <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
                   </div>
+                  <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
+                  <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
+                  <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
+                  <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
+                  <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
                 </div>
-
-                <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
-                <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
-                <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
-                <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
-                <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
-              </div>
-            </li>
-
-            <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
-            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-
+              </li>
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Sliding CTA Marquee Bar -->
-    <div class="sliding-cta-bar">
-      <div class="marquee-content">
-        <span>🔥 Get 99% Accurate Books & Flat-Rate Pricing! 🔥</span>
-        <span>Switch from Sage, Xero, or NetSuite to QuickBooks seamlessly.</span>
-        <span><a href="pricing.html">View Pricing</a></span>
-        <span><a href="contact.html">Free Consultation</a></span>
-        <span>Serving US Small Businesses Remotely.</span>
-        <span>🔥 Get 99% Accurate Books & Flat-Rate Pricing! 🔥</span>
-        <span>Switch from Sage, Xero, or NetSuite to QuickBooks seamlessly.</span>
-        <span><a href="pricing.html">View Pricing</a></span>
-        <span><a href="contact.html">Free Consultation</a></span>
-      </div>
-    </div>
-
     <!-- Banner Starts Here -->
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">
-          <!-- Item 1 -->
           <div class="item item-1">
             <div class="img-fill">
                 <div class="text-content slide-in-right">
@@ -276,7 +196,6 @@
                 </div>
             </div>
           </div>
-          <!-- Item 2 -->
           <div class="item item-2">
             <div class="img-fill">
                 <div class="text-content slide-in-right">
@@ -287,7 +206,6 @@
                 </div>
             </div>
           </div>
-          <!-- Item 3 -->
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content slide-in-right">
@@ -300,7 +218,6 @@
           </div>
         </div>
     </div>
-    <!-- Banner Ends Here -->
 
     <div class="request-form">
       <div class="container">
@@ -382,30 +299,10 @@
           </div>
           <div class="col-md-6 align-self-center">
             <div class="row">
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">100</div>
-                  <div class="count-title">Businesses Supported</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">12</div>
-                  <div class="count-title">Years Experience</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">99%</div>
-                  <div class="count-title">Accuracy</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">24</div>
-                  <div class="count-title">Hours Response Time</div>
-                </div>
-              </div>
+              <div class="col-md-6"><div class="count-area-content"><div class="count-digit">100</div><div class="count-title">Businesses Supported</div></div></div>
+              <div class="col-md-6"><div class="count-area-content"><div class="count-digit">12</div><div class="count-title">Years Experience</div></div></div>
+              <div class="col-md-6"><div class="count-area-content"><div class="count-digit">99%</div><div class="count-title">Accuracy</div></div></div>
+              <div class="col-md-6"><div class="count-area-content"><div class="count-digit">24</div><div class="count-title">Hours Response Time</div></div></div>
             </div>
           </div>
         </div>
@@ -447,53 +344,11 @@
               <span>Getting started with CountRights is quick and straightforward</span>
             </div>
           </div>
-
-          <div class="col process-step">
-            <div class="service-item">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <div class="down-content">
-                <h4>Initial Contact</h4>
-                <p>Reach out through email or our contact form to discuss your bookkeeping needs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col process-step">
-            <div class="service-item">
-              <div class="icon"><i class="fa fa-search"></i></div>
-              <div class="down-content">
-                <h4>Business Assessment</h4>
-                <p>We review your financial records, accounting system, and reporting requirements.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col process-step">
-            <div class="service-item">
-              <div class="icon"><i class="fa fa-file-text"></i></div>
-              <div class="down-content">
-                <h4>Service Proposal</h4>
-                <p>We prepare a clear proposal outlining services, scope, and pricing.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col process-step">
-            <div class="service-item">
-              <div class="icon"><i class="fa fa-exchange"></i></div>
-              <div class="down-content">
-                <h4>Setup & Migration</h4>
-                <p>We organize your bookkeeping system and migrate financial data if needed.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col process-step">
-            <div class="service-item">
-              <div class="icon"><i class="fa fa-line-chart"></i></div>
-              <div class="down-content">
-                <h4>Ongoing Support</h4>
-                <p>We maintain accurate records and provide financial reports.</p>
-              </div>
-            </div>
-          </div>
-
+          <div class="col process-step"><div class="service-item"><div class="icon"><i class="fa fa-envelope"></i></div><div class="down-content"><h4>Initial Contact</h4><p>Reach out through email or our contact form to discuss your bookkeeping needs.</p></div></div></div>
+          <div class="col process-step"><div class="service-item"><div class="icon"><i class="fa fa-search"></i></div><div class="down-content"><h4>Business Assessment</h4><p>We review your financial records, accounting system, and reporting requirements.</p></div></div></div>
+          <div class="col process-step"><div class="service-item"><div class="icon"><i class="fa fa-file-text"></i></div><div class="down-content"><h4>Service Proposal</h4><p>We prepare a clear proposal outlining services, scope, and pricing.</p></div></div></div>
+          <div class="col process-step"><div class="service-item"><div class="icon"><i class="fa fa-exchange"></i></div><div class="down-content"><h4>Setup & Migration</h4><p>We organize your bookkeeping system and migrate financial data if needed.</p></div></div></div>
+          <div class="col process-step"><div class="service-item"><div class="icon"><i class="fa fa-line-chart"></i></div><div class="down-content"><h4>Ongoing Support</h4><p>We maintain accurate records and provide financial reports.</p></div></div></div>
         </div>
       </div>
     </div>
@@ -508,106 +363,61 @@
               <span>Answers to common questions about our accounting and migration services</span>
             </div>
           </div>
-          
           <div class="col-md-12">
             <div class="accordion" id="faqAccordion" style="max-width: 850px; margin: 0 auto;">
-              
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingOne" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      What bookkeeping and accounting software do you support?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What bookkeeping and accounting software do you support?</button></h5>
                 </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    We support a wide range of industry-leading accounting software including QuickBooks Online, QuickBooks Desktop, Xero, Sage, Zoho Books, AccountEdge, FreshBooks, and NetSuite. Our certified team has deep expertise in managing, optimizing, and migrating data across all these cloud and desktop platforms to ensure your financial records are accurate and accessible.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">We support a wide range of industry-leading accounting software including QuickBooks Online, QuickBooks Desktop, Xero, Sage, Zoho Books, AccountEdge, FreshBooks, and NetSuite.</div>
                 </div>
               </div>
-
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingTwo" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      Can you help my business convert or migrate data between accounting platforms?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Can you help my business convert or migrate data between accounting platforms?</button></h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    Yes, we specialize in seamless accounting software conversion and data migration. Whether you are moving from NetSuite to QuickBooks, Xero to QuickBooks, Sage to QuickBooks, or transitioning from Zoho Books, FreshBooks, Wave, or AccountEdge, we handle the entire process. We securely export, clean, and map your historical data, rebuild your chart of accounts, and reconcile balances to ensure a zero-data-loss migration.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Yes, we specialize in seamless accounting software conversion and data migration from NetSuite, Xero, Sage, Zoho Books, FreshBooks, Wave, or AccountEdge to QuickBooks.</div>
                 </div>
               </div>
-
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingThree" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      How does your outsourced bookkeeping process work for small businesses?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">How does your outsourced bookkeeping process work for small businesses?</button></h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    Our outsourced bookkeeping services are designed to be hands-off for business owners. Once onboarded, we securely connect to your bank accounts and credit cards, categorize all monthly transactions, reconcile your accounts, and generate detailed financial reports. This virtual process ensures your books are always tax-ready and provides you with clear financial clarity to make data-driven business decisions.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Once onboarded, we securely connect to your bank accounts and credit cards, categorize all monthly transactions, reconcile your accounts, and generate detailed financial reports.</div>
                 </div>
               </div>
-
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingFour" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      Can you clean up messy bookkeeping records from previous years?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Can you clean up messy bookkeeping records from previous years?</button></h5>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    Absolutely. We offer specialized catch-up bookkeeping and bookkeeping clean-up services. If your financial records are months or years behind, or if past bookkeepers made errors, we will reconcile past transactions, reclassify improper expenses, and ensure your historical financial data is accurate and compliant for tax season.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Absolutely. We offer specialized catch-up bookkeeping and bookkeeping clean-up services to ensure your historical financial data is accurate and compliant for tax season.</div>
                 </div>
               </div>
-
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingFive" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      Do you provide financial reporting and cash flow management?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Do you provide financial reporting and cash flow management?</button></h5>
                 </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    Yes. We provide comprehensive financial reporting, including customized Profit and Loss (P&L) statements, Balance Sheets, and Cash Flow Statements. Beyond just data entry, we help you manage accounts payable and accounts receivable, track key performance indicators (KPIs), and offer actionable insights to maintain healthy business cash flow.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Yes. We provide comprehensive financial reporting, including customized Profit and Loss (P&L) statements, Balance Sheets, and Cash Flow Statements.</div>
                 </div>
               </div>
-
               <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
                 <div class="card-header" id="headingSix" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                      How much do virtual bookkeeping and software migration services cost?
-                    </button>
-                  </h5>
+                  <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">How much do virtual bookkeeping and software migration services cost?</button></h5>
                 </div>
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
-                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                    Our pricing is custom-quoted based on your specific business needs. Monthly outsourced bookkeeping is typically priced based on your monthly transaction volume and the number of bank accounts. Software conversion and data migration projects are quoted as flat-fee projects based on the complexity and volume of historical data being migrated. Contact us for a free consultation and custom quote.
-                  </div>
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Our pricing is custom-quoted based on your specific business needs. Monthly outsourced bookkeeping is based on transaction volume. Software migrations are flat-fee projects.</div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- SEO FAQ Section End -->
 
     <div class="callback-form">
       <div class="container">
@@ -626,7 +436,6 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="Page Origin" value="index.html">
                 <input type="hidden" name="Form Type" value="Main Callback Form">
-
                 <div class="row">
                   <div class="col-lg-4"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
                   <div class="col-lg-4"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
@@ -642,30 +451,28 @@
       </div>
     </div>
 
-    <!-- Software Logos Section Start -->
-    <div class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading" style="text-align: center; margin-bottom: 40px;">
-              <h2>Accounting Software We <em>Support & Migrate</em></h2>
-              <span>Expert bookkeeping and data migration across leading platforms</span>
-            </div>
-            <div class="owl-partners owl-carousel">
-              <div class="partner-item"><img src="assets/images/logos/quickbooks.webp" alt="QuickBooks ProAdvisor bookkeeping support"></div>
-              <div class="partner-item"><img src="assets/images/logos/xero.webp" alt="Xero certified bookkeeper services"></div>
-              <div class="partner-item"><img src="assets/images/logos/sage.webp" alt="Sage accounting software support"></div>
-              <div class="partner-item"><img src="assets/images/logos/zoho-books.webp" alt="Zoho Books migration and setup"></div>
-              <div class="partner-item"><img src="assets/images/logos/freshbooks.webp" alt="FreshBooks accounting conversion"></div>
-              <div class="partner-item"><img src="assets/images/logos/wave.webp" alt="Wave Accounting data migration"></div>
-              <div class="partner-item"><img src="assets/images/logos/netsuite.webp" alt="NetSuite to QuickBooks conversion"></div>
-              <div class="partner-item"><img src="assets/images/logos/accountedge.webp" alt="AccountEdge to QuickBooks migration"></div>
-            </div>
-          </div>
-        </div>
+    <!-- Automatic Scrolling Software Logos Section -->
+    <div class="logo-marquee-container">
+      <div class="logo-marquee-track">
+        <div class="logo-marquee-item"><img src="assets/images/logos/quickbooks.webp" alt="QuickBooks ProAdvisor"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/xero.webp" alt="Xero Certified"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/sage.webp" alt="Sage Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/zoho-books.webp" alt="Zoho Books"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/freshbooks.webp" alt="FreshBooks"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/wave.webp" alt="Wave Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/netsuite.webp" alt="NetSuite"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/accountedge.webp" alt="AccountEdge"></div>
+        <!-- Duplicate set for seamless infinite loop -->
+        <div class="logo-marquee-item"><img src="assets/images/logos/quickbooks.webp" alt="QuickBooks ProAdvisor"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/xero.webp" alt="Xero Certified"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/sage.webp" alt="Sage Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/zoho-books.webp" alt="Zoho Books"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/freshbooks.webp" alt="FreshBooks"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/wave.webp" alt="Wave Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/netsuite.webp" alt="NetSuite"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/accountedge.webp" alt="AccountEdge"></div>
       </div>
     </div>
-    <!-- Software Logos Section End -->
 
     <!-- Footer Starts Here -->
     <footer>
@@ -712,7 +519,6 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="Page Origin" value="index.html">
                 <input type="hidden" name="Form Type" value="Footer Form">
-
                 <div class="row">
                   <div class="col-lg-12"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
                   <div class="col-lg-12"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
@@ -736,6 +542,23 @@
       </div>
     </div>
 
+    <!-- Floating Slide-In Form -->
+    <div id="floatingLeadForm" class="floating-lead-form">
+      <button id="closeFloatingForm" class="floating-close-btn">&times;</button>
+      <h4 style="font-size: 18px; font-weight: 700; color: #1f272b; margin-bottom: 5px;">Get a Free Consultation</h4>
+      <p style="font-size: 13px; color: #555; margin-bottom: 15px;">Let us handle your books. Fill out the form below.</p>
+      <form action="https://formsubmit.co/contact@countrights.com" method="POST" id="floatingForm">
+        <input type="hidden" name="_subject" value="Floating Form Lead - CountRights">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="Form Type" value="Floating Slide-in Form">
+        <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email Address" required style="height: 40px; font-size: 14px;"></div>
+        <div class="form-group"><input type="text" name="phone" class="form-control" placeholder="Phone Number" style="height: 40px; font-size: 14px;"></div>
+        <button type="submit" class="filled-button w-100" style="border: none; padding: 10px; font-size: 14px;">Request Callback</button>
+        <div class="result-box" style="margin-top:5px; font-size: 13px; text-align: center;"></div>
+      </form>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -747,6 +570,23 @@
     <script src="assets/js/accordions.js"></script>
 
     <script>
+      // Floating Form Logic
+      const floatingForm = document.getElementById('floatingLeadForm');
+      const closeBtn = document.getElementById('closeFloatingForm');
+      
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 600) { // Show form after scrolling 600px
+          floatingForm.classList.add('show');
+        } else {
+          floatingForm.classList.remove('show');
+        }
+      });
+
+      closeBtn.addEventListener('click', function() {
+        floatingForm.style.display = 'none'; // Hide completely if user closes it
+      });
+
+      // FormSubmit AJAX Script for all forms
       const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
       forms.forEach(form => {
         const result = form.querySelector(".result-box");
