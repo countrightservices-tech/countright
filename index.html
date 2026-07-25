@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!-- Custom CSS: Dropdowns, Slider, Floating Form, & Auto-Scroll Logos -->
+    <!-- Custom CSS: Dropdowns, Slider, & Auto-Scroll Logos -->
     <style>
       .dropdown-submenu { position: relative; }
       .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
@@ -49,13 +49,6 @@
       .Modern-Slider .item .text-content h1, .Modern-Slider .item .text-content h4 { color: #ffffff; font-weight: 800; text-shadow: 3px 3px 12px rgba(0,0,0,0.9); }
       .Modern-Slider .item .text-content p { color: #f4f4f4; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); font-weight: 400; }
 
-      /* Slide In From Right Animation for Hero Text */
-      .slide-in-right { animation: slideInRight 1.2s ease-out forwards; }
-      @keyframes slideInRight {
-        0% { transform: translateX(100px); opacity: 0; }
-        100% { transform: translateX(0); opacity: 1; }
-      }
-
       /* Automatic Right-to-Left Scrolling Logos */
       .logo-marquee-container { overflow: hidden; white-space: nowrap; padding: 40px 0; background: #f9f9f9; }
       .logo-marquee-track { display: inline-block; animation: marqueeScroll 30s linear infinite; }
@@ -67,15 +60,6 @@
       .logo-marquee-item { display: inline-block; width: 160px; margin: 0 25px; vertical-align: middle; }
       .logo-marquee-item img { max-width: 100%; max-height: 60px; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s; }
       .logo-marquee-item img:hover { filter: grayscale(0%); opacity: 1; }
-
-      /* Floating Slide-In Form */
-      .floating-lead-form {
-        position: fixed; bottom: 20px; right: -350px; width: 320px; background: #fff;
-        padding: 25px; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-        z-index: 9999; transition: right 0.5s ease-in-out; border-top: 5px solid #a4c639;
-      }
-      .floating-lead-form.show { right: 20px; }
-      .floating-close-btn { position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 22px; color: #888; cursor: pointer; }
     </style>
 
     <!-- Business Schema with US Geo Targeting -->
@@ -188,7 +172,7 @@
         <div class="Modern-Slider">
           <div class="item item-1">
             <div class="img-fill">
-                <div class="text-content slide-in-right">
+                <div class="text-content">
                   <h6>Professional Bookkeeping & Accounting</h6>
                   <h1>Reliable Financial Solutions<br>&amp; Business Support</h1>
                   <p>CountRights provides expert bookkeeping services for small businesses, detailed financial reporting, and accounting software migrations to help you stay organized, compliant, and financially accurate.</p>
@@ -198,7 +182,7 @@
           </div>
           <div class="item item-2">
             <div class="img-fill">
-                <div class="text-content slide-in-right">
+                <div class="text-content">
                   <h6>We are here to support you</h6>
                   <h2>Professional<br>&amp; Bookkeeping Services</h2>
                   <p>CountRights helps small businesses stay financially organized with accurate bookkeeping, financial reporting, and reliable accounting support.</p>
@@ -208,7 +192,7 @@
           </div>
           <div class="item item-3">
             <div class="img-fill">
-                <div class="text-content slide-in-right">
+                <div class="text-content">
                   <h6>We have a solid background</h6>
                   <h2>Bookkeeping<br>&amp; Data Migration</h2>
                   <p>We help businesses migrate their accounting data between platforms and set up organized bookkeeping systems for accurate financial management.</p>
@@ -419,6 +403,7 @@
       </div>
     </div>
 
+    <!-- Simple HTML Form -->
     <div class="callback-form">
       <div class="container">
         <div class="row">
@@ -430,20 +415,21 @@
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-            <form id="contact" action="https://formsubmit.co/contact@countrights.com" method="POST">
+              <form id="contact" action="https://formsubmit.co/contact@countrights.com" method="POST">
+                
                 <input type="hidden" name="_subject" value="New Callback Request - CountRights">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="Page Origin" value="index.html">
-                <input type="hidden" name="Form Type" value="Main Callback Form">
+                <input type="hidden" name="_next" value="https://countrights.com/">
+
                 <div class="row">
                   <div class="col-lg-4"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
                   <div class="col-lg-4"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
                   <div class="col-lg-4"><input name="phone" type="text" class="form-control" placeholder="Phone Number"></div>
                   <div class="col-lg-12"><textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea></div>
                   <div class="col-lg-12"><button type="submit" class="border-button">Send Message</button></div>
-                  <div class="col-lg-12"><div class="result-box" style="margin-top:10px;"></div></div>
                 </div>
+
               </form>           
             </div>
           </div>
@@ -517,15 +503,14 @@
                 <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="Page Origin" value="index.html">
-                <input type="hidden" name="Form Type" value="Footer Form">
+                <input type="hidden" name="_next" value="https://countrights.com/">
+
                 <div class="row">
                   <div class="col-lg-12"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
                   <div class="col-lg-12"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
                   <div class="col-lg-12"><input name="phone" type="text" class="form-control" placeholder="Phone Number"></div>
                   <div class="col-lg-12"><textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea></div>
                   <div class="col-lg-12"><button type="submit" class="filled-button">Send Message</button></div>
-                  <div class="col-lg-12"><div class="result-box" style="margin-top:10px;"></div></div>
                 </div>
               </form>
             </div>
@@ -542,23 +527,6 @@
       </div>
     </div>
 
-    <!-- Floating Slide-In Form -->
-    <div id="floatingLeadForm" class="floating-lead-form">
-      <button id="closeFloatingForm" class="floating-close-btn">&times;</button>
-      <h4 style="font-size: 18px; font-weight: 700; color: #1f272b; margin-bottom: 5px;">Get a Free Consultation</h4>
-      <p style="font-size: 13px; color: #555; margin-bottom: 15px;">Let us handle your books. Fill out the form below.</p>
-      <form action="https://formsubmit.co/contact@countrights.com" method="POST" id="floatingForm">
-        <input type="hidden" name="_subject" value="Floating Form Lead - CountRights">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="Form Type" value="Floating Slide-in Form">
-        <div class="form-group"><input type="email" name="email" class="form-control" placeholder="Email Address" required style="height: 40px; font-size: 14px;"></div>
-        <div class="form-group"><input type="text" name="phone" class="form-control" placeholder="Phone Number" style="height: 40px; font-size: 14px;"></div>
-        <button type="submit" class="filled-button w-100" style="border: none; padding: 10px; font-size: 14px;">Request Callback</button>
-        <div class="result-box" style="margin-top:5px; font-size: 13px; text-align: center;"></div>
-      </form>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -568,68 +536,6 @@
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
-
-    <script>
-      // Floating Form Logic
-      const floatingForm = document.getElementById('floatingLeadForm');
-      const closeBtn = document.getElementById('closeFloatingForm');
-      
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 600) { // Show form after scrolling 600px
-          floatingForm.classList.add('show');
-        } else {
-          floatingForm.classList.remove('show');
-        }
-      });
-
-      closeBtn.addEventListener('click', function() {
-        floatingForm.style.display = 'none'; // Hide completely if user closes it
-      });
-
-      // FormSubmit AJAX Script for all forms
-      const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
-      forms.forEach(form => {
-        const result = form.querySelector(".result-box");
-        let actionUrl = form.getAttribute('action');
-        if (!actionUrl.includes('/ajax/')) {
-          actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-        }
-        form.addEventListener("submit", function(e) {
-          e.preventDefault();
-          const formData = new FormData(form);
-          const button = form.querySelector("button");
-          button.disabled = true;
-          button.innerText = "Sending...";
-          const object = {};
-          formData.forEach((value, key) => { object[key] = value; });
-          const json = JSON.stringify(object);
-          fetch(actionUrl, {
-            method: "POST",
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: json
-          })
-          .then(response => response.json())
-          .then(data => {
-            if (data.success === "true" || data.success === true) {
-              result.innerHTML = "✅ Message sent successfully!";
-              result.style.color = "#155724";
-              form.reset();
-            } else {
-              result.innerHTML = "❌ Something went wrong. Please email us directly.";
-              result.style.color = "red";
-            }
-          })
-          .catch(error => {
-            result.innerHTML = "⚠️ Network error.";
-            result.style.color = "orange";
-          })
-          .finally(() => {
-            button.disabled = false;
-            button.innerText = "Send Message";
-          });
-        });
-      });
-    </script>
 
   </body>
 
