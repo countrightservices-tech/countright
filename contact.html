@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Contact CountRights for professional bookkeeping, financial reporting, accounting software migration, and virtual CFO services. Schedule a free consultation today.">
+    <meta name="keywords" content="contact bookkeeper, bookkeeping consultation, accounting support, quickbooks migration help, contact count rights">
     <meta name="author" content="CountRights">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -31,7 +32,34 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
-    
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!-- Custom CSS -->
+    <style>
+      .dropdown-submenu { position: relative; }
+      .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+      .dropdown-submenu:hover .dropdown-menu { display: block; }
+
+      /* Hero Section Premium Dark Overlay */
+      .page-heading.header-text { position: relative; background-color: #1f272b; }
+      .page-heading.header-text::before {
+        content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)); z-index: 1;
+      }
+      .page-heading .container { position: relative; z-index: 2; padding: 100px 0; }
+      .page-heading h1 { color: #ffffff; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+      .page-heading span { color: #a4c639; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+      /* Automatic Right-to-Left Scrolling Logos */
+      .logo-marquee-container { overflow: hidden; white-space: nowrap; padding: 40px 0; background: #f9f9f9; }
+      .logo-marquee-track { display: inline-block; animation: marqueeScroll 30s linear infinite; }
+      .logo-marquee-track:hover { animation-play-state: paused; }
+      @keyframes marqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+      .logo-marquee-item { display: inline-block; width: 160px; margin: 0 25px; vertical-align: middle; }
+      .logo-marquee-item img { max-width: 100%; max-height: 60px; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s; }
+      .logo-marquee-item img:hover { filter: grayscale(0%); opacity: 1; }
+    </style>
+
     <!-- Contact Page Schema -->
     <script type="application/ld+json">
     {
@@ -40,10 +68,7 @@
       "name": "Contact CountRights",
       "url": "https://countrights.com/contact.html",
       "description": "Contact CountRights for bookkeeping, accounting support, financial reporting, and accounting software migration services.",
-      "isPartOf": {
-        "@type": "WebSite",
-        "url": "https://countrights.com/"
-      }
+      "isPartOf": { "@type": "WebSite", "url": "https://countrights.com/" }
     }
     </script>
 
@@ -71,18 +96,8 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://countrights.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Contact Us",
-          "item": "https://countrights.com/contact.html"
-        }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://countrights.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://countrights.com/contact.html" }
       ]
     }
     </script>
@@ -91,15 +106,8 @@
 
   <body>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
+    <!-- Preloader -->
+    <div id="preloader"><div class="jumper"><div></div><div></div><div></div></div></div>
 
     <!-- Header -->
     <div class="sub-header">
@@ -108,7 +116,7 @@
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+              <li><a href="mailto:Contact@CountRights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -127,27 +135,25 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
-              </li>
-
-              <!-- CONVERSIONS DROPDOWN -->
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+              
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">
-                  Conversions
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
-                  <a class="dropdown-item" href="sage-to-quickbooks.html">Sage to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
+                  </div>
                   <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
                   <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
                   <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
@@ -156,17 +162,9 @@
                 </div>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="resources/index.html">Resources</a>
-              </li> 
-
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a></li>
             </ul>
           </div>
         </div>
@@ -178,7 +176,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Contact CountRights Bookkeeping Services</h1>
+            <h1>Contact CountRights Bookkeeping</h1>
             <span>Get in touch to discuss your bookkeeping, software migration, or accounting needs</span>
           </div>
         </div>
@@ -280,35 +278,30 @@
               <h3 style="margin-bottom:10px; color:#fff; font-weight: 700; position: relative;">Send Us a Message</h3>
               <p style="margin-bottom:35px; color:rgba(255,255,255,0.9); position: relative;">Fill out the form below and we'll be in touch shortly.</p>
               
-              <form id="contact" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
-                <input type="hidden" name="subject" value="Contact Page Enquiry - CountRights">
+              <form id="contact" action="https://formsubmit.co/contact@countrights.com" method="POST">
+                <input type="hidden" name="_subject" value="Contact Page Enquiry - CountRights">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="contact.html">
+                <input type="hidden" name="Form Type" value="Main Contact Form">
 
                 <div class="input-group mb-3" style="height: 50px;">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
                   <input name="name" type="text" class="form-control" placeholder="Full Name" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
                 </div>
 
                 <div class="input-group mb-3" style="height: 50px;">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span></div>
                   <input name="email" type="email" class="form-control" placeholder="Email Address" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
                 </div>
 
                 <div class="input-group mb-3" style="height: 50px;">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span></div>
                   <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
                 </div>
 
                 <div class="input-group mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span>
-                  </div>
+                  <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span></div>
                   <textarea name="message" rows="4" class="form-control" placeholder="Tell us about your business and bookkeeping needs..." required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
                 </div>
 
@@ -328,57 +321,25 @@
       </div>
     </div>
 
-    <!-- SUPPORTED PLATFORMS -->
-    <div class="services" style="padding:80px 0; background:#f9f9f9;">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Software We <em>Support & Migrate</em></h2>
-          <span>Expert bookkeeping and data migration across leading platforms</span>
-        </div>
-        <div class="row text-center logos" style="margin-top:40px;">
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/quickbooks.png" alt="QuickBooks migration experts">
-              <p>QuickBooks</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/xero.png" alt="Xero accounting software conversion">
-              <p>Xero</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/zoho.png" alt="Zoho Books data migration">
-              <p>Zoho Books</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/wave.png" alt="Wave financial data conversion">
-              <p>Wave</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/freshbooks.png" alt="FreshBooks to QuickBooks conversion">
-              <p>FreshBooks</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/sage.png" alt="Sage accounting software migration">
-              <p>Sage</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="logo-box">
-              <img src="assets/images/accountedge.png" alt="AccountEdge to QuickBooks conversion">
-              <p>AccountEdge</p>
-            </div>
-          </div>
-        </div>
+    <!-- Automatic Scrolling Software Logos Section -->
+    <div class="logo-marquee-container">
+      <div class="logo-marquee-track">
+        <div class="logo-marquee-item"><img src="assets/images/logos/quickbooks.webp" alt="QuickBooks ProAdvisor"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/xero.webp" alt="Xero Certified"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/sage.webp" alt="Sage Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/zoho-books.webp" alt="Zoho Books"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/freshbooks.webp" alt="FreshBooks"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/wave.webp" alt="Wave Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/netsuite.webp" alt="NetSuite"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/accountedge.webp" alt="AccountEdge"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/quickbooks.webp" alt="QuickBooks ProAdvisor"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/xero.webp" alt="Xero Certified"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/sage.webp" alt="Sage Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/zoho-books.webp" alt="Zoho Books"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/freshbooks.webp" alt="FreshBooks"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/wave.webp" alt="Wave Accounting"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/netsuite.webp" alt="NetSuite"></div>
+        <div class="logo-marquee-item"><img src="assets/images/logos/accountedge.webp" alt="AccountEdge"></div>
       </div>
     </div>
 
@@ -410,43 +371,31 @@
           <div class="col-md-3 footer-item">
             <h4>Additional Pages</h4>
             <ul class="menu-list">
-              <li><a href="about.html">About Us</a></li>
               <li><a href="services.html">Our Services</a></li>
               <li><a href="resources/index.html">Resources</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
-              <form action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
-                <input type="hidden" name="subject" value="Footer Enquiry - CountRights">
-
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+                <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Contact Page)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="contact.html">
+                <input type="hidden" name="Form Type" value="Footer Form">
                 <div class="row">
-                  <div class="col-lg-12">
-                    <input name="name" type="text" class="form-control" placeholder="Full Name" required>
-                  </div>
-                  <div class="col-lg-12">
-                    <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
-                  </div>
-                  <div class="col-lg-12">
-                    <input name="phone" type="text" class="form-control" placeholder="Phone Number">
-                  </div>
-                  <div class="col-lg-12">
-                    <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
-                  </div>
-                  <div class="col-lg-12">
-                    <button type="submit" class="filled-button">Send Message</button>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="result-box" style="margin-top:10px;"></div>
-                  </div>
+                  <div class="col-lg-12"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
+                  <div class="col-lg-12"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
+                  <div class="col-lg-12"><input name="phone" type="text" class="form-control" placeholder="Phone Number"></div>
+                  <div class="col-lg-12"><textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea></div>
+                  <div class="col-lg-12"><button type="submit" class="filled-button">Send Message</button></div>
+                  <div class="col-lg-12"><div class="result-box" style="margin-top:10px;"></div></div>
                 </div>
-
               </form>
             </div>
           </div>
@@ -457,9 +406,7 @@
     <div class="sub-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
-          </div>
+          <div class="col-md-12"><p>Copyright &copy; 2024 CountRights. All rights reserved.</p></div>
         </div>
       </div>
     </div>
@@ -474,48 +421,40 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
-    
     <script>
-      const forms = document.querySelectorAll("form[action='https://api.web3forms.com/submit']");
-
+      const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
       forms.forEach(form => {
         const result = form.querySelector(".result-box");
-
+        let actionUrl = form.getAttribute('action');
+        if (!actionUrl.includes('/ajax/')) {
+          actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+        }
         form.addEventListener("submit", function(e) {
           e.preventDefault();
-
           const formData = new FormData(form);
           const button = form.querySelector("button");
-
           button.disabled = true;
           button.innerText = "Sending...";
-
-          fetch(form.action, {
+          const object = {};
+          formData.forEach((value, key) => { object[key] = value; });
+          const json = JSON.stringify(object);
+          fetch(actionUrl, {
             method: "POST",
-            body: formData
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: json
           })
-          .then(res => res.json())
+          .then(response => response.json())
           .then(data => {
-            if (data.success) {
+            if (data.success === "true" || data.success === true) {
               result.innerHTML = "✅ Message sent successfully!";
               result.style.color = "#155724";
               form.reset();
             } else {
-              result.innerHTML = "❌ Something went wrong.";
+              result.innerHTML = "❌ Something went wrong. Please email us directly.";
               result.style.color = "red";
             }
           })
-          .catch(() => {
+          .catch(error => {
             result.innerHTML = "⚠️ Network error.";
             result.style.color = "orange";
           })
@@ -528,4 +467,5 @@
     </script>
 
   </body>
+
 </html>
