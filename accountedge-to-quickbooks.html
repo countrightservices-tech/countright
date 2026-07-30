@@ -34,8 +34,12 @@
 <!-- Nested Dropdown CSS & Custom Styling -->
 <style>
   .dropdown-submenu { position: relative; }
-  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu .dropdown-menu {
+    top: 0; left: 100%; margin-top: -1px; margin-left: 0; 
+    display: none; position: absolute; z-index: 1000; border-radius: 5px;
+  }
   .dropdown-submenu:hover .dropdown-menu { display: block; }
+  .dropdown-menu .dropdown-item { white-space: nowrap; }
 
   /* Fix for Banner Text Visibility & Colors */
   .page-heading.header-text { position: relative; background-color: #1f272b; }
@@ -58,6 +62,26 @@
   .logo-marquee-item img:hover { filter: grayscale(0%); opacity: 1; }
 </style>
 
+<!-- US-Focused Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
+  "name": "CountRights",
+  "url": "https://countrights.com/",
+  "description": "Professional bookkeeping, accounting support, financial reporting, and accounting software migration services for US small businesses.",
+  "email": "Contact@countrights.com",
+  "telephone": "+1-000-000-0000",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "knowsAbout": ["QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"],
+  "sameAs": ["https://www.facebook.com/CountRights", "https://x.com/CountRights", "https://www.linkedin.com/company/countrights", "https://clutch.co/profile/countrights"]
+}
+</script>
+
 <!-- Service Schema -->
 <script type="application/ld+json">
 {
@@ -67,7 +91,7 @@
   "description": "Professional migration of accounting data from AccountEdge to QuickBooks. We securely transfer financial records, chart of accounts, customers, vendors, invoices, and transaction history while preserving data accuracy.",
   "url": "https://countrights.com/accountedge-to-quickbooks.html",
   "provider": { "@id": "https://countrights.com/#business" },
-  "areaServed": "Worldwide",
+  "areaServed": { "@type": "Country", "name": "United States" },
   "serviceType": "Accounting Software Migration"
 }
 </script>
@@ -149,15 +173,15 @@
       <div class="col-md-8">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:Contact@CountRights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+          <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
     </div>
@@ -173,11 +197,25 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
           
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesMenu">
+              <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
+              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
+              <a class="dropdown-item" href="virtual-cfo-services.html">Virtual CFO Services</a>
+              <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
+
+          <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-            <div class="dropdown-menu">
+            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
+            <div class="dropdown-menu" aria-labelledby="conversionMenu">
               <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
               <div class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
@@ -658,25 +696,28 @@
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Useful Links</h4>
         <ul class="menu-list">
-          <li><a href="services.html">Bookkeeping Services</a></li>
-          <li><a href="services.html">Financial Reporting</a></li>
-          <li><a href="services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="services.html">Accounting Data Migration</a></li>
-          <li><a href="contact.html">Free Consultation</a></li>
+          <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="virtual-cfo-services.html">Virtual CFO Services</a></li>
+          <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="accounting-software-migration.html">Software Migration</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
           <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="resources/index.html">Resources</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
