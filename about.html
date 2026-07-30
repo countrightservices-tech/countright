@@ -33,21 +33,34 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!-- Organization Schema -->
+    <!-- Nested Dropdown CSS -->
+    <style>
+      .dropdown-submenu { position: relative; }
+      .dropdown-submenu .dropdown-menu {
+        top: 0; left: 100%; margin-top: -1px; margin-left: 0; 
+        display: none; position: absolute; z-index: 1000; border-radius: 5px;
+      }
+      .dropdown-submenu:hover .dropdown-menu { display: block; }
+      .dropdown-menu .dropdown-item { white-space: nowrap; }
+    </style>
+
+    <!-- US-Focused Business Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "About CountRights",
-      "url": "https://countrights.com/about.html",
-      "description": "Learn about CountRights, your trusted partner for outsourced bookkeeping, accounting data migration, and virtual CFO services.",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "CountRights",
-        "url": "https://countrights.com/",
-        "email": "Contact@CountRights.com",
-        "description": "Professional bookkeeping and accounting support for small and growing businesses."
-      }
+      "@type": "AccountingService",
+      "@id": "https://countrights.com/#business",
+      "name": "CountRights",
+      "url": "https://countrights.com/",
+      "description": "Professional bookkeeping, accounting support, financial reporting, and accounting software migration services for US small businesses.",
+      "email": "Contact@countrights.com",
+      "telephone": "+1-000-000-0000",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "addressCountry": "US" },
+      "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "knowsAbout": ["QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"],
+      "sameAs": ["https://www.facebook.com/CountRights", "https://x.com/CountRights", "https://www.linkedin.com/company/countrights", "https://clutch.co/profile/countrights"]
     }
     </script>
 
@@ -150,9 +163,9 @@
           <div class="col-md-4">
             <ul class="right-icons">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
             </ul>
           </div>
         </div>
@@ -172,18 +185,34 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
+              <!-- OUR SERVICES DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+                <div class="dropdown-menu" aria-labelledby="servicesMenu">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
+                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
+                  <a class="dropdown-item" href="virtual-cfo-services.html">Virtual CFO Services</a>
+                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+                </div>
               </li>
 
-              <!-- CONVERSIONS DROPDOWN -->
+              <!-- CONVERSIONS DROPDOWN (Untouched with Sage Variants) -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">
-                  Conversions
-                </a>
-                <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
+                <div class="dropdown-menu" aria-labelledby="conversionMenu">
                   <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
-                  <a class="dropdown-item" href="sage-to-quickbooks.html">Sage to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
+                  </div>
                   <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
                   <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
                   <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
@@ -192,15 +221,10 @@
                 </div>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link" href="resources/index.html">Resources</a>
-              </li> 
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item active"><a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a></li>  
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -241,7 +265,7 @@
                       CountRights was founded with a single mission: to empower small and growing businesses by removing the burden of daily financial management. We noticed that too many entrepreneurs were spending their evenings and weekends trying to reconcile bank statements, fix messy books, and struggle with complicated software migrations.
                     </p>
                     <p style="font-size: 17px; line-height: 1.9; color: #555; margin-top: 20px;">
-                      As a fully remote <strong>virtual accounting firm</strong>, we provide enterprise-level financial clarity to small businesses across the US, UK, and globally. Whether you need ongoing monthly bookkeeping, a complex ERP-to-QuickBooks conversion, or clean-up bookkeeping for tax season, our certified experts act as an extension of your team.
+                      As a fully remote <strong>virtual accounting firm</strong>, we provide enterprise-level financial clarity to small businesses across the US, UK, and globally. Whether you need ongoing <a href="monthly-bookkeeping-services.html" style="color: #a4c639;">monthly bookkeeping</a>, a complex <a href="sage-to-quickbooks.html" style="color: #a4c639;">ERP-to-QuickBooks conversion</a>, or clean-up bookkeeping for tax season, our certified experts act as an extension of your team.
                     </p>
                     <a href="services.html" class="filled-button" style="margin-top: 20px;">View Our Services</a>
                   </div>
@@ -281,8 +305,8 @@
               </div>
               <div class="col-md-6 col-6">
                 <div class="count-area-content" style="text-align: center;">
-                  <div class="count-digit" style="color: #a4c639; font-size: 42px; font-weight: 700;">99</div>
-                  <div class="count-title" style="color: #fff; margin-top: 5px;">Percent Accuracy</div>
+                  <div class="count-digit" style="color: #a4c639; font-size: 42px; font-weight: 700;">99.9%</div>
+                  <div class="count-title" style="color: #fff; margin-top: 5px;">Accuracy</div>
                 </div>
               </div>
               <div class="col-md-6 col-6">
@@ -366,7 +390,7 @@
               </div>
               
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-                In today's fast-paced business environment, small business owners cannot afford to spend hours navigating complex accounting software. CountRights provides professional <strong style="color: #333;">outsourced bookkeeping services</strong> designed to give you your time back. By acting as your dedicated virtual accounting department, we handle the daily financial heavy lifting so you can focus on sales, operations, and scaling your company.
+                In today's fast-paced business environment, small business owners cannot afford to spend hours navigating complex accounting software. CountRights provides professional <a href="outsourced-bookkeeping-accounting.html" style="color: #333;"><strong>outsourced bookkeeping services</strong></a> designed to give you your time back. By acting as your dedicated virtual accounting department, we handle the daily financial heavy lifting so you can focus on sales, operations, and scaling your company.
               </p>
               
               <!-- Highlighted Callout Box 1 -->
@@ -377,7 +401,7 @@
               </div>
               
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-                Beyond ongoing bookkeeping, CountRights is a recognized leader in <strong style="color: #333;">accounting software migration</strong>. Transitioning between platforms like NetSuite, Sage, Xero, or Wave to QuickBooks can be a daunting task fraught with the risk of lost data and mismatched balances. Our conversion experts meticulously map your chart of accounts, historical transactions, and opening balances to ensure a zero-data-loss migration.
+                Beyond ongoing bookkeeping, CountRights is a recognized leader in <a href="accounting-software-migration.html" style="color: #333;"><strong>accounting software migration</strong></a>. Transitioning between platforms like NetSuite, Sage, Xero, or Wave to QuickBooks can be a daunting task fraught with the risk of lost data and mismatched balances. Our conversion experts meticulously map your chart of accounts, historical transactions, and opening balances to ensure a zero-data-loss migration.
               </p>
 
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
@@ -392,7 +416,7 @@
               </div>
 
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 0;">
-                Whether you are months behind on your books, planning a major software conversion, or simply need reliable monthly bookkeeping support, CountRights is here to help. We bring trust, accuracy, and advanced technology to your financial management. Contact us today for a free consultation and let us show you how we can bring financial clarity to your business.
+                Whether you are months behind on your books, planning a major software conversion, or simply need reliable monthly bookkeeping support, CountRights is here to help. We bring trust, accuracy, and advanced technology to your financial management. <a href="contact.html" style="color: #a4c639; font-weight: 600;">Contact us today</a> for a free consultation and let us show you how we can bring financial clarity to your business.
               </p>
 
             </div>
@@ -596,39 +620,42 @@
             <p>Serving businesses remotely across the US, UK, and globally.</p>
             <ul class="social-icons">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
             <h4>Useful Links</h4>
             <ul class="menu-list">
-              <li><a href="services.html">Bookkeeping Services</a></li>
-              <li><a href="services.html">Financial Reporting</a></li>
-              <li><a href="services.html">Accounts Payable & Receivable</a></li>
-              <li><a href="services.html">Accounting Data Migration</a></li>
+              <li><a href="outsourced-bookkeeping-accounting.html">Bookkeeping Services</a></li>
+              <li><a href="financial-reporting-services.html">Financial Reporting</a></li>
+              <li><a href="accounts-payable-receivable.html">Accounts Payable & Receivable</a></li>
+              <li><a href="accounting-software-migration.html">Accounting Data Migration</a></li>
               <li><a href="contact.html">Free Consultation</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
             <h4>Additional Pages</h4>
             <ul class="menu-list">
-              <li><a href="about.html">About Us</a></li>
               <li><a href="services.html">Our Services</a></li>
               <li><a href="resources/index.html">Resources</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
-              <form action="https://api.web3forms.com/submit" method="POST">
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST">
 
-                <input type="hidden" name="access_key" value="59e98d02-baa1-40ae-aa9b-80416a02d625">
-                <input type="hidden" name="subject" value="Footer Enquiry - CountRights">
+                <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (About Page)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="about.html">
+                <input type="hidden" name="Form Type" value="Footer Form">
 
                 <div class="row">
                   <div class="col-lg-12">
@@ -662,7 +689,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
+            <p>Copyright &copy; 2024 CountRights. All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -721,36 +748,39 @@
     </script>
     
     <script>
-      const forms = document.querySelectorAll("form[action='https://api.web3forms.com/submit']");
-
+      const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
       forms.forEach(form => {
         const result = form.querySelector(".result-box");
-
+        let actionUrl = form.getAttribute('action');
+        if (!actionUrl.includes('/ajax/')) {
+          actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+        }
         form.addEventListener("submit", function(e) {
           e.preventDefault();
-
           const formData = new FormData(form);
           const button = form.querySelector("button");
-
           button.disabled = true;
           button.innerText = "Sending...";
-
-          fetch(form.action, {
+          const object = {};
+          formData.forEach((value, key) => { object[key] = value; });
+          const json = JSON.stringify(object);
+          fetch(actionUrl, {
             method: "POST",
-            body: formData
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: json
           })
-          .then(res => res.json())
+          .then(response => response.json())
           .then(data => {
-            if (data.success) {
+            if (data.success === "true" || data.success === true) {
               result.innerHTML = "✅ Message sent successfully!";
               result.style.color = "#155724";
               form.reset();
             } else {
-              result.innerHTML = "❌ Something went wrong.";
+              result.innerHTML = "❌ Something went wrong. Please email us directly.";
               result.style.color = "red";
             }
           })
-          .catch(() => {
+          .catch(error => {
             result.innerHTML = "⚠️ Network error.";
             result.style.color = "orange";
           })
