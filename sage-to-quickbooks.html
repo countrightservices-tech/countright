@@ -40,6 +40,38 @@
   .dropdown-submenu:hover .dropdown-menu { display: block; }
 </style>
 
+<!-- US Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "CountRights",
+  "image": "https://countrights.com/assets/images/logo.png",
+  "url": "https://countrights.com",
+  "telephone": "+1-555-555-5555",
+  "email": "contact@countrights.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.0902",
+    "longitude": "-95.7129"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "sameAs": [
+    "https://x.com/CountRights",
+    "https://www.linkedin.com/company/countrights",
+    "https://clutch.co/profile/countrights"
+  ]
+}
+</script>
+
 <!-- Service Schema -->
 <script type="application/ld+json">
 {
@@ -49,7 +81,7 @@
   "description": "Professional migration of accounting data from Sage 50, Sage 100, Sage 300, Sage Intacct, and legacy Sage versions to QuickBooks. We securely transfer financial records, chart of accounts, customers, suppliers, and transaction history.",
   "url": "https://countrights.com/sage-to-quickbooks.html",
   "provider": { "@id": "https://countrights.com/#business" },
-  "areaServed": "Worldwide",
+  "areaServed": "United States",
   "serviceType": "Accounting Software Migration"
 }
 </script>
@@ -67,7 +99,7 @@
 }
 </script>
 
-<!-- Expanded FAQ Schema for Rich Results -->
+<!-- Expanded FAQ Schema (10 Questions) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -136,6 +168,22 @@
         "@type": "Answer",
         "text": "Yes. If you no longer wish to maintain separate legal entities, we can consolidate multiple Sage company databases into a single QuickBooks Enterprise file. We use 'Classes' or 'Locations' to track the different branches, giving you consolidated reporting at the click of a button."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I stop entering data into Sage during the migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend setting a 'cut-off' date. You do not need to stop using Sage immediately, but once we initiate the final data migration phase, you should cease entering new transactions into Sage to ensure no data is lost. We will guide you on exactly when to make this switch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my bank reconciliations during the switch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We bring over your previously reconciled bank statements as historical data and ensure your opening balances match your last reconciled bank statement perfectly. This allows you to pick up right where you left off in QuickBooks without having to redo past reconciliations."
+      }
     }
   ]
 }
@@ -161,15 +209,14 @@
       <div class="col-md-8">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
     </div>
@@ -187,7 +234,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+          
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="outsourced-bookkeeping-services.html">Outsourced Bookkeeping</a>
+              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="ap-ar-management-services.html">AP & AR Management</a>
+              <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+              <a class="dropdown-item" href="forensic-accounting-services.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
 
           <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown active">
@@ -246,7 +306,7 @@
       <!-- LEFT SIDE -->
       <div class="col-lg-6 mb-5 mb-lg-0">
         <h2 style="font-size:42px; margin-bottom:25px;">Smooth & Secure Sage Conversion</h2>
-        <p style="font-size:18px; line-height:1.9; margin-bottom:30px;">CountRights helps businesses migrate from Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks while maintaining reporting continuity, financial accuracy, and secure accounting data transfer.</p>
+        <p style="font-size:18px; line-height:1.9; margin-bottom:30px;">CountRights helps US businesses migrate from Sage 50, Sage 100, Sage 300, and Sage Intacct to QuickBooks while maintaining reporting continuity, financial accuracy, and secure accounting data transfer. We don't just move data; we translate it perfectly.</p>
         <ul style="list-style:none; padding:0; line-height:38px; font-size:17px;">
           <li><i class="fa fa-check" style="color:#28a745; margin-right:10px;"></i> Secure Data Transfer</li>
           <li><i class="fa fa-check" style="color:#28a745; margin-right:10px;"></i> Accurate Financial Records</li>
@@ -262,7 +322,7 @@
           <h3 style="margin-bottom:10px; color:#fff; font-weight: 700; position: relative;">Request Free Consultation</h3>
           <p style="margin-bottom:35px; color:rgba(255,255,255,0.9); position: relative;">Tell us about your migration requirements.</p>
           
-          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
             <input type="hidden" name="_subject" value="Sage Migration Enquiry - CountRights">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
@@ -287,7 +347,7 @@
               <textarea name="message" rows="4" class="form-control" placeholder="Tell us about your migration" required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
             </div>
             <button type="submit" class="btn w-100" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px;">Get Free Consultation</button>
-            <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600;"></div>
+            <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600; color: #fff;"></div>
           </form>
         </div>
       </div>
@@ -408,7 +468,7 @@
       <div class="col-lg-10 offset-lg-1">
         <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.05); border-top: 5px solid #1f272b;">
           <h3 style="color: #1f272b; margin-bottom: 20px;">Migrating from Other Legacy Sage Versions?</h3>
-          <p style="font-size: 16px; color: #555; line-height: 1.9;">In addition to the core Sage product line, our accounting data conversion experts have experience extracting data from older, discontinued Sage platforms. If you are running legacy software that is no longer supported, we can pull the raw SQL data and migrate it to a modern QuickBooks environment. We frequently handle migrations from:</p>
+          <p style="font-size: 16px; color: #555; line-height: 1.9;">In addition to the core Sage product line, our <a href="accounting-software-migration.html">accounting data conversion</a> experts have experience extracting data from older, discontinued Sage platforms. If you are running legacy software that is no longer supported, we can pull the raw SQL data and migrate it to a modern QuickBooks environment. We frequently handle migrations from:</p>
           <ul style="list-style: none; padding: 0; margin-top: 20px;">
             <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage Business Vision:</strong> Securely migrating your inventory and sales history to QuickBooks Enterprise.</li>
             <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color:#a4c639; margin-right: 10px;"></i><strong>Sage PFW (Paradox for Windows):</strong> Extracting data from outdated DOS-based or legacy Windows platforms.</li>
@@ -611,7 +671,7 @@
           </div>
           
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-            One of the biggest challenges businesses face during an <strong style="color: #333;">ERP to accounting software conversion</strong> is maintaining historical balances while simplifying the chart of accounts. We eliminate this issue by running a pre-migration assessment and a post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage against your newly migrated QuickBooks file. This strict verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
+            One of the biggest challenges businesses face during an <a href="accounting-software-migration.html">accounting software conversion</a> is maintaining historical balances while simplifying the chart of accounts. We eliminate this issue by running a pre-migration assessment and a post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage against your newly migrated QuickBooks file. This strict verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
           </p>
 
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
@@ -629,8 +689,12 @@
             We also understand that many businesses have been using Sage for decades. If you are running an older, discontinued version of Sage like Business Vision, Sage PFW, or Simply Accounting, you might think your data is trapped. It's not. We use advanced SQL extraction tools to pull raw data directly from the backend database, bypassing the locked user interface so we can recover your historical financials and migrate them to a modern platform.
           </p>
 
+          <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+            Many clients worry about life after the migration. That's why we don't just drop the file and leave. Once your QuickBooks file is ready, we provide comprehensive onboarding to help you and your staff understand the new interface. Should you need ongoing help, we seamlessly transition clients into our <a href="monthly-bookkeeping-services.html">monthly bookkeeping</a> programs, ensuring your books stay pristine year-round.
+          </p>
+
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 0;">
-            By transitioning to QuickBooks, your business gains access to advanced financial reporting, automated bank feeds, and a massive ecosystem of over 700 third-party integrations—without the heavy overhead of a full ERP. Don't let Sage software bloat slow down your business. Trust CountRights to securely handle your <strong style="color: #333;">Sage to QuickBooks data migration</strong> so you can focus on running your business with clear, reliable financial data.
+            By transitioning to QuickBooks, your business gains access to advanced financial reporting, automated bank feeds, and a massive ecosystem of over 700 third-party integrations—without the heavy overhead of a full ERP. Don't let Sage software bloat slow down your business. Trust CountRights to securely handle your <strong style="color: #333;">Sage to QuickBooks data migration</strong> so you can focus on running your business with clear, reliable financial data. For more insights on how to prepare, check out our <a href="resources/index.html">resource pages</a>.
           </p>
 
         </div>
@@ -641,7 +705,7 @@
   </div>
 </div>
 
-<!-- PREMIUM FAQ SECTION (Expanded to 8 Questions) -->
+<!-- PREMIUM FAQ SECTION (Expanded to 10 Questions) -->
 <div class="services" style="background:#f9f9f9; padding:80px 0;">
   <div class="container">
     <div class="row">
@@ -775,160 +839,159 @@
             </div>
           </div>
 
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  Should I stop entering data into Sage during the migration?
+                </button>
+              </h5>
+            </div>
+            <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                We recommend setting a "cut-off" date. You do not need to stop using Sage immediately, but once we initiate the final data migration phase, you should cease entering new transactions into Sage to ensure no data is lost. We will guide you on exactly when to make this switch.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  What happens to my bank reconciliations during the switch?
+                </button>
+              </h5>
+            </div>
+            <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                We bring over your previously reconciled bank statements as historical data and ensure your opening balances match your last reconciled bank statement perfectly. This allows you to pick up right where you left off in QuickBooks without having to redo past reconciliations.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FOOTER (Corrected with Privacy & Terms) -->
-<footer>
+<!-- FOOTER -->
+<footer style="background:#1f272b; color:#fff; padding:60px 0 20px;">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 footer-item">
-        <h4>CountRights</h4>
-        <p>CountRights provides professional bookkeeping, financial reporting, and accounting support to help small businesses stay organized, compliant, and financially confident.</p>
-        <p>Serving businesses remotely across the US, UK, and globally.</p>
-        <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
-        </ul>
+      
+      <div class="col-md-4 mb-4">
+        <h2 style="color:#fff; font-size:24px; margin-bottom:15px;">CountRights</h2>
+        <p style="color:#bbb; font-size:14px; line-height:1.8;">Professional accounting data conversion, bookkeeping, and migration services tailored for US businesses transitioning to QuickBooks.</p>
       </div>
-      <div class="col-md-3 footer-item">
-        <h4>Useful Links</h4>
-        <ul class="menu-list">
-          <li><a href="services.html">Bookkeeping Services</a></li>
-          <li><a href="services.html">Financial Reporting</a></li>
-          <li><a href="services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="services.html">Accounting Data Migration</a></li>
-          <li><a href="contact.html">Free Consultation</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 footer-item">
-        <h4>Additional Pages</h4>
-        <ul class="menu-list">
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="resources/index.html">Resources</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 footer-item last-item">
-        <h4>Contact Us</h4>
-        <div class="contact-form">
-          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
-            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <!-- Tracking Inputs -->
-            <input type="hidden" name="Page Origin" value="sage-to-quickbooks.html">
-            <input type="hidden" name="Form Type" value="Footer Form">
 
-            <div class="row">
-              <div class="col-lg-12">
-                <input name="name" type="text" class="form-control" placeholder="Full Name" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="phone" type="text" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="col-lg-12">
-                <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="filled-button">Send Message</button>
-              </div>
-              <div class="col-lg-12">
-                <div class="result-box" style="margin-top:10px;"></div>
-              </div>
-            </div>
-          </form>
-        </div>
+      <div class="col-md-4 mb-4">
+        <h5 style="color:#fff; margin-bottom:20px;">Useful Links</h5>
+        <ul style="list-style:none; padding:0; color:#bbb;">
+          <li style="margin-bottom:8px;"><a href="outsourced-bookkeeping-services.html" style="color:#bbb; text-decoration:none;">Outsourced Bookkeeping</a></li>
+          <li style="margin-bottom:8px;"><a href="monthly-bookkeeping-services.html" style="color:#bbb; text-decoration:none;">Monthly Bookkeeping</a></li>
+          <li style="margin-bottom:8px;"><a href="catch-up-bookkeeping-services.html" style="color:#bbb; text-decoration:none;">Catch-Up Bookkeeping</a></li>
+          <li style="margin-bottom:8px;"><a href="ap-ar-management-services.html" style="color:#bbb; text-decoration:none;">AP & AR Management</a></li>
+          <li style="margin-bottom:8px;"><a href="payroll-services.html" style="color:#bbb; text-decoration:none;">Payroll Services</a></li>
+          <li style="margin-bottom:8px;"><a href="forensic-accounting-services.html" style="color:#bbb; text-decoration:none;">Forensic Accounting</a></li>
+          <li style="margin-bottom:8px;"><a href="accounting-software-migration.html" style="color:#bbb; text-decoration:none;">Software Migration</a></li>
+        </ul>
       </div>
+
+      <div class="col-md-2 mb-4">
+        <h5 style="color:#fff; margin-bottom:20px;">Additional Pages</h5>
+        <ul style="list-style:none; padding:0; color:#bbb;">
+          <li style="margin-bottom:8px;"><a href="about-us.html" style="color:#bbb; text-decoration:none;">About Us</a></li>
+          <li style="margin-bottom:8px;"><a href="pricing.html" style="color:#bbb; text-decoration:none;">Pricing</a></li>
+          <li style="margin-bottom:8px;"><a href="resources/index.html" style="color:#bbb; text-decoration:none;">Resources</a></li>
+          <li style="margin-bottom:8px;"><a href="contact.html" style="color:#bbb; text-decoration:none;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h5 style="color:#fff; margin-bottom:20px;">Connect</h5>
+        <ul class="right-icons" style="list-style:none; padding:0; display:flex; gap:10px;">
+          <li><a href="https://x.com/CountRights" target="_blank" style="color:#fff; font-size:18px;"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights" target="_blank" style="color:#fff; font-size:18px;"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank" style="color:#fff; font-size:18px;"><i class="fa fa-award"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <hr style="border-color:#333; margin-top:30px; margin-bottom:20px;">
+    <div style="text-align:center; color:#888; font-size:14px;">
+      <p>Copyright &copy; 2026 CountRights. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
 
-<div class="sub-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
-      </div>
-    </div>
+<!-- FLOATING FORM -->
+<div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <button id="floatToggleBtn" style="background: #28a745; color: white; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+    <i class="fa fa-envelope"></i>
+  </button>
+  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 4px solid #28a745;">
+    <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+    <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+      <input type="hidden" name="_subject" value="Floating Form Lead - Sage to QB">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="Page Origin" value="sage-to-quickbooks.html">
+      <input type="hidden" name="Form Type" value="Floating Hover Form">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+      <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+      <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+    </form>
   </div>
 </div>
 
 <!-- SCRIPTS -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/accordions.js"></script>
-
-<!-- FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
-
-forms.forEach(form => {
-  const result = form.querySelector(".result-box");
-
-  let actionUrl = form.getAttribute('action');
-  if (!actionUrl.includes('/ajax/')) {
-    actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-  }
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const button = form.querySelector("button");
-
-    button.disabled = true;
-    button.innerText = "Sending...";
-
-    const object = {};
-    formData.forEach((value, key) => {
-      object[key] = value;
+  $(document).ready(function() {
+    // Preloader
+    $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() { $(this).remove(); });
     });
-    const json = JSON.stringify(object);
 
-    fetch(actionUrl, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: json
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success === "true" || data.success === true) {
-        result.innerHTML = "✅ Message sent successfully!";
-        result.style.color = "#155724";
-        form.reset();
-      } else {
-        result.innerHTML = "❌ Something went wrong. Please email us directly.";
-        result.style.color = "red";
-      }
-    })
-    .catch(error => {
-      result.innerHTML = "⚠️ Network error.";
-      result.style.color = "orange";
-    })
-    .finally(() => {
-      button.disabled = false;
-      button.innerText = "Send Message";
+    // Floating Form Toggle
+    $("#floatToggleBtn").click(function() {
+      $("#floatFormPanel").toggle();
+    });
+
+    // AJAX Form Handler for ALL forms on the page
+    $("form.ajax-form").submit(function(e) {
+      e.preventDefault();
+      var form = $(this);
+      var url = form.attr("action");
+      var data = form.serialize();
+      var resultBox = form.find(".result-box");
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        success: function() {
+          resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#28a745");
+          form[0].reset();
+          setTimeout(function() {
+            if (form.closest("#floatFormPanel").length) {
+              $("#floatFormPanel").hide();
+              resultBox.html("");
+            }
+          }, 4000);
+        },
+        error: function() {
+          resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+        }
+      });
     });
   });
-});
 </script>
 
 </body>
