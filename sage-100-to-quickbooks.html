@@ -33,12 +33,42 @@
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-<!-- Nested Dropdown CSS for Sage Variants -->
+<!-- Nested Dropdown CSS for Sage Variants & Floating Form -->
 <style>
   .dropdown-submenu { position: relative; }
-  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu .dropdown-menu {
+    top: 0; left: 100%; margin-top: -1px; margin-left: 0; 
+    display: none; position: absolute; z-index: 1000; border-radius: 5px;
+  }
   .dropdown-submenu:hover .dropdown-menu { display: block; }
+  .dropdown-menu .dropdown-item { white-space: nowrap; }
+
+  /* Floating Hovering Form */
+  .floating-btn { position: fixed; bottom: 20px; right: 20px; background: #a4c639; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 24px; transition: background 0.3s; }
+  .floating-btn:hover { background: #1f272b; }
+  .floating-form-container { position: fixed; bottom: 90px; right: 20px; width: 320px; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 999; display: none; border-top: 5px solid #a4c639; }
+  .floating-form-container.show { display: block; }
 </style>
+
+<!-- US-Focused Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
+  "name": "CountRights",
+  "url": "https://countrights.com/",
+  "description": "Professional bookkeeping, accounting support, financial reporting, and accounting software migration services for US small businesses.",
+  "email": "contact@countrights.com",
+  "telephone": "+1-000-000-0000",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "knowsAbout": ["QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"],
+  "sameAs": ["https://www.facebook.com/CountRights", "https://x.com/CountRights", "https://www.linkedin.com/company/countrights", "https://clutch.co/profile/countrights"]
+}
+</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -49,7 +79,7 @@
   "description": "Professional migration of accounting data from Sage 100 (MAS 90/MAS 200) to QuickBooks. We securely transfer ERP financial records, chart of accounts, customers, and transaction history.",
   "url": "https://countrights.com/sage-100-to-quickbooks.html",
   "provider": { "@id": "https://countrights.com/#business" },
-  "areaServed": "Worldwide",
+  "areaServed": { "@type": "Country", "name": "United States" },
   "serviceType": "Accounting Software Migration"
 }
 </script>
@@ -162,15 +192,15 @@
       <div class="col-md-8">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
     </div>
@@ -188,12 +218,25 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+          
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesMenu">
+              <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
+              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
+              <a class="dropdown-item" href="virtual-cfo-services.html">Virtual CFO Services</a>
+              <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
 
           <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-            <div class="dropdown-menu">
+            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
+            <div class="dropdown-menu" aria-labelledby="conversionMenu">
               <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
               
               <!-- SAGE NESTED DROPDOWN -->
@@ -267,6 +310,8 @@
             <input type="hidden" name="_subject" value="Sage 100 Migration Enquiry">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Page Origin" value="sage-100-to-quickbooks.html">
+            <input type="hidden" name="Form Type" value="Main Consultation Form">
 
             <div class="input-group mb-3" style="height: 50px;">
               <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
@@ -409,12 +454,12 @@
           <!-- Highlighted Callout Box 1 -->
           <div style="background: #f4f9ea; border-left: 4px solid #a4c639; padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0;">
             <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
-              <strong style="color: #333;">Extracting data from a modular ERP isn't easy.</strong> Sage 100 stores data in separate modules (General Ledger, Accounts Payable, Sales Order, etc.) inside a complex SQL database. You can't just export a CSV file. Our accounting data conversion experts bypass the user interface and extract data directly from the SQL backend tables. We flatten those complex relationships and map your <strong style="color: #333;">historical GL detail, customer profiles, open orders, and inventory assemblies</strong> into QuickBooks' native structure.
+              <strong style="color: #333;">Extracting data from a modular ERP isn't easy.</strong> Sage 100 stores data in separate modules (General Ledger, Accounts Payable, Sales Order, etc.) inside a complex SQL database. You can't just export a CSV file. Our <a href="accounting-software-migration.html" style="color: #555; text-decoration: underline;">accounting data conversion</a> experts bypass the user interface and extract data directly from the SQL backend tables. We flatten those complex relationships and map your <strong style="color: #333;">historical GL detail, customer profiles, open orders, and inventory assemblies</strong> into QuickBooks' native structure.
             </p>
           </div>
           
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-            One of the biggest fears businesses have during an <strong style="color: #333;">ERP to accounting software conversion</strong> is losing historical General Ledger detail. We eliminate this risk by running a pre-migration assessment and a strict post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage 100 against your newly migrated QuickBooks file down to the penny. This verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
+            One of the biggest fears businesses have during an <strong style="color: #333;">ERP to <a href="accounting-software-migration.html" style="color: #555; text-decoration: underline;">accounting software conversion</a></strong> is losing historical General Ledger detail. We eliminate this risk by running a pre-migration assessment and a strict post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage 100 against your newly migrated QuickBooks file down to the penny. This verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
           </p>
 
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
@@ -424,7 +469,7 @@
           <!-- Highlighted Callout Box 2 -->
           <div style="background: #eef2ff; border-left: 4px solid #007bff; padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0;">
             <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
-              <strong style="color: #333;">Why abandon Sage 100 (MAS 90/200)?</strong> Legacy ERP systems require constant server maintenance, version upgrades, and expensive third-party consultants just to pull custom reports. By moving to QuickBooks, your business gains access to automated bank feeds, 700+ native app integrations, and a simplified user interface that your entire team can actually navigate with confidence.
+              <strong style="color: #333;">Why abandon Sage 100 (MAS 90/200)?</strong> Legacy ERP systems require constant server maintenance, version upgrades, and expensive third-party consultants just to pull custom reports. By moving to QuickBooks, your business gains access to automated bank feeds, 700+ native app integrations, and a simplified user interface that your entire team can actually navigate with confidence. You can pair this with our <a href="monthly-bookkeeping-services.html" style="color: #555; text-decoration: underline;">monthly bookkeeping</a> services to keep your new file perfectly up to date.
             </p>
           </div>
 
@@ -584,7 +629,7 @@
   </div>
 </div>
 
-<!-- FOOTER (Corrected with Privacy & Terms) -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="row">
@@ -594,25 +639,28 @@
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Useful Links</h4>
         <ul class="menu-list">
-          <li><a href="services.html">Bookkeeping Services</a></li>
-          <li><a href="services.html">Financial Reporting</a></li>
-          <li><a href="services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="services.html">Accounting Data Migration</a></li>
-          <li><a href="contact.html">Free Consultation</a></li>
+          <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="virtual-cfo-services.html">Virtual CFO Services</a></li>
+          <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="accounting-software-migration.html">Software Migration</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
           <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="resources/index.html">Resources</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -624,9 +672,11 @@
         <h4>Contact Us</h4>
         <div class="contact-form">
           <form action="https://formsubmit.co/contact@countrights.com" method="POST">
-            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Sage 100 Page)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Page Origin" value="sage-100-to-quickbooks.html">
+            <input type="hidden" name="Form Type" value="Footer Form">
 
             <div class="row">
               <div class="col-lg-12">
@@ -659,10 +709,38 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p>Copyright &copy; 2024 CountRights. All rights reserved.</p>
+        <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Floating Quick Contact Form -->
+<div id="floatingFormContainer" class="floating-form-container">
+  <button onclick="toggleFloatingForm()" style="position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 20px; color: #888; cursor: pointer;">&times;</button>
+  <h4 style="margin-bottom: 15px; color: #1f272b;">Send a Quick Message</h4>
+  <form action="https://formsubmit.co/contact@countrights.com" method="POST" id="floatingContactForm">
+    <input type="hidden" name="_subject" value="Floating Form Lead - CountRights (Sage 100 Page)">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="Page Origin" value="sage-100-to-quickbooks.html">
+    <input type="hidden" name="Form Type" value="Floating Form">
+    <div class="form-group mb-2">
+      <input name="email" type="email" class="form-control" placeholder="Email Address" required style="height: 40px;">
+    </div>
+    <div class="form-group mb-2">
+      <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="height: 40px;">
+    </div>
+    <div class="form-group mb-3">
+      <textarea name="message" rows="3" class="form-control" placeholder="How can we help?" required style="font-size: 14px;"></textarea>
+    </div>
+    <button type="submit" class="filled-button w-100" style="border: none; padding: 8px; font-size: 14px;">Send Message</button>
+    <div class="result-box" style="margin-top:5px; font-size: 13px; text-align: center;"></div>
+  </form>
+</div>
+
+<div class="floating-btn" onclick="toggleFloatingForm()">
+  <i class="fa fa-envelope"></i>
 </div>
 
 <!-- SCRIPTS -->
@@ -673,13 +751,15 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
 
-<!-- FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
+function toggleFloatingForm() {
+  const form = document.getElementById('floatingFormContainer');
+  form.classList.toggle('show');
+}
 
+const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
 forms.forEach(form => {
   const result = form.querySelector(".result-box");
-
   let actionUrl = form.getAttribute('action');
   if (!actionUrl.includes('/ajax/')) {
     actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
