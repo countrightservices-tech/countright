@@ -11,7 +11,7 @@
 <meta name="description" content="Professional Sage Intacct to QuickBooks migration services. We securely map complex dimensions, historical ledgers, and multi-entity data to QuickBooks Online or Enterprise to reduce your software overhead.">
 
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://CountRights.com/sage-intacct-to-quickbooks.html" />
+<link rel="canonical" href="https://countrights.com/sage-intacct-to-quickbooks.html" />
 
 <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/assets/images/favicon.png">
@@ -33,12 +33,42 @@
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-<!-- Nested Dropdown CSS for Sage Variants -->
+<!-- Nested Dropdown CSS, Custom Styling & Floating Form -->
 <style>
   .dropdown-submenu { position: relative; }
-  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu .dropdown-menu {
+    top: 0; left: 100%; margin-top: -1px; margin-left: 0; 
+    display: none; position: absolute; z-index: 1000; border-radius: 5px;
+  }
   .dropdown-submenu:hover .dropdown-menu { display: block; }
+  .dropdown-menu .dropdown-item { white-space: nowrap; }
+
+  /* Floating Hovering Form */
+  .floating-btn { position: fixed; bottom: 20px; right: 20px; background: #a4c639; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 999; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-size: 24px; transition: background 0.3s; }
+  .floating-btn:hover { background: #1f272b; }
+  .floating-form-container { position: fixed; bottom: 90px; right: 20px; width: 320px; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 999; display: none; border-top: 5px solid #a4c639; }
+  .floating-form-container.show { display: block; }
 </style>
+
+<!-- US-Focused Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
+  "name": "CountRights",
+  "url": "https://countrights.com/",
+  "description": "Professional bookkeeping, accounting support, financial reporting, and accounting software migration services for US small businesses.",
+  "email": "contact@countrights.com",
+  "telephone": "+1-000-000-0000",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "knowsAbout": ["QuickBooks Online", "QuickBooks Desktop", "AccountEdge", "Xero", "Sage", "Zoho Books", "NetSuite"],
+  "sameAs": ["https://www.facebook.com/CountRights", "https://x.com/CountRights", "https://www.linkedin.com/company/countrights", "https://clutch.co/profile/countrights"]
+}
+</script>
 
 <!-- Service Schema -->
 <script type="application/ld+json">
@@ -47,9 +77,9 @@
   "@type": "Service",
   "name": "Sage Intacct to QuickBooks Migration",
   "description": "Professional migration of accounting data from Sage Intacct to QuickBooks. We securely map dimensions, historical ledgers, and multi-entity data to reduce software overhead.",
-  "url": "https://CountRights.com/sage-intacct-to-quickbooks.html",
-  "provider": { "@id": "https://CountRights.com/#business" },
-  "areaServed": "Worldwide",
+  "url": "https://countrights.com/sage-intacct-to-quickbooks.html",
+  "provider": { "@id": "https://countrights.com/#business" },
+  "areaServed": { "@type": "Country", "name": "United States" },
   "serviceType": "Accounting Software Migration"
 }
 </script>
@@ -60,15 +90,15 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://CountRights.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Conversions", "item": "https://CountRights.com/services.html" },
-    { "@type": "ListItem", "position": 3, "name": "Sage to QuickBooks", "item": "https://CountRights.com/sage-to-quickbooks.html" },
-    { "@type": "ListItem", "position": 4, "name": "Sage Intacct to QuickBooks", "item": "https://CountRights.com/sage-intacct-to-quickbooks.html" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://countrights.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Conversions", "item": "https://countrights.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Sage to QuickBooks", "item": "https://countrights.com/sage-to-quickbooks.html" },
+    { "@type": "ListItem", "position": 4, "name": "Sage Intacct to QuickBooks", "item": "https://countrights.com/sage-intacct-to-quickbooks.html" }
   ]
 }
 </script>
 
-<!-- Expanded FAQ Schema for Rich Results -->
+<!-- Expanded FAQ Schema for Rich Results (10 Questions) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -137,6 +167,22 @@
         "@type": "Answer",
         "text": "Yes. We migrate your open AR and AP invoices. We ensure that all outstanding customer and vendor balances are perfectly mapped so your aging reports are accurate from day one in QuickBooks."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you migrate Sage Intacct multi-currency data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If your Sage Intacct file is set up for multi-currency, we can map those foreign currency balances and historical transactions accurately into a QuickBooks Multi-Currency enabled file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you support migrations for non-profits using Sage Intacct?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Sage Intacct is very popular with non-profits for fund accounting. We map your Intacct fund tracking dimensions directly to QuickBooks Classes to maintain non-profit compliance and grant tracking."
+      }
     }
   ]
 }
@@ -162,15 +208,15 @@
       <div class="col-md-8">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:Contact@CountRights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
     </div>
@@ -188,12 +234,25 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+          
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesMenu">
+              <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
+              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
+              <a class="dropdown-item" href="virtual-cfo-services.html">Virtual CFO Services</a>
+              <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
 
           <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-            <div class="dropdown-menu">
+            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
+            <div class="dropdown-menu" aria-labelledby="conversionMenu">
               <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
               
               <!-- SAGE NESTED DROPDOWN -->
@@ -267,7 +326,6 @@
             <input type="hidden" name="_subject" value="Sage Intacct Migration Enquiry">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <!-- Tracking Inputs -->
             <input type="hidden" name="Page Origin" value="sage-intacct-to-quickbooks.html">
             <input type="hidden" name="Form Type" value="Main Consultation Form">
 
@@ -412,12 +470,12 @@
           <!-- Highlighted Callout Box 1 -->
           <div style="background: #f4f9ea; border-left: 4px solid #a4c639; padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0;">
             <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
-              <strong style="color: #333;">Mapping Intacct Dimensions requires expert handling.</strong> Sage Intacct relies on "Dimensions" (like Department, Location, Project, or Custom Fields) to tag transactions. QuickBooks handles this differently, using Classes, Locations, and Categories. Our accounting data conversion experts meticulously map your Intacct dimensions directly into QuickBooks' tracking structure, ensuring your granular departmental reporting remains perfectly intact and accurate year-over-year.
+              <strong style="color: #333;">Mapping Intacct Dimensions requires expert handling.</strong> Sage Intacct relies on "Dimensions" (like Department, Location, Project, or Custom Fields) to tag transactions. QuickBooks handles this differently, using Classes, Locations, and Categories. Our <a href="accounting-software-migration.html" style="color: #555; text-decoration: underline;">accounting data conversion</a> experts meticulously map your Intacct dimensions directly into QuickBooks' tracking structure, ensuring your granular departmental reporting remains perfectly intact and accurate year-over-year.
             </p>
           </div>
           
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-            One of the biggest fears businesses have during a <strong style="color: #333;">cloud ERP conversion</strong> is losing historical General Ledger detail. We eliminate this risk by running a pre-migration assessment and a strict post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage Intacct against your newly migrated QuickBooks file down to the penny. This verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
+            One of the biggest fears businesses have during a <strong style="color: #333;"><a href="accounting-software-migration.html" style="color: #555; text-decoration: underline;">cloud ERP conversion</a></strong> is losing historical General Ledger detail. We eliminate this risk by running a pre-migration assessment and a strict post-migration reconciliation. We compare your Profit and Loss (P&L) and Balance Sheet reports in Sage Intacct against your newly migrated QuickBooks file down to the penny. This verification process guarantees that your financial history, account balances, and reporting continuity are preserved with 100% accuracy.
           </p>
 
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
@@ -427,7 +485,7 @@
           <!-- Highlighted Callout Box 2 -->
           <div style="background: #eef2ff; border-left: 4px solid #007bff; padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0;">
             <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
-              <strong style="color: #333;">Why abandon Sage Intacct?</strong> Intacct is a premium SaaS platform with high per-user licensing costs, complex implementation requirements, and a steep learning curve. By moving to QuickBooks, your business gains access to native US payroll, automated bank feeds, 700+ app integrations, and a simplified user interface that your entire team can actually navigate with confidence—all while cutting software costs by up to 60%.
+              <strong style="color: #333;">Why abandon Sage Intacct?</strong> Intacct is a premium SaaS platform with high per-user licensing costs, complex implementation requirements, and a steep learning curve. By moving to QuickBooks, your business gains access to native US payroll, automated bank feeds, 700+ app integrations, and a simplified user interface that your entire team can actually navigate with confidence—all while cutting software costs by up to 60%. If you need high-level financial forecasting without the ERP bloat, consider pairing your migration with our <a href="virtual-cfo-services.html" style="color: #555; text-decoration: underline;">Virtual CFO services</a>.
             </p>
           </div>
 
@@ -436,7 +494,7 @@
           </p>
 
           <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 0;">
-            Don't let expensive SaaS bloat and complex ERP features slow down your business growth. Trust CountRights to securely handle your <strong style="color: #333;">Sage Intacct to QuickBooks data migration</strong>. We bring the expertise, the API extraction tools, and the accounting knowledge required to ensure a seamless, zero-data-loss transition.
+            Don't let expensive SaaS bloat and complex ERP features slow down your business growth. Trust CountRights to securely handle your <strong style="color: #333;">Sage Intacct to QuickBooks data migration</strong>. We bring the expertise, the API extraction tools, and the accounting knowledge required to ensure a seamless, zero-data-loss transition. For more insights on managing your finances post-migration, check out our collection of free <a href="resources/index.html" style="color: #a4c639; font-weight: 600;">accounting resources and guides</a>.
           </p>
 
         </div>
@@ -447,7 +505,7 @@
   </div>
 </div>
 
-<!-- PREMIUM FAQ SECTION (Expanded to 8 Questions) -->
+<!-- PREMIUM FAQ SECTION (Expanded to 10 Questions) -->
 <div class="services" style="background:#ffffff; padding:80px 0;">
   <div class="container">
     <div class="row">
@@ -581,13 +639,43 @@
             </div>
           </div>
 
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  Can you migrate Sage Intacct multi-currency data?
+                </button>
+              </h5>
+            </div>
+            <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                Yes. If your Sage Intacct file is set up for multi-currency, we can map those foreign currency balances and historical transactions accurately into a QuickBooks Multi-Currency enabled file.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+            <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                  Do you support migrations for non-profits using Sage Intacct?
+                </button>
+              </h5>
+            </div>
+            <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+              <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                Absolutely. Sage Intacct is very popular with non-profits for fund accounting. We map your Intacct fund tracking dimensions directly to QuickBooks Classes to maintain non-profit compliance and grant tracking.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FOOTER (Corrected with Privacy & Terms) -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="row">
@@ -597,25 +685,28 @@
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Useful Links</h4>
         <ul class="menu-list">
-          <li><a href="services.html">Bookkeeping Services</a></li>
-          <li><a href="services.html">Financial Reporting</a></li>
-          <li><a href="services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="services.html">Accounting Data Migration</a></li>
-          <li><a href="contact.html">Free Consultation</a></li>
+          <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="virtual-cfo-services.html">Virtual CFO Services</a></li>
+          <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="accounting-software-migration.html">Software Migration</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
           <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="resources/index.html">Resources</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -627,32 +718,19 @@
         <h4>Contact Us</h4>
         <div class="contact-form">
           <form action="https://formsubmit.co/contact@countrights.com" method="POST">
-            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Sage Intacct Page)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <!-- Tracking Inputs -->
             <input type="hidden" name="Page Origin" value="sage-intacct-to-quickbooks.html">
             <input type="hidden" name="Form Type" value="Footer Form">
 
             <div class="row">
-              <div class="col-lg-12">
-                <input name="name" type="text" class="form-control" placeholder="Full Name" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="phone" type="text" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="col-lg-12">
-                <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="filled-button">Send Message</button>
-              </div>
-              <div class="col-lg-12">
-                <div class="result-box" style="margin-top:10px;"></div>
-              </div>
+              <div class="col-lg-12"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
+              <div class="col-lg-12"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
+              <div class="col-lg-12"><input name="phone" type="text" class="form-control" placeholder="Phone Number"></div>
+              <div class="col-lg-12"><textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea></div>
+              <div class="col-lg-12"><button type="submit" class="filled-button">Send Message</button></div>
+              <div class="col-lg-12"><div class="result-box" style="margin-top:10px;"></div></div>
             </div>
           </form>
         </div>
@@ -664,14 +742,40 @@
 <div class="sub-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p>Copyright &copy; 2024 CountRights. All rights reserved.</p>
-      </div>
+      <div class="col-md-12"><p>Copyright &copy; 2026 CountRights. All rights reserved.</p></div>
     </div>
   </div>
 </div>
 
-<!-- SCRIPTS -->
+<!-- Floating Quick Contact Form -->
+<div id="floatingFormContainer" class="floating-form-container">
+  <button onclick="toggleFloatingForm()" style="position: absolute; top: 10px; right: 15px; background: none; border: none; font-size: 20px; color: #888; cursor: pointer;">&times;</button>
+  <h4 style="margin-bottom: 15px; color: #1f272b;">Send a Quick Message</h4>
+  <form action="https://formsubmit.co/contact@countrights.com" method="POST" id="floatingContactForm">
+    <input type="hidden" name="_subject" value="Floating Form Lead - CountRights (Sage Intacct Page)">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="Page Origin" value="sage-intacct-to-quickbooks.html">
+    <input type="hidden" name="Form Type" value="Floating Form">
+    <div class="form-group mb-2">
+      <input name="email" type="email" class="form-control" placeholder="Email Address" required style="height: 40px;">
+    </div>
+    <div class="form-group mb-2">
+      <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="height: 40px;">
+    </div>
+    <div class="form-group mb-3">
+      <textarea name="message" rows="3" class="form-control" placeholder="How can we help?" required style="font-size: 14px;"></textarea>
+    </div>
+    <button type="submit" class="filled-button w-100" style="border: none; padding: 8px; font-size: 14px;">Send Message</button>
+    <div class="result-box" style="margin-top:5px; font-size: 13px; text-align: center;"></div>
+  </form>
+</div>
+
+<div class="floating-btn" onclick="toggleFloatingForm()">
+  <i class="fa fa-envelope"></i>
+</div>
+
+<!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/custom.js"></script>
@@ -679,13 +783,15 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
 
-<!-- FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
+function toggleFloatingForm() {
+  const form = document.getElementById('floatingFormContainer');
+  form.classList.toggle('show');
+}
 
+const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
 forms.forEach(form => {
   const result = form.querySelector(".result-box");
-
   let actionUrl = form.getAttribute('action');
   if (!actionUrl.includes('/ajax/')) {
     actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
@@ -693,25 +799,16 @@ forms.forEach(form => {
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
-
     const formData = new FormData(form);
     const button = form.querySelector("button");
-
     button.disabled = true;
     button.innerText = "Sending...";
-
     const object = {};
-    formData.forEach((value, key) => {
-      object[key] = value;
-    });
+    formData.forEach((value, key) => { object[key] = value; });
     const json = JSON.stringify(object);
-
     fetch(actionUrl, {
       method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: json
     })
     .then(response => response.json())
