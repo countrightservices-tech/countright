@@ -6,10 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta name="description" content="CountRights provides outsourced bookkeeping services, accounts payable & receivable, financial reporting, catch-up bookkeeping, and accounting software migration for small businesses.">
+  <meta name="description" content="Expert outsourced bookkeeping, AP/AR, catch-up, payroll, and software migration for US businesses. Get clean, tax-ready books. Free quote!">
   <meta name="author" content="CountRights">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- Optimized Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <title>Outsourced Bookkeeping & Accounting Services | CountRights</title>
   <meta name="robots" content="index, follow">
@@ -40,6 +43,50 @@
     .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
     .dropdown-submenu:hover .dropdown-menu { display: block; }
   </style>
+
+  <!-- US Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "CountRights",
+    "image": "https://countrights.com/assets/images/logo.png",
+    "url": "https://countrights.com",
+    "email": "contact@countrights.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.0902",
+      "longitude": "-95.7129"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "United States"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Texas",
+        "url": "https://countrights.com/bookkeeping-services-in-texas.html"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "California",
+        "url": "https://countrights.com/bookkeeping-services-in-california.html"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/countrights",
+      "https://x.com/CountRights",
+      "https://www.linkedin.com/company/countrights",
+      "https://clutch.co/profile/countrights"
+    ]
+  }
+  </script>
 
   <!-- SEO Schema: Collection Page & Breadcrumbs -->
   <script type="application/ld+json">
@@ -75,12 +122,13 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Accounts Payable & Receivable Management", "description": "Tracking vendor invoices, managing customer billing, and optimizing business cash flow." }},
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financial Reporting", "description": "Generating accurate Profit and Loss statements, Balance Sheets, and Cash Flow reports." }},
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Accounting Software Data Migration", "description": "Converting and migrating historical accounting data between platforms like QuickBooks, Xero, Sage, and NetSuite." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Catch-Up Bookkeeping", "description": "Cleaning up disorganized books and reconciling past transactions to make them tax-ready." }}
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Catch-Up Bookkeeping", "description": "Cleaning up disorganized books and reconciling past transactions to make them tax-ready." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Payroll Services", "description": "Managing employee compensation, tax filings, and payroll reconciliation seamlessly." }}
     ]
   }
   </script>
 
-  <!-- FAQ Schema -->
+  <!-- Expanded FAQ Schema (10 Questions) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -115,6 +163,26 @@
         "@type": "Question",
         "name": "How does virtual bookkeeping work?",
         "acceptedAnswer": { "@type": "Answer", "text": "We use secure, cloud-based technology to access your accounting software and bank statements. Once onboarded, we categorize transactions, reconcile accounts, and deliver financial reports to you digitally." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer payroll services for small businesses?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer comprehensive payroll services. We handle employee compensation, calculate taxes, and ensure your payroll liabilities are perfectly mapped to your chart of accounts for seamless year-end W-2 and 1099 reporting." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you migrate data from Sage or NetSuite to QuickBooks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, our accounting software migration experts specialize in complex ERP conversions. Whether you are moving from Sage 50, Sage Intacct, or NetSuite to QuickBooks Online or Enterprise, we ensure a zero-data-loss conversion." }
+      },
+      {
+        "@type": "Question",
+        "name": "How secure is my financial data?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We utilize 256-bit SSL encryption, secure document portals, and read-only bank feeds. We do not store passwords in plain text, and access to your financial data is strictly limited to your assigned accounting team." }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We serve a diverse range of industries, including e-commerce, real estate, professional services, construction, and non-profits. Our team is trained on industry-specific tax deductions and reporting standards." }
       }
     ]
   }
@@ -140,15 +208,15 @@
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+              <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
             </ul>
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
             </ul>
           </div>
         </div>
@@ -165,8 +233,21 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item active"><a class="nav-link" href="services.html">Our Services <span class="sr-only">(current)</span></a></li>
               
+              <!-- OUR SERVICES DROPDOWN -->
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
+                  <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+                </div>
+              </li>
+
               <!-- CONVERSIONS DROPDOWN -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
@@ -225,6 +306,7 @@
               <li><a href='#tabs-3'>Financial Reporting <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-4'>Accounting Data Migration <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-5'>Catch-Up Bookkeeping <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-6'>Payroll Services <i class="fa fa-angle-right"></i></a></li>
             </ul>
           </div>
           <div class="col-md-8">
@@ -233,7 +315,7 @@
               <article id='tabs-1'>
                 <img src="assets/images/single_service_01.jpg" alt="Monthly bookkeeping services for small businesses">
                 <h4>Monthly Bookkeeping</h4>
-                <p>Our monthly bookkeeping service ensures that your financial records are always accurate, organized, and up to date. As your virtual bookkeeper, we record and categorize daily transactions, reconcile bank and credit card accounts, and maintain a clean financial system so you always know the true financial position of your business.</p>
+                <p>Our <a href="monthly-bookkeeping-services.html">monthly bookkeeping</a> service ensures that your financial records are always accurate, organized, and up to date. As your virtual bookkeeper, we record and categorize daily transactions, reconcile bank and credit card accounts, and maintain a clean financial system so you always know the true financial position of your business.</p>
                 <p>With reliable outsourced bookkeeping in place, business owners can focus on growth while we handle the financial records. We ensure everything is properly documented for year-end reporting and tax preparation, eliminating the stress of messy books.</p>
               </article>
 
@@ -241,7 +323,7 @@
                 <img src="assets/images/single_service_02.jpg" alt="Accounts payable and receivable management services">
                 <h4>Accounts Payable & Receivable</h4>
                 <p>Effective management of payables and receivables is essential for maintaining healthy business cash flow. We help businesses track vendor invoices, monitor incoming customer payments, and manage outgoing expenses efficiently to avoid late fees and missed revenue.</p>
-                <p>Our process ensures that invoices are properly recorded, payments are tracked on time, and outstanding balances are clearly monitored. This helps reduce delays, improve cash flow management, and keep your financial records accurate for better decision-making.</p>
+                <p>Our <a href="accounts-payable-receivable.html">AP and AR management</a> process ensures that invoices are properly recorded, payments are tracked on time, and outstanding balances are clearly monitored. This helps reduce delays, improve cash flow management, and keep your financial records accurate for better decision-making.</p>
               </article>
 
               <article id='tabs-3'>
@@ -254,16 +336,23 @@
               <article id='tabs-4'>
                 <img src="assets/images/single_service_04.jpg" alt="Accounting software data migration to QuickBooks">
                 <h4>Accounting Data Migration</h4>
-                <p>Our accounting data migration service helps businesses move their financial records safely between accounting platforms. Whether you are upgrading to a more robust system or consolidating platforms, we ensure that historical transactions, customer balances, and financial records are transferred with 100% accuracy.</p>
-                <p>By maintaining strict data integrity during the conversion process, businesses can transition smoothly to new accounting systems without losing important financial information or disrupting daily operations. <a href="sage-to-quickbooks.html" style="color: #a4c639; font-weight: 600;">Explore our Sage to QuickBooks migrations</a> or <a href="xero-to-quickbooks.html" style="color: #a4c639; font-weight: 600;">Xero conversions</a>.</p>
+                <p>Our <a href="accounting-software-migration.html">accounting data conversion</a> service helps businesses move their financial records safely between accounting platforms. Whether you are upgrading to a more robust system or consolidating platforms, we ensure that historical transactions, customer balances, and financial records are transferred with 100% accuracy.</p>
+                <p>By maintaining strict data integrity during the conversion process, businesses can transition smoothly to new accounting systems without losing important financial information or disrupting daily operations. Explore our <a href="sage-to-quickbooks.html" style="color: #a4c639; font-weight: 600;">Sage to QuickBooks migrations</a> or <a href="xero-to-quickbooks.html" style="color: #a4c639; font-weight: 600;">Xero conversions</a>.</p>
                 <p><strong>Supported Platforms for Conversion:</strong> QuickBooks Online • QuickBooks Desktop • Xero • Zoho Books • Wave • AccountEdge • Sage • NetSuite • FreshBooks</p>
               </article>
 
               <article id='tabs-5'>
                 <img src="assets/images/single_service_01.jpg" alt="Catch up bookkeeping and clean up services">
                 <h4>Catch-Up Bookkeeping & Clean-Up</h4>
-                <p>If your books are months or even years behind, you are not alone. Our catch-up bookkeeping services are designed to get your financial records back on track quickly. We will reconcile past bank statements, reclassify improper expenses, and fix any errors left by previous bookkeepers.</p>
+                <p>If your books are months or even years behind, you are not alone. Our <a href="catch-up-bookkeeping-services.html">catch-up bookkeeping</a> services are designed to get your financial records back on track quickly. We will reconcile past bank statements, reclassify improper expenses, and fix any errors left by previous bookkeepers.</p>
                 <p>Having clean, updated, and reconciled books is crucial for filing taxes on time, securing business loans, or attracting investors. We bring your historical financial data up to date so you can move forward with total financial clarity.</p>
+              </article>
+
+              <article id='tabs-6'>
+                <img src="assets/images/single_service_02.jpg" alt="Professional payroll services for small businesses">
+                <h4>Payroll Services</h4>
+                <p>Managing payroll can be time-consuming and prone to costly errors. Our professional <a href="payroll-services.html">payroll services</a> ensure your employees are paid accurately and on time, while also handling tax withholdings and filings seamlessly.</p>
+                <p>We integrate your payroll data directly into your accounting software, ensuring that your payroll liabilities and expenses are perfectly mapped to your chart of accounts. This provides a complete, real-time view of your labor costs and keeps you compliant with state and federal tax regulations.</p>
               </article>
 
             </section>
@@ -342,11 +431,11 @@
               </div>
               
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-                Beyond ongoing bookkeeping, CountRights is a recognized leader in <strong>accounting software migration</strong>. Transitioning between platforms like NetSuite, Sage, Xero, or Wave to QuickBooks can be a daunting task fraught with the risk of lost data and mismatched balances. Our conversion experts meticulously map your chart of accounts, historical transactions, and opening balances to ensure a zero-data-loss migration.
+                Beyond ongoing bookkeeping, CountRights is a recognized leader in <strong>accounting software migration</strong>. Transitioning between platforms like NetSuite, Sage, or Xero to QuickBooks can be a daunting task fraught with the risk of lost data and mismatched balances. Our conversion experts meticulously map your chart of accounts, historical transactions, and opening balances to ensure a zero-data-loss migration.
               </p>
 
               <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
-                We serve a diverse range of industries, including e-commerce, real estate, professional services, and construction. Because we are a <strong>remote accounting firm</strong>, we are uniquely positioned to support businesses across the US, UK, and globally. We understand the nuances of multi-currency transactions, sales tax compliance, and remote CPA collaboration.
+                We serve a diverse range of industries, including e-commerce, real estate, professional services, and construction. Because we are a <strong>remote accounting firm</strong>, we are uniquely positioned to support businesses across the US, UK, and globally. We understand the nuances of multi-currency transactions, sales tax compliance, and remote CPA collaboration. We also offer specialized <a href="payroll-services.html">payroll services</a> to ensure your staff is paid accurately and on time.
               </p>
 
               <!-- Highlighted Callout Box 2 -->
@@ -381,7 +470,7 @@
             <div style="background: linear-gradient(145deg, #8fb323 0%, #a4c639 100%); padding: 50px 40px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
               <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
               
-              <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
                 <input type="hidden" name="_subject" value="Services Page Enquiry - CountRights">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
@@ -418,7 +507,7 @@
                     <button type="submit" class="btn" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px; padding: 0 40px;">Send Message</button>
                   </div>
                   <div class="col-md-12">
-                    <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600;"></div>
+                    <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600; color: #fff;"></div>
                   </div>
                 </div>
               </form>
@@ -532,6 +621,66 @@
                 </div>
               </div>
 
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Do you offer payroll services for small businesses?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, we offer comprehensive payroll services. We handle employee compensation, calculate taxes, and ensure your payroll liabilities are perfectly mapped to your chart of accounts for seamless year-end W-2 and 1099 reporting.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Can you migrate data from Sage or NetSuite to QuickBooks?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, our accounting software migration experts specialize in complex ERP conversions. Whether you are moving from Sage 50, Sage Intacct, or NetSuite to QuickBooks Online or Enterprise, we ensure a zero-data-loss conversion.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      How secure is my financial data?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    We utilize 256-bit SSL encryption, secure document portals, and read-only bank feeds. We do not store passwords in plain text, and access to your financial data is strictly limited to your assigned accounting team.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      What industries do you serve?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    We serve a diverse range of industries, including e-commerce, real estate, professional services, construction, and non-profits. Our team is trained on industry-specific tax deductions and reporting standards.
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -547,26 +696,29 @@
             <p>CountRights provides professional outsourced bookkeeping, financial reporting, and accounting software migration services to help small businesses stay organized, compliant, and financially confident.</p>
             <p>Serving businesses remotely across the US, UK, and globally.</p>
             <ul class="social-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
             <h4>Useful Links</h4>
             <ul class="menu-list">
-              <li><a href="services.html">Bookkeeping Services</a></li>
-              <li><a href="services.html">Financial Reporting</a></li>
-              <li><a href="services.html">Accounts Payable & Receivable</a></li>
-              <li><a href="services.html">Accounting Data Migration</a></li>
-              <li><a href="contact.html">Free Consultation</a></li>
+              <li><a href="services.html">All Services</a></li>
+              <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+              <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+              <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+              <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+              <li><a href="payroll-services.html">Payroll Services</a></li>
+              <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+              <li><a href="accounting-software-migration.html">Software Migration</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
             <h4>Additional Pages</h4>
             <ul class="menu-list">
-              <li><a href="services.html">Our Services</a></li>
+              <li><a href="about-us.html">About Us</a></li>
               <li><a href="resources/index.html">Resources</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="contact.html">Contact Us</a></li>
@@ -577,7 +729,7 @@
           <div class="col-md-3 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
-              <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
 
                 <input type="hidden" name="_subject" value="Footer Enquiry - CountRights">
                 <input type="hidden" name="_template" value="table">
@@ -623,6 +775,28 @@
         </div>
       </div>
     </div>
+
+    <!-- FLOATING FORM -->
+    <div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+      <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+        <i class="fa fa-envelope"></i>
+      </button>
+      <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
+        <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+        <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+          <input type="hidden" name="_subject" value="Floating Form Lead - Services Page">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Page Origin" value="services.html">
+          <input type="hidden" name="Form Type" value="Floating Hover Form">
+          <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+          <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+          <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+          <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+          <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+        </form>
+      </div>
+    </div>
     
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -634,62 +808,48 @@
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
-    <!-- FormSubmit AJAX Script -->
+    <!-- Toggle & FormSubmit AJAX Script -->
     <script>
-    const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
-
-    forms.forEach(form => {
-      const result = form.querySelector(".result-box");
-
-      let actionUrl = form.getAttribute('action');
-      if (!actionUrl.includes('/ajax/')) {
-        actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-      }
-
-      form.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const button = form.querySelector("button");
-
-        button.disabled = true;
-        button.innerText = "Sending...";
-
-        const object = {};
-        formData.forEach((value, key) => {
-          object[key] = value;
+      $(document).ready(function() {
+        // Preloader
+        $(window).on('load', function() {
+          $('#preloader').fadeOut('slow', function() { $(this).remove(); });
         });
-        const json = JSON.stringify(object);
 
-        fetch(actionUrl, {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: json
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success === "true" || data.success === true) {
-            result.innerHTML = "✅ Message sent successfully!";
-            result.style.color = "#155724";
-            form.reset();
-          } else {
-            result.innerHTML = "❌ Something went wrong. Please email us directly.";
-            result.style.color = "red";
-          }
-        })
-        .catch(error => {
-          result.innerHTML = "⚠️ Network error.";
-          result.style.color = "orange";
-        })
-        .finally(() => {
-          button.disabled = false;
-          button.innerText = "Send Message";
+        // Floating Form Toggle
+        $("#floatToggleBtn").click(function() {
+          $("#floatFormPanel").toggle();
+        });
+
+        // AJAX Form Handler for ALL forms on the page
+        $("form.ajax-form").submit(function(e) {
+          e.preventDefault();
+          var form = $(this);
+          var url = form.attr("action");
+          var data = form.serialize();
+          var resultBox = form.find(".result-box");
+
+          $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            cache: false,
+            success: function() {
+              resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+              form[0].reset();
+              setTimeout(function() {
+                if (form.closest("#floatFormPanel").length) {
+                  $("#floatFormPanel").hide();
+                  resultBox.html("");
+                }
+              }, 4000);
+            },
+            error: function() {
+              resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+            }
+          });
         });
       });
-    });
     </script>
 
   </body>
