@@ -23,7 +23,11 @@
   gtag('config', 'G-7ZVBSSK8VV');
 </script>
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<!-- Optimized Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -50,6 +54,123 @@
   .sidebar-item ul li a:hover { color: #a4c639; }
 </style>
 
+<!-- US Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "CountRights",
+  "image": "https://countrights.com/assets/images/logo.png",
+  "url": "https://countrights.com",
+  "email": "contact@countrights.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.0902",
+    "longitude": "-95.7129"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Texas",
+      "url": "https://countrights.com/bookkeeping-services-in-texas.html"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "California",
+      "url": "https://countrights.com/bookkeeping-services-in-california.html"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/countrights",
+    "https://x.com/CountRights",
+    "https://www.linkedin.com/company/countrights",
+    "https://clutch.co/profile/countrights"
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://countrights.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://countrights.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Terms of Service", "item": "https://countrights.com/terms-of-service.html" }
+  ]
+}
+</script>
+
+<!-- Expanded FAQ Schema (10 Questions) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to sign a contract to use CountRights?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, we require a standard service agreement that outlines the scope of work, monthly fees, and responsibilities to ensure total transparency." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can CountRights file my taxes for me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, CountRights provides bookkeeping and accounting support, but we are not CPAs. We prepare your books perfectly so your CPA can file your taxes easily." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my data if I cancel my bookkeeping services?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Upon termination, we provide you with a final export of your reconciled financial data. You retain full ownership of all your financial records." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much notice do I need to give to cancel my monthly service?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We require a 30-day written notice for cancellation of any ongoing monthly bookkeeping services to ensure a smooth transition." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the monthly bookkeeping fees refundable?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, our flat-rate monthly fees are billed in advance and are non-refundable, as the work and resources are allocated for the entire month." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CountRights provide legal or financial advice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, we provide accounting support, data migration, and bookkeeping services only. We do not provide legal, tax, or certified financial advice." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is responsible for providing bank statements?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The client is responsible for providing timely and secure access to bank statements, credit card statements, and accounting software." }
+    },
+    {
+      "@type": "Question",
+      "name": "What security measures does CountRights use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We utilize bank-level 256-bit SSL encryption, secure document portals, and read-only bank feeds to ensure your data is completely protected." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can CountRights guarantee the outcome of an IRS audit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, while we ensure your books are accurate and tax-ready, we cannot guarantee the outcome of any IRS audit or loan application. Final tax liability is determined by the IRS." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer services outside the US?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, while we focus on US businesses, we serve clients globally, including the UK, and handle multi-currency transactions." }
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -64,15 +185,15 @@
       <div class="col-md-8 col-xs-12">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@CountRights.com</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
         </ul>
       </div>
     </div>
@@ -88,8 +209,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
           
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
+              <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+              <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
+
+          <!-- CONVERSIONS DROPDOWN -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
             <div class="dropdown-menu">
@@ -144,10 +279,10 @@
           
           <p><strong>Last Updated: May 22, 2024</strong></p>
           
-          <p>Welcome to CountRights. By accessing our website or engaging our bookkeeping, accounting, or data migration services, you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.</p>
+          <p>Welcome to CountRights. By accessing our website or engaging our <a href="outsourced-bookkeeping-accounting.html">bookkeeping</a>, accounting, or data migration services, you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.</p>
 
           <h2>1. Scope of Services</h2>
-          <p>CountRights provides virtual bookkeeping, bank reconciliation, financial reporting, payroll support, and accounting software migration services. We act as an independent contractor, not as your employee, partner, or fiduciary. We do not provide Certified Public Accountant (CPA) services, tax filing, or legal advice. You must retain a licensed CPA or tax attorney for tax preparation and filing.</p>
+          <p>CountRights provides virtual bookkeeping, bank reconciliation, financial reporting, <a href="payroll-services.html">payroll support</a>, and <a href="accounting-software-migration.html">accounting software migration</a> services. We act as an independent contractor, not as your employee, partner, or fiduciary. We do not provide Certified Public Accountant (CPA) services, tax filing, or legal advice. You must retain a licensed CPA or tax attorney for tax preparation and filing.</p>
 
           <h2>2. Client Responsibilities</h2>
           <p>To perform our services accurately, you agree to provide timely and accurate information. This includes:</p>
@@ -162,7 +297,7 @@
           <p>We take your financial data seriously. We utilize bank-level encryption and read-only access protocols. However, you are solely responsible for maintaining the security of your own login credentials. We will never ask for your password directly. For details on how we handle your data, please review our <a href="privacy-policy.html" style="color: #a4c639;">Privacy Policy</a>.</p>
 
           <h2>4. Fees and Billing</h2>
-          <p>Our monthly bookkeeping services are billed on a flat-rate basis as outlined in your service agreement. Fees are billed monthly in advance. Software migration projects are billed as flat-fee projects. Unless otherwise stated, all fees are non-refundable. If you wish to cancel your monthly service, you must provide 30 days' written notice.</p>
+          <p>Our <a href="monthly-bookkeeping-services.html">monthly bookkeeping</a> services are billed on a flat-rate basis as outlined in your service agreement. Fees are billed monthly in advance. Software migration projects are billed as flat-fee projects. Unless otherwise stated, all fees are non-refundable. If you wish to cancel your monthly service, you must provide 30 days' written notice.</p>
 
           <h2>5. Limitation of Liability</h2>
           <p>CountRights shall not be liable for any indirect, incidental, or consequential damages, including loss of profits, resulting from the use of our services. Our total liability for any claim arising from these Terms shall be limited to the amount of fees paid by you to CountRights in the three (3) months preceding the claim.</p>
@@ -180,10 +315,180 @@
           <p>If you have any questions about these Terms of Service, please contact us:</p>
           <p>
             <strong>CountRights</strong><br>
-            Email: <a href="mailto:Contact@countrights.com" style="color: #a4c639;">Contact@CountRights.com</a><br>
+            Email: <a href="mailto:contact@countrights.com" style="color: #a4c639;">contact@countrights.com</a><br>
             Service Area: Serving businesses remotely across the US, UK, and globally.
           </p>
 
+        </div>
+
+        <!-- PREMIUM FAQ SECTION -->
+        <div class="services" style="background:#ffffff; padding:80px 0; margin-top: 60px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+                  <h2>Frequently Asked <em>Questions</em></h2>
+                  <span>Common questions about our terms and conditions</span>
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="accordion" id="faqAccordion">
+                  
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead1" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Do I need to sign a contract to use CountRights?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq1" class="collapse show" aria-labelledby="faqHead1" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        Yes, we require a standard service agreement that outlines the scope of work, monthly fees, and responsibilities to ensure total transparency.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead2" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Can CountRights file my taxes for me?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq2" class="collapse" aria-labelledby="faqHead2" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        No, CountRights provides bookkeeping and accounting support, but we are not CPAs. We prepare your books perfectly so your CPA can file your taxes easily.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead3" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          What happens to my data if I cancel my bookkeeping services?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq3" class="collapse" aria-labelledby="faqHead3" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        Upon termination, we provide you with a final export of your reconciled financial data. You retain full ownership of all your financial records.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead4" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          How much notice do I need to give to cancel my monthly service?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq4" class="collapse" aria-labelledby="faqHead4" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        We require a 30-day written notice for cancellation of any ongoing monthly bookkeeping services to ensure a smooth transition.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead5" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Are the monthly bookkeeping fees refundable?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        No, our flat-rate monthly fees are billed in advance and are non-refundable, as the work and resources are allocated for the entire month.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead6" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Does CountRights provide legal or financial advice?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq6" class="collapse" aria-labelledby="faqHead6" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        No, we provide accounting support, data migration, and bookkeeping services only. We do not provide legal, tax, or certified financial advice.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Who is responsible for providing bank statements?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        The client is responsible for providing timely and secure access to bank statements, credit card statements, and accounting software.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          What security measures does CountRights use?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        We utilize bank-level 256-bit SSL encryption, secure document portals, and read-only bank feeds to ensure your data is completely protected.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Can CountRights guarantee the outcome of an IRS audit?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        No, while we ensure your books are accurate and tax-ready, we cannot guarantee the outcome of any IRS audit or loan application. Final tax liability is determined by the IRS.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                    <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                          Do you offer services outside the US?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+                      <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                        Yes, while we focus on US businesses, we serve clients globally, including the UK, and handle multi-currency transactions.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
       </div>
@@ -224,26 +529,29 @@
         <p>CountRights provides professional bookkeeping, financial reporting, and accounting support to help small businesses stay organized, compliant, and financially confident.</p>
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Useful Links</h4>
         <ul class="menu-list">
-          <li><a href="services.html">Bookkeeping Services</a></li>
-          <li><a href="services.html">Financial Reporting</a></li>
-          <li><a href="services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="services.html">Accounting Data Migration</a></li>
-          <li><a href="contact.html">Free Consultation</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="payroll-services.html">Payroll Services</a></li>
+          <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="accounting-software-migration.html">Software Migration</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about-us.html">About Us</a></li>
           <li><a href="resources/index.html">Resources</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -254,7 +562,7 @@
       <div class="col-md-3 footer-item last-item">
         <h4>Contact Us</h4>
         <div class="contact-form">
-          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
             <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Terms Page)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
@@ -284,6 +592,28 @@
   </div>
 </div>
 
+<!-- FLOATING FORM -->
+<div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+    <i class="fa fa-envelope"></i>
+  </button>
+  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
+    <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+    <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+      <input type="hidden" name="_subject" value="Floating Form Lead - Terms of Service">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="Page Origin" value="terms-of-service.html">
+      <input type="hidden" name="Form Type" value="Floating Hover Form">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+      <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+      <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+    </form>
+  </div>
+</div>
+
 <!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -292,49 +622,48 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
 
+<!-- Toggle & FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
-forms.forEach(form => {
-  const result = form.querySelector(".result-box");
-  let actionUrl = form.getAttribute('action');
-  if (!actionUrl.includes('/ajax/')) {
-    actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-  }
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const button = form.querySelector("button");
-    button.disabled = true;
-    button.innerText = "Sending...";
-    const object = {};
-    formData.forEach((value, key) => { object[key] = value; });
-    const json = JSON.stringify(object);
-    fetch(actionUrl, {
-      method: "POST",
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: json
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success === "true" || data.success === true) {
-        result.innerHTML = "✅ Message sent successfully!";
-        result.style.color = "#155724";
-        form.reset();
-      } else {
-        result.innerHTML = "❌ Something went wrong. Please email us directly.";
-        result.style.color = "red";
-      }
-    })
-    .catch(error => {
-      result.innerHTML = "⚠️ Network error.";
-      result.style.color = "orange";
-    })
-    .finally(() => {
-      button.disabled = false;
-      button.innerText = "Send Message";
+  $(document).ready(function() {
+    // Preloader
+    $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() { $(this).remove(); });
+    });
+
+    // Floating Form Toggle
+    $("#floatToggleBtn").click(function() {
+      $("#floatFormPanel").toggle();
+    });
+
+    // AJAX Form Handler for ALL forms on the page
+    $("form.ajax-form").submit(function(e) {
+      e.preventDefault();
+      var form = $(this);
+      var url = form.attr("action");
+      var data = form.serialize();
+      var resultBox = form.find(".result-box");
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        success: function() {
+          resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+          form[0].reset();
+          setTimeout(function() {
+            if (form.closest("#floatFormPanel").length) {
+              $("#floatFormPanel").hide();
+              resultBox.html("");
+            }
+          }, 4000);
+        },
+        error: function() {
+          resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+        }
+      });
     });
   });
-});
 </script>
 
 </body>
