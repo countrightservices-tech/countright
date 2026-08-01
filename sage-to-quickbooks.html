@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-<title>Sage to QuickBooks Conversion | Sage 50, 100, 300 & Intacct Migration</title>
+<title>Convert Sage to QuickBooks | Sage 50, 100, 300 & Intacct Migration</title>
 
 <meta name="description" content="Professional Sage to QuickBooks migration services. Convert Sage 50, 100, 300, or Intacct to QuickBooks securely with 100% data accuracy. Get a free quote!">
 
@@ -973,10 +973,10 @@
 
 <!-- FLOATING FORM -->
 <div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
-  <button id="floatToggleBtn" style="background: #28a745; color: white; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+  <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
     <i class="fa fa-envelope"></i>
   </button>
-  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 4px solid #28a745;">
+  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
     <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
     <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
       <input type="hidden" name="_subject" value="Floating Form Lead - Sage to QB">
@@ -1001,67 +1001,48 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
 
-<!-- FormSubmit AJAX Script for All Forms -->
+<!-- Toggle & FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form.ajax-form");
-
-forms.forEach(form => {
-  const result = form.querySelector(".result-box");
-
-  let actionUrl = form.getAttribute('action');
-  if (!actionUrl.includes('/ajax/')) {
-    actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-  }
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const button = form.querySelector("button");
-
-    button.disabled = true;
-    button.innerText = "Sending...";
-
-    const object = {};
-    formData.forEach((value, key) => {
-      object[key] = value;
+  $(document).ready(function() {
+    // Preloader
+    $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() { $(this).remove(); });
     });
-    const json = JSON.stringify(object);
 
-    fetch(actionUrl, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: json
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success === "true" || data.success === true) {
-        result.innerHTML = "✅ Message sent successfully!";
-        result.style.color = "#155724";
-        form.reset();
-      } else {
-        result.innerHTML = "❌ Something went wrong. Please email us directly.";
-        result.style.color = "red";
-      }
-    })
-    .catch(error => {
-      result.innerHTML = "⚠️ Network error.";
-      result.style.color = "orange";
-    })
-    .finally(() => {
-      button.disabled = false;
-      button.innerText = "Send Message";
-      setTimeout(function() {
-        if (form.closest("#floatFormPanel")) {
-          $("#floatFormPanel").hide();
+    // Floating Form Toggle
+    $("#floatToggleBtn").click(function() {
+      $("#floatFormPanel").toggle();
+    });
+
+    // AJAX Form Handler for ALL forms on the page
+    $("form.ajax-form").submit(function(e) {
+      e.preventDefault();
+      var form = $(this);
+      var url = form.attr("action");
+      var data = form.serialize();
+      var resultBox = form.find(".result-box");
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        success: function() {
+          resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+          form[0].reset();
+          setTimeout(function() {
+            if (form.closest("#floatFormPanel").length) {
+              $("#floatFormPanel").hide();
+              resultBox.html("");
+            }
+          }, 4000);
+        },
+        error: function() {
+          resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
         }
-      }, 4000);
+      });
     });
   });
-});
 </script>
 
 </body>
