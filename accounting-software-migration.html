@@ -155,6 +155,56 @@
   .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
   .page-heading.header-text span { color: #a4c639 !important; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
   .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+
+  /* Requirements Checklist */
+  .req-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .req-item i {
+    color: #a4c639;
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 2px;
+  }
+  .req-item h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .req-item p {
+    font-size: 15px;
+    color: #777;
+    margin: 0;
+  }
+  
+  /* Process Timeline */
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eef0f2;
+  }
+  .process-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .process-step .step-number {
+    background: #1f272b;
+    color: #a4c639;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
 </style>
 
 <!-- US Business Schema -->
@@ -403,19 +453,141 @@
           </div>
            <!-- QuickBooks Online -->
            <div class="col-md-4 mb-4">
-            <div class="directory-card" style="cursor: default; background: #f9f9f9;">
-              <i class="fa fa-check-circle" style="color: #a4c639;"></i>
-              <h4>QuickBooks Online</h4>
-              <p>Your final destination platform.</p>
-            </div>
+            <a href="quickbooks-online.html" class="directory-card">
+              <i class="fa fa-check-circle"></i>
+              <h4>QuickBooks Online Setup</h4>
+              <p>Start fresh with a new QBO company file.</p>
+            </a>
           </div>
            <!-- QuickBooks Desktop -->
            <div class="col-md-4 mb-4">
-            <div class="directory-card" style="cursor: default; background: #f9f9f9;">
-              <i class="fa fa-check-circle" style="color: #a4c639;"></i>
-              <h4>QuickBooks Desktop</h4>
-              <p>Your final destination platform.</p>
+            <a href="quickbooks-desktop.html" class="directory-card">
+              <i class="fa fa-check-circle"></i>
+              <h4>QuickBooks Desktop Setup</h4>
+              <p>Configure Enterprise or Premier locally.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIGRATION REQUIREMENTS -->
+    <div class="more-info" style="padding: 80px 0; background: #f9f9f9;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>What Do We Need to <em>Migrate Your Data?</em></h2>
+              <span>To ensure a smooth and accurate transition, we require the following information</span>
             </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-key"></i>
+                  <div>
+                    <h5>Software Access</h5>
+                    <p>Admin-level access to your current accounting software (Sage, Xero, NetSuite, etc.) and your new QuickBooks account.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-university"></i>
+                  <div>
+                    <h5>Bank & Credit Card Statements</h5>
+                    <p>Recent statements for all accounts to verify opening balances and ensure accurate reconciliation.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-file-text-o"></i>
+                  <div>
+                    <h5>Financial Reports</h5>
+                    <p>Your most recent Profit & Loss (P&L) and Balance Sheet reports to use as a baseline for verification.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-list-alt"></i>
+                  <div>
+                    <h5>Chart of Accounts Structure</h5>
+                    <p>Confirmation of your desired chart of accounts structure in the new system. We can help you clean it up!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-users"></i>
+                  <div>
+                    <h5>Customer & Vendor Lists</h5>
+                    <p>Exported lists of your active customers, vendors, and employees to ensure all contacts are transferred.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="req-item">
+                  <i class="fa fa-calendar"></i>
+                  <div>
+                    <h5>Migration Cut-Off Date</h5>
+                    <p>An agreed-upon date to cease entering data into the old system, ensuring no transactions are lost in transit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIGRATION PROCESS TIMELINE -->
+    <div class="services" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>Our Migration <em>Process</em></h2>
+              <span>A systematic approach to ensure zero data loss</span>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Consultation & Data Assessment</h4>
+                <p style="line-height: 1.8; color: #555;">We start with a free consultation to understand your current software, review the volume of your historical data, and identify any complex mapping requirements like multi-currency or inventory assemblies.</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Data Mapping & Extraction</h4>
+                <p style="line-height: 1.8; color: #555;">Our experts meticulously map your old chart of accounts to the new QuickBooks structure. We securely extract your historical transactions, customer profiles, and open invoices.</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Secure Import & Reconciliation</h4>
+                <p style="line-height: 1.8; color: #555;">We import the mapped data into your new QuickBooks file. We then perform strict bank reconciliations, comparing your old P&L and Balance Sheet to the new one to ensure 100% accuracy.</p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Review & Handover</h4>
+                <p style="line-height: 1.8; color: #555;">We review the final file with you, ensuring everything looks correct. Once approved, we hand over the pristine file and can transition you into our ongoing <a href="monthly-bookkeeping-services.html">monthly bookkeeping</a> services.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
