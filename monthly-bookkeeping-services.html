@@ -56,7 +56,7 @@
   
   /* Navbar Request Callback Button */
   .nav-callback-btn {
-    background: #a4c639;
+    background: #a4c639 !important;
     color: #1f272b !important;
     font-weight: 700;
     padding: 8px 20px !important;
@@ -69,7 +69,7 @@
     white-space: nowrap;
   }
   .nav-callback-btn:hover {
-    background: #1f272b;
+    background: #1f272b !important;
     color: #fff !important;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
@@ -90,30 +90,45 @@
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
   }
   
-  /* Platform Badges */
+  /* Platform Badges - Fixing Text Color */
   .platform-badge {
     display: inline-block;
-    padding: 10px 20px;
-    background: #f9f9f9;
-    border: 1px solid #eef0f2;
-    border-radius: 30px;
-    margin: 5px;
-    color: #1f272b !important;
-    font-weight: 600;
+    padding: 10px 20px !important;
+    background: #f9f9f9 !important;
+    border: 1px solid #eef0f2 !important;
+    border-radius: 30px !important;
+    margin: 5px !important;
+    color: #1f272b !important; /* Dark text on light background */
+    font-weight: 600 !important;
     text-decoration: none !important;
     transition: all 0.2s ease;
   }
   .platform-badge:hover {
-    background: #a4c639;
-    color: #fff !important;
-    border-color: #a4c639;
+    background: #a4c639 !important;
+    color: #ffffff !important; /* White text on green hover */
+    border-color: #a4c639 !important;
     transform: scale(1.05);
+  }
+  .platform-badge-dark {
+    background: #1f272b !important;
+    color: #ffffff !important;
+    border-color: #1f272b !important;
+  }
+  .platform-badge-dark:hover {
+    background: #a4c639 !important;
+    color: #ffffff !important;
+    border-color: #a4c639 !important;
   }
   
   /* Accordion Header Hover */
   .accordion .card-header button:hover {
     color: #a4c639 !important;
   }
+
+  /* Force Page Heading Colors for Visibility */
+  .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+  .page-heading.header-text span { color: #a4c639 !important; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
 </style>
 
 <!-- US Business Schema -->
@@ -457,8 +472,8 @@
               <a href="wave-to-quickbooks.html" class="platform-badge">Wave</a> 
               <a href="accountedge-to-quickbooks.html" class="platform-badge">AccountEdge</a> 
               <a href="freshbooks-to-quickbooks.html" class="platform-badge">FreshBooks</a> 
-              <span class="platform-badge" style="background: #1f272b; color: #fff; border-color: #1f272b;">QuickBooks Online</span> 
-              <span class="platform-badge" style="background: #1f272b; color: #fff; border-color: #1f272b;">QuickBooks Desktop</span>
+              <span class="platform-badge platform-badge-dark">QuickBooks Online</span> 
+              <span class="platform-badge platform-badge-dark">QuickBooks Desktop</span>
             </div>
           </div>
         </div>
