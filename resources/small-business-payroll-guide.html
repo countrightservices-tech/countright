@@ -33,19 +33,51 @@
   gtag('config', 'G-7ZVBSSK8VV');
 </script>
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<!-- Optimized Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="../assets/css/fontawesome.css">
 <link rel="stylesheet" href="../assets/css/templatemo-finance-business.css">
 <link rel="stylesheet" href="../assets/css/owl.css">
 
-<!-- Nested Dropdown CSS -->
+<!-- Nested Dropdown CSS & Custom Styling -->
 <style>
   .dropdown-submenu { position: relative; }
   .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
   .dropdown-submenu:hover .dropdown-menu { display: block; }
   
+  /* Fix Navbar to stay on one line */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  /* Navbar Request Callback Button */
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+
   /* Blog Post Styling */
   .blog-post p { font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px; }
   .blog-post h2 { font-size: 28px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700; }
@@ -55,7 +87,38 @@
   
   /* Sidebar Styling */
   .sidebar-item { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
+
+  /* Force Page Heading Colors for Visibility */
+  .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+  .page-heading.header-text span { color: #a4c639 !important; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
 </style>
+
+<!-- US Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "CountRights",
+  "image": "https://countrights.com/assets/images/logo.png",
+  "url": "https://countrights.com",
+  "email": "contact@countrights.com",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
+  "areaServed": [
+    { "@type": "Country", "name": "United States" },
+    { "@type": "AdministrativeArea", "name": "Texas", "url": "https://countrights.com/bookkeeping-services-in-texas.html" },
+    { "@type": "AdministrativeArea", "name": "California", "url": "https://countrights.com/bookkeeping-services-in-california.html" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/countrights",
+    "https://x.com/CountRights",
+    "https://www.linkedin.com/company/countrights",
+    "https://clutch.co/profile/countrights"
+  ]
+}
+</script>
 
 <!-- Article Schema -->
 <script type="application/ld+json">
@@ -104,7 +167,7 @@
     {
       "@type":"Question",
       "name":"How often do I need to pay payroll taxes?",
-      "acceptedAnswer":{ "@type":"Answer", "text":"Most US employers must deposit payroll taxes either semi-weekly or monthly, depending on the total tax liability reported during a "lookback" period. State deposit schedules vary." }
+      "acceptedAnswer":{ "@type":"Answer", "text":"Most US employers must deposit payroll taxes either semi-weekly or monthly, depending on the total tax liability reported during a 'lookback' period. State deposit schedules vary." }
     },
     {
       "@type":"Question",
@@ -151,15 +214,15 @@
       <div class="col-md-8 col-xs-12">
         <ul class="left-info">
           <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:contact@CountRights.com"><i class="fa fa-envelope"></i>contact@CountRights.com</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul class="right-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
         </ul>
       </div>
     </div>
@@ -177,8 +240,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="../services.html">Our Services</a></li>
           
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="../outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+              <a class="dropdown-item" href="../monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="../catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="../accounts-payable-receivable.html">AP & AR Management</a>
+              <a class="dropdown-item" href="../payroll-services.html">Payroll Services</a>
+              <a class="dropdown-item" href="../forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="../accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
+
           <!-- Conversions Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
@@ -207,6 +283,7 @@
           <li class="nav-item active"><a class="nav-link" href="index.html">Resources <span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="../pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
         </ul>
       </div>
     </div>
@@ -240,10 +317,10 @@
             Hiring your first employee is a massive milestone for a US small business. But the moment you decide to put someone on payroll, you step into a highly regulated, complex world of federal and state tax laws. 
           </p>
           <p>
-            Payroll isn't just about writing a check to your staff. It involves calculating withholdings, matching taxes, filing reports with the IRS, and complying with the Department of Labor. Making a mistake doesn't just upset your employees—it can result in severe IRS penalties that can cripple a growing business.
+            Payroll isn't just about writing a check to your staff. It involves calculating withholdings, matching taxes, filing reports with the IRS, and complying with the Department of Labor.
           </p>
           <p>
-            In this comprehensive guide, CountRights breaks down everything a US small business owner needs to know about running payroll, classifying workers correctly, and staying compliant.
+            Making a mistake doesn't just upset your employees—it can result in severe IRS penalties that can cripple a growing business. In this comprehensive guide, CountRights breaks down everything a US small business owner needs to know about running payroll, classifying workers correctly, and staying compliant.
           </p>
 
           <div style="margin-bottom: 40px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
@@ -457,14 +534,14 @@
       </div>
 
       <!-- Sidebar Area (3 Cols) -->
-      <div class="col-lg-3">
+      <div class="col-lg-3" id="contact">
         
         <!-- Sidebar CTA Form -->
         <div class="sidebar-item" style="background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%); color: #fff;">
           <h4 style="color: #fff; font-weight: 700; margin-bottom: 15px; font-size: 20px;">Need Help with Payroll Setup?</h4>
           <p style="color: #ccc; font-size: 14px; margin-bottom: 25px;">Setting up QuickBooks Payroll or Gusto? Let our experts ensure your taxes and W-2s are compliant from day one.</p>
           
-          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
             <input type="hidden" name="_subject" value="Sidebar Enquiry - Payroll Guide Article">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
@@ -481,7 +558,7 @@
               <textarea name="message" rows="3" class="form-control" placeholder="How can we help?" required></textarea>
             </div>
             <button type="submit" class="filled-button w-100" style="border: none;">Get Free Consultation</button>
-            <div class="result-box" style="margin-top:10px; text-align: center; font-weight: 600;"></div>
+            <div class="result-box" style="margin-top:10px; text-align: center; font-weight: 600; color: #fff;"></div>
           </form>
         </div>
 
@@ -528,29 +605,32 @@
     <div class="row">
       <div class="col-md-3 footer-item">
         <h4>CountRights</h4>
-        <p>CountRights provides professional bookkeeping, financial reporting, and accounting support to help small businesses stay organized, compliant, and financially confident.</p>
+        <p>CountRights provides professional outsourced bookkeeping, financial reporting, and accounting software migration services to help small businesses stay organized, compliant, and financially confident.</p>
         <p>Serving businesses remotely across the US, UK, and globally.</p>
         <ul class="social-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Useful Links</h4>
         <ul class="menu-list">
-          <li><a href="../services.html">Bookkeeping Services</a></li>
-          <li><a href="../services.html">Financial Reporting</a></li>
-          <li><a href="../services.html">Accounts Payable & Receivable</a></li>
-          <li><a href="../services.html">Accounting Data Migration</a></li>
-          <li><a href="../contact.html">Free Consultation</a></li>
+          <li><a href="../outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="../monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="../catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="../accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="../payroll-services.html">Payroll Services</a></li>
+          <li><a href="../forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="../accounting-software-migration.html">Software Migration</a></li>
         </ul>
       </div>
       <div class="col-md-3 footer-item">
         <h4>Additional Pages</h4>
         <ul class="menu-list">
           <li><a href="../services.html">Our Services</a></li>
+          <li><a href="../about-us.html">About Us</a></li>
           <li><a href="index.html">Resources</a></li>
           <li><a href="../pricing.html">Pricing</a></li>
           <li><a href="../contact.html">Contact Us</a></li>
@@ -561,7 +641,7 @@
       <div class="col-md-3 footer-item last-item">
         <h4>Contact Us</h4>
         <div class="contact-form">
-          <form action="https://formsubmit.co/contact@countrights.com" method="POST">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
             <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Resources Article)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
@@ -605,6 +685,28 @@
   </div>
 </div>
 
+<!-- FLOATING FORM -->
+<div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+    <i class="fa fa-envelope"></i>
+  </button>
+  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
+    <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+    <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+      <input type="hidden" name="_subject" value="Floating Form Lead - Payroll Guide Article">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="Page Origin" value="small-business-payroll-guide.html">
+      <input type="hidden" name="Form Type" value="Floating Hover Form">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+      <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+      <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+    </form>
+  </div>
+</div>
+
 <!-- Scripts -->
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -613,62 +715,48 @@
 <script src="../assets/js/slick.js"></script>
 <script src="../assets/js/accordions.js"></script>
 
-<!-- FormSubmit AJAX Script -->
+<!-- Toggle & FormSubmit AJAX Script -->
 <script>
-const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
-
-forms.forEach(form => {
-  const result = form.querySelector(".result-box");
-
-  let actionUrl = form.getAttribute('action');
-  if (!actionUrl.includes('/ajax/')) {
-    actionUrl = actionUrl.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
-  }
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const button = form.querySelector("button");
-
-    button.disabled = true;
-    button.innerText = "Sending...";
-
-    const object = {};
-    formData.forEach((value, key) => {
-      object[key] = value;
+  $(document).ready(function() {
+    // Preloader
+    $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() { $(this).remove(); });
     });
-    const json = JSON.stringify(object);
 
-    fetch(actionUrl, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: json
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success === "true" || data.success === true) {
-        result.innerHTML = "✅ Message sent successfully!";
-        result.style.color = "#155724";
-        form.reset();
-      } else {
-        result.innerHTML = "❌ Something went wrong. Please email us directly.";
-        result.style.color = "red";
-      }
-    })
-    .catch(error => {
-      result.innerHTML = "⚠️ Network error.";
-      result.style.color = "orange";
-    })
-    .finally(() => {
-      button.disabled = false;
-      button.innerText = "Send Message";
+    // Floating Form Toggle
+    $("#floatToggleBtn").click(function() {
+      $("#floatFormPanel").toggle();
+    });
+
+    // AJAX Form Handler for ALL forms on the page
+    $("form.ajax-form").submit(function(e) {
+      e.preventDefault();
+      var form = $(this);
+      var url = form.attr("action");
+      var data = form.serialize();
+      var resultBox = form.find(".result-box");
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        success: function() {
+          resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+          form[0].reset();
+          setTimeout(function() {
+            if (form.closest("#floatFormPanel").length) {
+              $("#floatFormPanel").hide();
+              resultBox.html("");
+            }
+          }, 4000);
+        },
+        error: function() {
+          resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+        }
+      });
     });
   });
-});
 </script>
 
 </body>
