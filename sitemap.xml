@@ -1,216 +1,128 @@
-Ah, my apologies! Thank you for the correction. 
-
-Here is the updated `sitemap.xml` with the `<lastmod>` date correctly set to today's date, **2026-08-15**, for all URLs. This ensures search engines see that your massive 3,000-word SEO updates, new forms, and schema changes were all freshly published today.
-
-You can copy and paste this directly into your `sitemap.xml` file:
-
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
   <url>
     <loc>https://countrights.com/</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://countrights.com/services.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/pricing.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://countrights.com/about.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://countrights.com/contact.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
 
-  <!-- Main Service Pages -->
+  <!-- Bookkeeping & Accounting Services -->
   <url>
     <loc>https://countrights.com/outsourced-bookkeeping-accounting.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/monthly-bookkeeping-services.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/catch-up-bookkeeping-services.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/accounts-payable-receivable.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/payroll-services.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/forensic-accounting.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://countrights.com/accounting-software-migration.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
 
-  <!-- Main Conversion Pages -->
+  <!-- Accounting Software Migration -->
   <url>
     <loc>https://countrights.com/netsuite-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/sage-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/xero-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/zoho-books-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/freshbooks-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/wave-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://countrights.com/accountedge-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
-
-  <!-- Sage Variant Conversion Pages -->
   <url>
     <loc>https://countrights.com/sage-50-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://countrights.com/sage-100-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://countrights.com/sage-300-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://countrights.com/sage-intacct-to-quickbooks.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
 
-  <!-- Resources Hub & Articles -->
+  <!-- Resources -->
   <url>
-    <loc>https://countrights.com/resources/index.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <loc>https://countrights.com/resources/</loc>
   </url>
   <url>
     <loc>https://countrights.com/resources/why-small-businesses-need-professional-bookkeeping-services.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://countrights.com/resources/bookkeeping-vs-accounting.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/5-signs-your-business-needs-a-bookkeeper.html</loc>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/bank-reconciliation-explained.html</loc>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/how-ap-ar-affect-cash-flow.html</loc>
   </url>
   <url>
     <loc>https://countrights.com/resources/chart-of-accounts-explained.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://countrights.com/resources/small-business-payroll-guide.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://countrights.com/resources/tax-preparation-checklist-for-small-businesses.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://countrights.com/resources/top-tax-deductions-for-small-businesses.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/accrual-vs-cash-basis-accounting.html</loc>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/understanding-financial-statements.html</loc>
+  </url>
+  <url>
+    <loc>https://countrights.com/resources/choosing-the-best-accounting-software.html</loc>
   </url>
 
   <!-- Legal Pages -->
   <url>
     <loc>https://countrights.com/privacy-policy.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
   </url>
   <url>
     <loc>https://countrights.com/terms-of-service.html</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
   </url>
 
 </urlset>
-```
