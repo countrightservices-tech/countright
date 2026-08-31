@@ -131,23 +131,20 @@
   .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
 </style>
 
-<!-- US Business Schema -->
+<!-- US-wide business schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
   "name": "CountRights",
-  "image": "https://countrights.com/assets/images/logo.png",
-  "url": "https://countrights.com",
+  "url": "https://countrights.com/",
   "email": "contact@countrights.com",
   "priceRange": "$$",
-  "address": { "@type": "PostalAddress", "addressCountry": "US" },
-  "geo": { "@type": "GeoCoordinates", "latitude": "37.0902", "longitude": "-95.7129" },
-  "areaServed": [
-    { "@type": "Country", "name": "United States" },
-    { "@type": "AdministrativeArea", "name": "Texas", "url": "https://countrights.com/bookkeeping-services-in-texas.html" },
-    { "@type": "AdministrativeArea", "name": "California", "url": "https://countrights.com/bookkeeping-services-in-california.html" }
-  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
   "sameAs": [
     "https://www.facebook.com/countrights",
     "https://x.com/CountRights",
@@ -157,16 +154,21 @@
 }
 </script>
 
-<!-- Service Schema -->
+<!-- Catch-up bookkeeping service schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Catch-Up Bookkeeping Services",
-  "description": "Professional catch-up bookkeeping services to clean up messy books, reconcile past bank statements, and reclassify expenses for US small businesses.",
+  "description": "Catch-up bookkeeping to organize historical transactions, reconcile past accounts, and help bring financial records up to date.",
   "url": "https://countrights.com/catch-up-bookkeeping-services.html",
-  "provider": { "@id": "https://countrights.com/#business" },
-  "areaServed": "United States",
+  "provider": {
+    "@id": "https://countrights.com/#business"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
   "serviceType": "Catch-Up Bookkeeping"
 }
 </script>
