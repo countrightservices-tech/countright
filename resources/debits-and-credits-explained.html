@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Primary SEO -->
+<title>Debits and Credits Explained: Simple Guide with Examples | CountRights</title>
+<meta name="description" content="Finally understand debits and credits. Learn the DEALER rule, see T-account examples, and discover why debits aren't bad and credits aren't good.">
+<meta name="keywords" content="debits and credits explained, debit vs credit, accounting basics, T accounts, double entry accounting, DEALER rule, chart of accounts debits credits, bookkeeping basics">
+<meta name="author" content="CountRights">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://countrights.com/resources/debits-and-credits-explained.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debits and Credits Explained: Simple Guide">
+<meta property="og:description" content="Learn the DEALER rule, see T-account examples, and finally understand how debits and credits work.">
+<meta property="og:url" content="https://countrights.com/resources/debits-and-credits-explained.html">
+<meta property="og:site_name" content="CountRights">
+
+<link rel="icon" href="../assets/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZVBSSK8VV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7ZVBSSK8VV');
+</script>
+
+<!-- Optimized Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/fontawesome.css">
+<link rel="stylesheet" href="../assets/css/templatemo-finance-business.css">
+<link rel="stylesheet" href="../assets/css/owl.css">
+
+<!-- Custom Styling -->
+<style>
+  body { font-family: 'Poppins', sans-serif; color: #555; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; color: #1f272b; }
+  
+  .dropdown-submenu { position: relative; }
+  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu:hover .dropdown-menu { display: block; }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+
+  /* Blog Post Styling */
+  .blog-post p { font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px; }
+  .blog-post h2 { font-size: 28px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700; }
+  .blog-post h3 { font-size: 22px; color: #1f272b; margin-top: 30px; margin-bottom: 15px; font-weight: 600; }
+  
+  /* T-ACCOUNT VISUAL */
+  .t-account-wrapper {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+    margin: 35px 0;
+    text-align: center;
+  }
+  .t-account {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+  }
+  .t-account .t-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f272b;
+    border-bottom: 3px solid #1f272b;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+  .t-account .t-columns {
+    display: flex;
+    border-bottom: 3px solid #1f272b;
+  }
+  .t-account .t-col {
+    flex: 1;
+    padding: 15px 10px;
+    font-size: 15px;
+    min-height: 80px;
+  }
+  .t-account .t-col:first-child {
+    border-right: 3px solid #1f272b;
+  }
+  .t-account .t-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .t-account .t-debit-label { color: #007bff; }
+  .t-account .t-credit-label { color: #a4c639; }
+  .t-account .t-amount {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  .t-account .t-desc {
+    font-size: 12px;
+    color: #888;
+  }
+  .t-account .t-result {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f272b;
+    padding-top: 15px;
+    border-top: 2px dashed #e0e0e0;
+  }
+  
+  /* DEALER CARDS */
+  .dealer-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    height: 100%;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .dealer-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+  .dealer-card .dealer-letter {
+    font-size: 60px;
+    font-weight: 900;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+  .dealer-card h4 { font-weight: 700; font-size: 20px; margin-bottom: 5px; }
+  .dealer-card .dealer-word {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  .dealer-card p { font-size: 14px; line-height: 1.7; color: #555; margin: 0; }
+  
+  /* TRANSACTION TABLE */
+  .txn-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin: 30px 0;
+  }
+  .txn-table th {
+    background: #1f272b;
+    color: #fff;
+    padding: 18px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .txn-table th:nth-child(2) { color: #6db3f2; }
+  .txn-table th:nth-child(3) { color: #c9e26a; }
+  .txn-table td {
+    padding: 14px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eef0f2;
+    color: #555;
+  }
+  .txn-table tr:last-child td { border-bottom: none; }
+  .txn-table tr:hover td { background: #f9f9f9; }
+  .txn-table .debit-cell { color: #007bff; font-weight: 600; }
+  .txn-table .credit-cell { color: #a4c639; font-weight: 600; }
+  
+  /* MEMORY TRICK BOX */
+  .memory-box {
+    background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%);
+    border-radius: 18px;
+    padding: 40px;
+    color: #fff;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .memory-box::before {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+    width: 220px;
+    height: 220px;
+    background: rgba(164, 198, 57, 0.08);
+    border-radius: 50%;
+  }
+  .memory-box h4 { color: #a4c639; position: relative; z-index: 2; margin-bottom: 20px; }
+  .memory-box p { color: #ccc; position: relative; z-index: 2; font-size: 16px; line-height: 1.8; }
+  .memory-box .mnemonic-row {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .memory-box .mnemonic-letter {
+    width: 50px;
+    height: 50px;
+    background: #a4c639;
+    color: #1f272b;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  
+  /* BANK VS ACCOUNTING COMPARISON */
+  .vs-box {
+    display: flex;
+    gap: 25px;
+    margin: 35px 0;
+  }
+  .vs-item {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+  }
+  .vs-item:hover { transform: translateY(-4px); }
+  .vs-item h5 { font-weight: 700; margin-bottom: 15px; font-size: 18px; }
+  .vs-item ul { list-style: none; padding: 0; margin: 0; }
+  .vs-item ul li { font-size: 14px; color: #555; margin-bottom: 10px; padding-left: 20px; position: relative; line-height: 1.7; }
+  .vs-item ul li::before {
+    content: '\f111';
+    font-family: 'FontAwesome';
+    font-size: 6px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .vs-item.vs-bank { border-top: 4px solid #dc3545; }
+  .vs-item.vs-bank ul li::before { color: #dc3545; }
+  .vs-item.vs-accounting { border-top: 4px solid #a4c639; }
+  .vs-item.vs-accounting ul li::before { color: #a4c639; }
+  @media (max-width: 768px) {
+    .vs-box { flex-direction: column; }
+  }
+  
+  /* Callout */
+  .callout-green {
+    background: linear-gradient(135deg, #f4f9ea 0%, #e8f5d0 100%);
+    border-left: 5px solid #a4c639;
+    padding: 30px;
+    border-radius: 0 12px 12px 0;
+    margin: 35px 0;
+  }
+  .callout-blue {
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    border-left: 5px solid #007bff;
+    padding: 30px;
+    border-radius: 0 12px 12px 0;
+    margin: 35px 0;
+  }
+  
+  /* Sidebar */
+  .sidebar-item { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
+  
+  /* Accordion */
+  .accordion .card-header button:hover { color: #a4c639 !important; }
+
+  /* Page Heading */
+  .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+  .page-heading.header-text span { color: #a4c639 !important; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+  
+  .section-heading h2 em { color: #a4c639; font-style: normal; }
+</style>
+
+<!-- US-wide business schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
+  "name": "CountRights",
+  "url": "https://countrights.com/",
+  "email": "contact@countrights.com",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "sameAs": [
+    "https://www.facebook.com/countrights",
+    "https://x.com/CountRights",
+    "https://www.linkedin.com/company/countrights",
+    "https://clutch.co/profile/countrights"
+  ]
+}
+</script>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Debits and Credits Explained: Simple Guide with Examples",
+  "description": "A beginner-friendly guide to understanding debits and credits, including the DEALER rule, T-accounts, and common transaction examples.",
+  "author": { "@type": "Organization", "name": "CountRights" },
+  "publisher": { "@type": "Organization", "name": "CountRights" },
+  "datePublished": "2026-08-15",
+  "dateModified": "2026-08-15",
+  "mainEntityOfPage": "https://countrights.com/resources/debits-and-credits-explained.html"
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://countrights.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://countrights.com/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "Debits and Credits Explained", "item": "https://countrights.com/resources/debits-and-credits-explained.html" }
+  ]
+}
+</script>
+
+<!-- FAQ Schema (15 Questions) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What do debit and credit actually mean in accounting?", "acceptedAnswer": { "@type": "Answer", "text": "Debit simply means the left side of an account, and credit means the right side. That's it. They don't mean increase or decrease, good or bad, or money in or money out. Whether a debit or credit increases or decreases an account depends entirely on the account type." } },
+    { "@type": "Question", "name": "Is a debit good or bad?", "acceptedAnswer": { "@type": "Answer", "text": "Neither. Debits and credits are neutral. A debit increases assets and expenses but decreases liabilities, equity, and revenue. A credit does the opposite. Whether a debit is 'good' or 'bad' depends on which account it's applied to and what the transaction represents." } },
+    { "@type": "Question", "name": "What is the DEALER rule?", "acceptedAnswer": { "@type": "Answer", "text": "DEALER is a mnemonic for remembering which account types increase with debits vs credits. Debits increase: Dividends, Expenses, Assets. Credits increase: Liabilities, Equity, Revenue. The first three letters (DEA) are debit-increasing, and the last three (LER) are credit-increasing." } },
+    { "@type": "Question", "name": "Why does my bank call deposits 'credits' and withdrawals 'debits'?", "acceptedAnswer": { "@type": "Answer", "text": "Banks use debits and credits from THEIR perspective, not yours. Your bank account is a liability on the bank's books (money they owe you), so when you deposit money, it increases their liability — which is a credit on their books. This is the opposite of how a 'Cash' asset account works on your own books, which is why it feels backwards." } },
+    { "@type": "Question", "name": "Do debits always equal credits?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in double-entry accounting, every transaction must have equal total debits and credits. If they don't match, your books are out of balance, and something was recorded incorrectly. This is one of the most powerful built-in error-checking features of the double-entry system." } },
+    { "@type": "Question", "name": "What are T-accounts?", "acceptedAnswer": { "@type": "Answer", "text": "T-accounts are visual learning tools shaped like the letter T. The account name goes on top, debits go on the left side, and credits go on the right side. They're used in accounting education to show how transactions affect individual accounts before creating formal journal entries." } },
+    { "@type": "Question", "name": "Does a debit always increase an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. A debit increases assets and expenses, but decreases liabilities, equity, and revenue accounts. Conversely, a credit increases liabilities, equity, and revenue, but decreases assets and expenses. The effect depends on the account type." } },
+    { "@type": "Question", "name": "What is double-entry accounting?", "acceptedAnswer": { "@type": "Answer", "text": "Double-entry accounting is the system where every transaction is recorded in at least two accounts — one debit and one credit — with equal amounts. This ensures the accounting equation (Assets = Liabilities + Equity) always stays in balance and provides built-in error detection." } },
+    { "@type": "Question", "name": "How do I know whether to debit or credit an account?", "acceptedAnswer": { "@type": "Answer", "text": "First identify the account type (asset, liability, equity, revenue, or expense). Then ask whether the transaction increases or decreases that account. If it's an asset or expense and it increased, debit it. If it's a liability, equity, or revenue and it increased, credit it. Use the DEALER mnemonic as a quick reference." } },
+    { "@type": "Question", "name": "What happens if debits don't equal credits?", "acceptedAnswer": { "@type": "Answer", "text": "If total debits don't equal total credits, your books are out of balance. This means an error was made — possibly a transaction was recorded with wrong amounts, posted to only one account, or a number was mistyped. Most accounting software like QuickBooks prevents unbalanced entries." } },
+    { "@type": "Question", "name": "Is a debit card withdrawal a debit in accounting?", "acceptedAnswer": { "@type": "Answer", "text": "When you spend money from your business account (via debit card, check, or transfer), you credit your Cash account (an asset, which decreases with credits) and typically debit an expense account. The terminology between everyday banking and accounting can be confusing because banks use the terms from their own perspective." } },
+    { "@type": "Question", "name": "What is a trial balance?", "acceptedAnswer": { "@type": "Answer", "text": "A trial balance is a report listing all accounts with their debit or credit balances at a specific point in time. The total debits should equal total credits. Accountants and bookkeepers use it to verify that the books are in balance before preparing financial statements." } },
+    { "@type": "Question", "name": "Can a single account have both debits and credits?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, most accounts naturally accumulate both debits and credits over time. For example, your Cash account gets debited when money comes in and credited when money goes out. The final balance is the net of all debits and credits." } },
+    { "@type": "Question", "name": "What does it mean when an account has a credit balance?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the account type. Liability, equity, and revenue accounts normally carry credit balances. However, if an asset or expense account shows a credit balance, that's usually unusual and may indicate an error — such as a bank account that's been overdrawn or a refund exceeding original expenses." } },
+    { "@type": "Question", "name": "Do I need to understand debits and credits if I use QuickBooks?", "acceptedAnswer": { "@type": "Answer", "text": "You don't need to manually calculate them, but understanding debits and credits helps you choose the right transaction types, interpret your financial reports correctly, and catch errors. QuickBooks handles the behind-the-scenes journal entries, but knowing what's happening makes you a better business owner." } }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="jumper"><div></div><div></div><div></div></div>
+</div>
+
+<!-- Sub Header -->
+<div class="sub-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        <ul class="left-info">
+          <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="right-icons">
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><h2>CountRights</h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          
+          <!-- OUR SERVICES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="../outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+              <a class="dropdown-item" href="../monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+              <a class="dropdown-item" href="../catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+              <a class="dropdown-item" href="../accounts-payable-receivable.html">AP & AR Management</a>
+              <a class="dropdown-item" href="../payroll-services.html">Payroll Services</a>
+              <a class="dropdown-item" href="../forensic-accounting.html">Forensic Accounting</a>
+              <a class="dropdown-item" href="../accounting-software-migration.html">Software Migration</a>
+            </div>
+          </li>
+
+          <!-- Conversions Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="../sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                  <a class="dropdown-item" href="../sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                  <a class="dropdown-item" href="../sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                  <a class="dropdown-item" href="../sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                </div>
+              </div>
+              <a class="dropdown-item" href="../xero-to-quickbooks.html">Xero to QuickBooks</a>
+              <a class="dropdown-item" href="../zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
+              <a class="dropdown-item" href="../freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
+              <a class="dropdown-item" href="../wave-to-quickbooks.html">Wave to QuickBooks</a>
+              <a class="dropdown-item" href="../accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
+            </div>
+          </li>
+          
+          <li class="nav-item active"><a class="nav-link" href="index.html">Resources <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="../pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Page Heading -->
+<div class="page-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Debits and Credits Explained</h1>
+        <span>Resources • Accounting Basics • 10 min read</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog Post Content -->
+<div class="services" style="padding: 80px 0; background: #f9f9f9;">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Main Article Area -->
+      <div class="col-lg-9">
+        
+        <div style="background: #ffffff; padding: 50px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border-top: 5px solid #a4c639;" class="blog-post">
+          
+          <p>
+            If you've ever looked at your accounting software and felt confused about debits and credits, you're not alone. It's the single most common source of confusion for business owners learning bookkeeping — and it's completely understandable why.
+          </p>
+          <p>
+            We grow up thinking "credit" means something good (store credit, credit score) and "debit" means something taken away. Then accounting flips everything around and calls deposits "debits" and withdrawals "credits." What's going on?
+          </p>
+          <p>
+            Here's the good news: <strong>debits and credits are much simpler than they seem</strong> once you understand one core concept. In this guide, we'll demystify them once and for all.
+          </p>
+
+          <h2>The Big Secret: It's Just Left and Right</h2>
+          <p>
+            Forget everything you think you know about debits and credits from everyday banking. In accounting:
+          </p>
+          
+          <div class="callout-blue">
+            <p style="font-size: 18px; line-height: 1.9; color: #555; margin: 0; text-align: center;">
+              <strong style="color: #007bff; font-size: 24px;">DEBIT = LEFT SIDE</strong><br>
+              <strong style="color: #a4c639; font-size: 24px;">CREDIT = RIGHT SIDE</strong>
+            </p>
+          </div>
+          
+          <p>
+            That's it. A debit means an amount goes on the <strong>left side</strong> of an account. A credit means it goes on the <strong>right side</strong>. Neither one is inherently good or bad, positive or negative. They're simply directions — like "left" and "right" on a map.
+          </p>
+          <p>
+            Whether a debit or credit <em>increases</em> or <em>decreases</em> an account depends entirely on what <strong>type</strong> of account you're working with. Let's break that down.
+          </p>
+
+          <h2>Understanding T-Accounts (The Visual Tool)</h2>
+          <p>
+            Accountants use a visual tool called a "T-account" to understand how transactions affect accounts. It looks like the letter T:
+          </p>
+
+          <!-- T-ACCOUNT VISUAL -->
+          <div class="t-account-wrapper">
+            <div class="t-account">
+              <div class="t-title">Cash Account</div>
+              <div class="t-columns">
+                <div class="t-col">
+                  <div class="t-label t-debit-label">DEBIT (Left)</div>
+                  <div class="t-amount">+$5,000</div>
+                  <div class="t-desc">Client payment received</div>
+                  <div class="t-amount" style="margin-top:10px;">+$2,000</div>
+                  <div class="t-desc">Another client payment</div>
+                </div>
+                <div class="t-col">
+                  <div class="t-label t-credit-label">CREDIT (Right)</div>
+                  <div class="t-amount">-$1,200</div>
+                  <div class="t-desc">Paid office rent</div>
+                  <div class="t-amount" style="margin-top:10px;">-$800</div>
+                  <div class="t-desc">Software subscription</div>
+                </div>
+              </div>
+              <div class="t-result">
+                Ending Balance: $5,000 (Debit)<br>
+                <small style="color: #888;">Cash is an asset → debits increase it, credits decrease it</small>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Cash is an <strong>asset</strong>, and assets carry a <strong>debit balance</strong>. That means money coming in goes on the left (debit) side, and money going out goes on the right (credit) side. The final balance is whichever side is bigger.
+          </p>
+
+          <h2>The DEALER Rule: Which Accounts Go Up?</h2>
+          <p>
+            Here's where the real learning happens. There are five types of accounts in your <a href="chart-of-accounts-explained.html">chart of accounts</a>, and each responds differently to debits and credits. The easiest way to remember this is the <strong>DEALER</strong> mnemonic:
+          </p>
+
+          <!-- DEALER CARDS -->
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #007bff;">
+                <div class="dealer-letter">D</div>
+                <h4>Dividends</h4>
+                <div class="dealer-word" style="color: #007bff;">Increases with DEBIT</div>
+                <p>Owner distributions reduce equity, so they're recorded as debits against retained earnings.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #007bff;">
+                <div class="dealer-letter">E</div>
+                <h4>Expenses</h4>
+                <div class="dealer-word" style="color: #007bff;">Increases with DEBIT</div>
+                <p>Rent, utilities, salaries, supplies — every expense you record is a debit. More spending = more debits.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #007bff;">
+                <div class="dealer-letter">A</div>
+                <h4>Assets</h4>
+                <div class="dealer-word" style="color: #007bff;">Increases with DEBIT</div>
+                <p>Cash, equipment, inventory, receivables — when you gain assets, you debit their accounts.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #a4c639;">
+                <div class="dealer-letter">L</div>
+                <h4>Liabilities</h4>
+                <div class="dealer-word" style="color: #a4c639;">Increases with CREDIT</div>
+                <p>Loans, credit cards, unpaid bills — when you take on debt, you credit the liability account.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #a4c639;">
+                <div class="dealer-letter">E</div>
+                <h4>Equity</h4>
+                <div class="dealer-word" style="color: #a4c639;">Increases with CREDIT</div>
+                <p>Owner investments and retained profits grow equity, recorded as credits.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="dealer-card" style="border-top: 4px solid #a4c639;">
+                <div class="dealer-letter">R</div>
+                <h4>Revenue</h4>
+                <div class="dealer-word" style="color: #a4c639;">Increases with CREDIT</div>
+                <p>Every sale and payment you receive is a credit to your income accounts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MEMORY TRICK -->
+          <div class="memory-box">
+            <h4><i class="fa fa-lightbulb-o" style="color: #a4c639; margin-right: 10px;"></i>Memory Trick: DEA vs LER</h4>
+            <p>The first three letters — <strong>D</strong>ivends, <strong>E</strong>xpenses, <strong>A</strong>ssets — are <strong>DEBIT</strong> increasers. The last three — <strong>L</strong>iabilities, <strong>E</strong>quity, <strong>R</strong>evenue — are <strong>CREDIT</strong> increasers.</p>
+            <div class="mnemonic-row">
+              <div class="mnemonic-letter">D</div>
+              <div class="mnemonic-letter">E</div>
+              <div class="mnemonic-letter">A</div>
+              <div style="display:flex; align-items:center; color:#a4c639; font-weight:800; font-size:18px;">← Debits ↑</div>
+              <div class="mnemonic-letter" style="background:#1f272b; color:#a4c639;">L</div>
+              <div class="mnemonic-letter" style="background:#1f272b; color:#a4c639;">E</div>
+              <div class="mnemonic-letter" style="background:#1f272b; color:#a4c639;">R</div>
+              <div style="display:flex; align-items:center; color:#a4c639; font-weight:800; font-size:18px;">← Credits ↑</div>
+            </div>
+          </div>
+
+          <h2>Real Transaction Examples</h2>
+          <p>
+            Let's see how this works with common business transactions. Remember: every transaction needs <strong>equal debits and credits</strong> (that's the "double-entry" part).
+          </p>
+
+          <table class="txn-table">
+            <thead>
+              <tr>
+                <th>Transaction</th>
+                <th>Debit (Left)</th>
+                <th>Credit (Right)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>You receive a $5,000 client payment</td>
+                <td class="debit-cell">Cash (Asset) +$5,000</td>
+                <td class="credit-cell">Revenue +$5,000</td>
+              </tr>
+              <tr>
+                <td>You pay $1,200 for office rent</td>
+                <td class="debit-cell">Rent Expense +$1,200</td>
+                <td class="credit-cell">Cash (Asset) −$1,200</td>
+              </tr>
+              <tr>
+                <td>You buy a $3,000 laptop on business credit</td>
+                <td class="debit-cell">Equipment (Asset) +$3,000</td>
+                <td class="credit-cell">Credit Card Payable +$3,000</td>
+              </tr>
+              <tr>
+                <td>You pay off $500 of a credit card</td>
+                <td class="debit-cell">Credit Card Payable −$500</td>
+                <td class="credit-cell">Cash (Asset) −$500</td>
+              </tr>
+              <tr>
+                <td>You invest $10,000 into your LLC</td>
+                <td class="debit-cell">Cash (Asset) +$10,000</td>
+                <td class="credit-cell">Owner's Equity +$10,000</td>
+              </tr>
+              <tr>
+                <td>Client pays their outstanding invoice</td>
+                <td class="debit-cell">Cash (Asset) +$2,500</td>
+                <td class="credit-cell">Accounts Receivable −$2,500</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            Notice the pattern: money always moves <em>from</em> one account <em>to</em> another. Nothing is created or destroyed — it just shifts between debit and credit sides, keeping everything in balance.
+          </p>
+
+          <h2>Why Banks Say It Backwards</h2>
+          <p>
+            Here's the mind-bender that trips up almost everyone. When you deposit money at the bank, the bank calls it a "credit" to your account. When you withdraw, they call it a "debit." This feels backwards compared to what we just learned — and there's a good reason.
+          </p>
+
+          <div class="vs-box">
+            <div class="vs-item vs-bank">
+              <h5>🏦 Bank's Perspective</h5>
+              <ul>
+                <li>Your deposit is money they now <strong>owe you</strong></li>
+                <li>"Owing you" is a <strong>liability</strong> on their books</li>
+                <li>Liabilities increase with credits → deposit = credit</li>
+                <li>They're keeping their own books, not yours</li>
+              </ul>
+            </div>
+            <div class="vs-item vs-accounting">
+              <h5>📊 Your Books' Perspective</h5>
+              <ul>
+                <li>Your deposit is money you now <strong>own</strong></li>
+                <li>Cash you own is an <strong>asset</strong> on your books</li>
+                <li>Assets increase with debits → deposit = debit</li>
+                <li>Same money, opposite sides of the equation</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            Neither perspective is wrong — they're just viewing the same money from opposite sides of the transaction. The bank is a debtor to you; you are a creditor to them. Once this clicks, bank statements stop being confusing.
+          </p>
+
+          <div class="callout-green">
+            <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
+              <strong style="color: #333;">💡 Quick Check:</strong> On your own books, when a customer pays you, you <strong>debit</strong> Cash (more money in the bank). When you pay a vendor, you <strong>credit</strong> Cash (less money in the bank). This matches your intuition — money in = debit, money out = credit — for asset accounts.
+            </p>
+          </div>
+
+          <h2>Normal Account Balances</h2>
+          <p>
+            Each account type "normally" carries a particular balance. Assets and expenses normally have debit balances. Liabilities, equity, and revenue normally have credit balances. This is how accountants know something's wrong — if an asset account shows a credit balance, or a liability shows a debit balance, that's a red flag that needs investigation.
+          </p>
+
+          <h2>Why This System Exists</h2>
+          <p>
+            Double-entry accounting has been used for over 500 years (it was formally codified by Italian mathematician Luca Pacioli in 1494) because it's incredibly elegant. The requirement that debits always equal credits creates a built-in error-checking system. If your books don't balance, you know immediately that something was recorded wrong — and by how much.
+          </p>
+          <p>
+            It also ensures the fundamental accounting equation always holds true: <strong>Assets = Liabilities + Equity</strong>. Every transaction affects at least two accounts, and the equation stays in balance no matter what happens.
+          </p>
+
+          <h2>Do You Need to Know This If You Use QuickBooks?</h2>
+          <p>
+            Modern software like <a href="../quickbooks-online.html">QuickBooks Online</a> handles debits and credits automatically behind the scenes. When you record an invoice or write a check, the software creates the journal entries for you. So strictly speaking, you don't need to calculate debits and credits manually.
+          </p>
+          <p>
+            However, understanding them makes you a better business owner. You'll choose the right transaction types, interpret your <a href="understanding-financial-statements.html">financial statements</a> correctly, spot errors before they compound, and communicate more effectively with your CPA. And if you're tracking owner draws (like we cover in our <a href="how-to-pay-yourself-llc-owner.html">LLC owner compensation guide</a>), knowing whether to debit or credit Owner's Equity matters.
+          </p>
+          <p>
+            Of course, if you'd rather not think about any of this, that's what our <a href="../monthly-bookkeeping-services.html">monthly bookkeeping services</a> are for. We handle every debit and credit correctly so you can focus on running your business. If your books are already a mess, our <a href="../catch-up-bookkeeping-services.html">catch-up bookkeeping team</a> can untangle everything and set you up with clean, balanced books going forward. <a href="../contact.html" style="color: #a4c639; font-weight: 600;">Get a free consultation today</a>.
+          </p>
+
+        </div>
+        <!-- End of Card -->
+        
+        <!-- FAQ Section -->
+        <div style="margin-top: 50px;">
+          <div class="section-heading" style="text-align: left; margin-bottom: 30px;">
+            <h2>Frequently Asked <em>Questions</em></h2>
+          </div>
+          
+          <div class="accordion" id="faqAccordion">
+            
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead1" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What do debit and credit actually mean in accounting?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq1" class="collapse show" aria-labelledby="faqHead1" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Debit simply means the left side of an account, and credit means the right side. That's it. They don't mean increase or decrease, good or bad, or money in or money out. Whether a debit or credit increases or decreases an account depends entirely on the account type.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead2" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Is a debit good or bad?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq2" class="collapse" aria-labelledby="faqHead2" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Neither. Debits and credits are neutral. A debit increases assets and expenses but decreases liabilities, equity, and revenue. A credit does the opposite. Whether a debit is 'good' or 'bad' depends on which account it's applied to and what the transaction represents.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead3" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What is the DEALER rule?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq3" class="collapse" aria-labelledby="faqHead3" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  DEALER is a mnemonic for remembering which account types increase with debits vs credits. Debits increase: Dividends, Expenses, Assets. Credits increase: Liabilities, Equity, Revenue. The first three letters (DEA) are debit-increasing, and the last three (LER) are credit-increasing.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead4" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Why does my bank call deposits 'credits' and withdrawals 'debits'?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq4" class="collapse" aria-labelledby="faqHead4" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Banks use debits and credits from THEIR perspective, not yours. Your bank account is a liability on the bank's books (money they owe you), so when you deposit money, it increases their liability — which is a credit on their books. This is the opposite of how a 'Cash' asset account works on your own books.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead5" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Do debits always equal credits?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Yes, in double-entry accounting, every transaction must have equal total debits and credits. If they don't match, your books are out of balance, and something was recorded incorrectly. This is one of the most powerful built-in error-checking features of the double-entry system.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead6" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What are T-accounts?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq6" class="collapse" aria-labelledby="faqHead6" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  T-accounts are visual learning tools shaped like the letter T. The account name goes on top, debits go on the left side, and credits go on the right side. They're used in accounting education to show how transactions affect individual accounts before creating formal journal entries.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Does a debit always increase an account?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  No. A debit increases assets and expenses, but decreases liabilities, equity, and revenue accounts. Conversely, a credit increases liabilities, equity, and revenue, but decreases assets and expenses. The effect depends on the account type.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What is double-entry accounting?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Double-entry accounting is the system where every transaction is recorded in at least two accounts — one debit and one credit — with equal amounts. This ensures the accounting equation (Assets = Liabilities + Equity) always stays in balance and provides built-in error detection.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    How do I know whether to debit or credit an account?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  First identify the account type (asset, liability, equity, revenue, or expense). Then ask whether the transaction increases or decreases that account. If it's an asset or expense and it increased, debit it. If it's a liability, equity, or revenue and it increased, credit it. Use the DEALER mnemonic as a quick reference.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What happens if debits don't equal credits?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  If total debits don't equal total credits, your books are out of balance. This means an error was made — possibly a transaction was recorded with wrong amounts, posted to only one account, or a number was mistyped. Most accounting software like QuickBooks prevents unbalanced entries.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead11" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq11" aria-expanded="false" aria-controls="faq11" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Is a debit card withdrawal a debit in accounting?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq11" class="collapse" aria-labelledby="faqHead11" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  When you spend money from your business account, you credit your Cash account (an asset, which decreases with credits) and typically debit an expense account. The terminology between everyday banking and accounting can be confusing because banks use the terms from their own perspective.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead12" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq12" aria-expanded="false" aria-controls="faq12" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What is a trial balance?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq12" class="collapse" aria-labelledby="faqHead12" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  A trial balance is a report listing all accounts with their debit or credit balances at a specific point in time. The total debits should equal total credits. Accountants and bookkeepers use it to verify that the books are in balance before preparing financial statements.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead13" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq13" aria-expanded="false" aria-controls="faq13" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Can a single account have both debits and credits?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq13" class="collapse" aria-labelledby="faqHead13" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  Yes, most accounts naturally accumulate both debits and credits over time. For example, your Cash account gets debited when money comes in and credited when money goes out. The final balance is the net of all debits and credits.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead14" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq14" aria-expanded="false" aria-controls="faq14" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    What does it mean when an account has a credit balance?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq14" class="collapse" aria-labelledby="faqHead14" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  It depends on the account type. Liability, equity, and revenue accounts normally carry credit balances. However, if an asset or expense account shows a credit balance, that's usually unusual and may indicate an error — such as a bank account that's been overdrawn or a refund exceeding original expenses.
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead15" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq15" aria-expanded="false" aria-controls="faq15" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                    Do I need to understand debits and credits if I use QuickBooks?
+                  </button>
+                </h5>
+              </div>
+              <div id="faq15" class="collapse" aria-labelledby="faqHead15" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                  You don't need to manually calculate them, but understanding debits and credits helps you choose the right transaction types, interpret your financial reports correctly, and catch errors. QuickBooks handles the behind-the-scenes journal entries, but knowing what's happening makes you a better business owner.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Sidebar Area -->
+      <div class="col-lg-3" id="contact">
+        
+        <!-- Sidebar CTA Form -->
+        <div class="sidebar-item" style="background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%); color: #fff;">
+          <h4 style="color: #fff; font-weight: 700; margin-bottom: 15px; font-size: 20px;">Let Us Handle Your Books</h4>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 25px;">Skip the debits and credits headaches. Our experts manage every journal entry correctly.</p>
+          
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+            <input type="hidden" name="_subject" value="Sidebar Enquiry - Debits Credits Guide">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Page Origin" value="debits-and-credits-explained.html">
+            <input type="hidden" name="Form Type" value="Sidebar Form">
+            
+            <div class="form-group mb-3">
+              <input name="name" type="text" class="form-control" placeholder="Full Name" required style="height: 45px;">
+            </div>
+            <div class="form-group mb-3">
+              <input name="email" type="email" class="form-control" placeholder="Email Address" required style="height: 45px;">
+            </div>
+            <div class="form-group mb-3">
+              <textarea name="message" rows="3" class="form-control" placeholder="How can we help?" required></textarea>
+            </div>
+            <button type="submit" class="filled-button w-100" style="border: none;">Get Free Consultation</button>
+            <div class="result-box" style="margin-top:10px; text-align: center; font-weight: 600; color: #fff;"></div>
+          </form>
+        </div>
+
+        <!-- Related Services -->
+        <div class="sidebar-item">
+          <h4 style="font-weight: 700; margin-bottom: 20px; color: #1f272b; font-size: 20px;">Related Services</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 15px;">
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../monthly-bookkeeping-services.html" style="color: #555; text-decoration: none;">Monthly Bookkeeping</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../catch-up-bookkeeping-services.html" style="color: #555; text-decoration: none;">Catch-Up Bookkeeping</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../outsourced-bookkeeping-accounting.html" style="color: #555; text-decoration: none;">Outsourced Bookkeeping</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../quickbooks-online.html" style="color: #555; text-decoration: none;">QuickBooks Online Setup</a></li>
+            <li style="margin-bottom: 0; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../forensic-accounting.html" style="color: #555; text-decoration: none;">Forensic Accounting</a></li>
+          </ul>
+        </div>
+
+        <!-- Related Resources -->
+        <div class="sidebar-item">
+          <h4 style="font-weight: 700; margin-bottom: 20px; color: #1f272b; font-size: 20px;">Continue Learning</h4>
+          <a href="chart-of-accounts-explained.html" style="display: block; text-decoration: none; margin-bottom: 15px; border-bottom: 1px solid #eef0f2; padding-bottom: 15px;">
+            <span style="color: #a4c639; font-weight: 600; font-size: 13px;">ACCOUNTING</span>
+            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Chart of Accounts Explained</h5>
+          </a>
+          <a href="bookkeeping-vs-accounting.html" style="display: block; text-decoration: none; margin-bottom: 15px; border-bottom: 1px solid #eef0f2; padding-bottom: 15px;">
+            <span style="color: #007bff; font-weight: 600; font-size: 13px;">BASICS</span>
+            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Bookkeeping vs Accounting</h5>
+          </a>
+          <a href="understanding-financial-statements.html" style="display: block; text-decoration: none;">
+            <span style="color: #dc3545; font-weight: 600; font-size: 13px;">REPORTING</span>
+            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Understanding Financial Statements</h5>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer-item">
+        <h4>CountRights</h4>
+        <p>CountRights provides professional outsourced bookkeeping, financial reporting, and accounting software migration services to help small businesses stay organized, compliant, and financially confident.</p>
+        <p>Serving businesses remotely across the US, UK, and globally.</p>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item">
+        <h4>Useful Links</h4>
+        <ul class="menu-list">
+          <li><a href="../outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+          <li><a href="../monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+          <li><a href="../catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+          <li><a href="../accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+          <li><a href="../payroll-services.html">Payroll Services</a></li>
+          <li><a href="../forensic-accounting.html">Forensic Accounting</a></li>
+          <li><a href="../accounting-software-migration.html">Software Migration</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item">
+        <h4>Additional Pages</h4>
+        <ul class="menu-list">
+          <li><a href="../services.html">Our Services</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="index.html">Resources</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-item last-item">
+        <h4>Contact Us</h4>
+        <div class="contact-form">
+          <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Debits Credits Guide)">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="Page Origin" value="debits-and-credits-explained.html">
+            <input type="hidden" name="Form Type" value="Footer Form">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <input name="name" type="text" class="form-control" placeholder="Full Name" required>
+              </div>
+              <div class="col-lg-12">
+                <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
+              </div>
+              <div class="col-lg-12">
+                <input name="phone" type="text" class="form-control" placeholder="Phone Number">
+              </div>
+              <div class="col-lg-12">
+                <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="filled-button">Send Message</button>
+              </div>
+              <div class="col-lg-12">
+                <div class="result-box" style="margin-top:10px;"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING FORM -->
+<div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+  <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+    <i class="fa fa-envelope"></i>
+  </button>
+  <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
+    <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+    <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+      <input type="hidden" name="_subject" value="Floating Form Lead - Debits Credits Guide">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="Page Origin" value="debits-and-credits-explained.html">
+      <input type="hidden" name="Form Type" value="Floating Hover Form">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+      <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+      <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+      <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+    </form>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/owl.js"></script>
+<script src="../assets/js/slick.js"></script>
+<script src="../assets/js/accordions.js"></script>
+
+<!-- Toggle & FormSubmit AJAX Script -->
+<script>
+  $(document).ready(function() {
+    $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() { $(this).remove(); });
+    });
+
+    $("#floatToggleBtn").click(function() {
+      $("#floatFormPanel").toggle();
+    });
+
+    $("form.ajax-form").submit(function(e) {
+      e.preventDefault();
+      var form = $(this);
+      var url = form.attr("action");
+      var data = form.serialize();
+      var resultBox = form.find(".result-box");
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        cache: false,
+        success: function() {
+          resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+          form[0].reset();
+          setTimeout(function() {
+            if (form.closest("#floatFormPanel").length) {
+              $("#floatFormPanel").hide();
+              resultBox.html("");
+            }
+          }, 4000);
+        },
+        error: function() {
+          resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
