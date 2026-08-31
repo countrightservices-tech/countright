@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>QuickBooks Desktop Setup & Support (Pro, Premier, Enterprise) | CountRights</title>
+
+<meta name="description" content="Expert QuickBooks Desktop setup for Pro, Premier & Enterprise. Industry editions, inventory config, multi-user setup & hosting guidance. Get a free quote!">
+<meta name="author" content="CountRights">
+
+<!-- Optimized Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://countrights.com/quickbooks-desktop.html" />
+<link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZVBSSK8VV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7ZVBSSK8VV');
+</script>
+
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/fontawesome.css">
+<link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+<link rel="stylesheet" href="assets/css/owl.css">
+
+<!-- Custom Styling & Enhancements -->
+<style>
+  body { font-family: 'Poppins', sans-serif; color: #555; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; color: #1f272b; }
+  
+  .dropdown-submenu { position: relative; }
+  .dropdown-submenu .dropdown-menu { top: 0; left: 100%; margin-top: -1px; display: none; border-radius: 5px; }
+  .dropdown-submenu:hover .dropdown-menu { display: block; }
+  
+  /* Fix Navbar to stay on one line */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  /* Navbar Request Callback Button */
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+
+  /* Premium Card Styling */
+  .premium-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    border-top: 5px solid transparent;
+  }
+  .premium-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  }
+  
+  /* Stats Bar */
+  .stat-box { text-align: center; padding: 20px; }
+  .stat-box .stat-number { font-size: 42px; font-weight: 800; color: #a4c639; }
+  .stat-box .stat-label { font-size: 14px; color: #ccc; text-transform: uppercase; letter-spacing: 1px; }
+  
+  /* Comparison Table */
+  .comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  }
+  .comparison-table th {
+    background: #1f272b;
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .comparison-table th:first-child { text-align: left; }
+  .comparison-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #eef0f2;
+    color: #555;
+  }
+  .comparison-table td:first-child { text-align: left; font-weight: 600; color: #1f272b; }
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .comparison-table tr:hover td { background: #f9f9f9; }
+  .comparison-table .yes { color: #28a745; font-weight: 700; }
+  .comparison-table .no { color: #dc3545; font-weight: 700; }
+  
+  /* Process Timeline */
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eef0f2;
+  }
+  .process-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .process-step .step-number {
+    background: #1f272b;
+    color: #a4c639;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+  
+  /* Platform Badges */
+  .platform-badge {
+    display: inline-block;
+    padding: 10px 20px !important;
+    background: #f9f9f9 !important;
+    border: 1px solid #eef0f2 !important;
+    border-radius: 30px !important;
+    margin: 5px !important;
+    color: #1f272b !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+  }
+  .platform-badge:hover {
+    background: #a4c639 !important;
+    color: #ffffff !important;
+    border-color: #a4c639 !important;
+    transform: scale(1.05);
+  }
+  
+  /* Accordion Header Hover */
+  .accordion .card-header button:hover {
+    color: #a4c639 !important;
+  }
+
+  /* Force Page Heading Colors for Visibility */
+  .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+  .page-heading.header-text span { color: #a4c639 !important; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .page-heading.header-text p { color: #f4f4f4 !important; font-size: 18px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+</style>
+
+<!-- US-wide business schema (Rule 25) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://countrights.com/#business",
+  "name": "CountRights",
+  "url": "https://countrights.com/",
+  "email": "contact@countrights.com",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "sameAs": [
+    "https://www.facebook.com/countrights",
+    "https://x.com/CountRights",
+    "https://www.linkedin.com/company/countrights",
+    "https://clutch.co/profile/countrights"
+  ]
+}
+</script>
+
+<!-- QuickBooks Desktop Setup service schema (Rule 26) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "QuickBooks Desktop Setup & Implementation",
+  "description": "Professional QuickBooks Desktop setup and implementation services for Pro, Premier, and Enterprise, including industry editions, inventory configuration, and multi-user access.",
+  "url": "https://countrights.com/quickbooks-desktop.html",
+  "provider": {
+    "@id": "https://countrights.com/#business"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "QuickBooks Desktop Setup"
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://countrights.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://countrights.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "QuickBooks Desktop Setup", "item": "https://countrights.com/quickbooks-desktop.html" }
+  ]
+}
+</script>
+
+<!-- FAQ Schema (15 Questions) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is QuickBooks Desktop being discontinued?", "acceptedAnswer": { "@type": "Answer", "text": "Intuit has stopped selling new subscriptions of Desktop Pro and Premier to new customers, but existing subscribers can still renew. QuickBooks Desktop Enterprise remains fully available and actively supported. We help you plan the right path forward." } },
+    { "@type": "Question", "name": "What is the difference between QuickBooks Pro, Premier, and Enterprise?", "acceptedAnswer": { "@type": "Answer", "text": "Pro handles basic bookkeeping for up to 3 users. Premier adds forecasting, industry-specific reports, and up to 5 users. Enterprise supports up to 30 users, advanced inventory, and massive list capacities." } },
+    { "@type": "Question", "name": "Can QuickBooks Desktop be accessed remotely?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, through Intuit's hosting program or third-party providers, Desktop can run in the cloud. This gives you the power of Desktop with the remote access of Online." } },
+    { "@type": "Question", "name": "What is QuickBooks Desktop hosting?", "acceptedAnswer": { "@type": "Answer", "text": "Hosting runs your Desktop software on a cloud server instead of a local computer. Your team and CPA can access the same file simultaneously from anywhere, just like QuickBooks Online." } },
+    { "@type": "Question", "name": "Can I move from QuickBooks Desktop to Online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Intuit provides a built-in conversion tool, and our experts handle the entire process to ensure your historical data, inventory, and payroll history transfer accurately." } },
+    { "@type": "Question", "name": "Can you migrate data from other software into QuickBooks Desktop?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We migrate data from Sage, Xero, NetSuite, Wave, FreshBooks, and more into QuickBooks Desktop with 100% accuracy, preserving all historical transactions." } },
+    { "@type": "Question", "name": "Which industries have specific QuickBooks Desktop editions?", "acceptedAnswer": { "@type": "Answer", "text": "Premier and Enterprise offer editions for General Contractor, Manufacturing & Wholesale, Professional Services, Nonprofit, and Retail, each with tailored reports and features." } },
+    { "@type": "Question", "name": "How many users can access QuickBooks Desktop at once?", "acceptedAnswer": { "@type": "Answer", "text": "Pro allows up to 3 users, Premier up to 5, and Enterprise up to 30 simultaneous users with role-based permissions." } },
+    { "@type": "Question", "name": "Does QuickBooks Desktop have payroll?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, QuickBooks Desktop Payroll is available as an add-on. We can set it up, configure tax filings, and ensure it syncs with your general ledger." } },
+    { "@type": "Question", "name": "Is QuickBooks Desktop better than Online for inventory?", "acceptedAnswer": { "@type": "Answer", "text": "For complex inventory, yes. Desktop Enterprise offers advanced inventory including FIFO costing, barcode scanning, multi-location tracking, and assembly management that Online can't match." } },
+    { "@type": "Question", "name": "How much does QuickBooks Desktop cost?", "acceptedAnswer": { "@type": "Answer", "text": "Enterprise pricing starts around $1,400/year and scales with user count. Since Pro and Premier are limited to existing subscribers, many businesses are transitioning to Enterprise or Online. We help you choose the best value." } },
+    { "@type": "Question", "name": "Can I import bank transactions into QuickBooks Desktop?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Desktop connects to bank feeds for automatic transaction downloads. We set up all your accounts and establish rules for automatic categorization." } },
+    { "@type": "Question", "name": "What happens if my QuickBooks Desktop file is corrupted or slow?", "acceptedAnswer": { "@type": "Answer", "text": "We specialize in file repair and optimization. We rebuild data, resolve corruption errors, and restructure bloated files to make your Desktop run fast again." } },
+    { "@type": "Question", "name": "Do you provide ongoing QuickBooks Desktop support?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer ongoing support, troubleshooting, and monthly bookkeeping services for Desktop users, ensuring your file stays healthy year-round." } },
+    { "@type": "Question", "name": "How do I get started with QuickBooks Desktop setup?", "acceptedAnswer": { "@type": "Answer", "text": "Simply click the 'Request Callback' button in the navigation menu or fill out the contact form on this page. We'll schedule a free consultation to assess your needs." } }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader"><div class="jumper"><div></div><div></div><div></div></div></div>
+
+    <!-- Sub Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
+                  <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
+                  </div>
+                  <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
+                  <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
+                  <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
+                  <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
+                  <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
+                </div>
+              </li>
+              
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>QuickBooks Desktop Setup</h1>
+            <span>Pro, Premier & Enterprise — configured for power users</span>
+            <p>QuickBooks Desktop remains the most powerful locally-installed accounting platform for inventory-heavy, multi-user, and industry-specific businesses. CountRights sets up your Desktop file correctly from day one — whether you're on Pro, Premier, Enterprise, or exploring hosting solutions.</p>
+            <a href="#contact" class="filled-button" style="margin-top: 20px;">Get Your Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div style="background: #1f272b; padding: 50px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Max Users (Enterprise)</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <div class="stat-number">1M+</div>
+              <div class="stat-label">List Item Capacity</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Industry Editions</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Years of Desktop Legacy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHEN DESKTOP BEATS ONLINE -->
+    <div class="services" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>When Desktop <em>Beats Online</em></h2>
+              <span>Cloud isn't always the answer — here's when Desktop still wins</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #28a745;">
+              <h4 style="margin-bottom: 20px; color: #28a745;"><i class="fa fa-check-circle" style="margin-right: 10px;"></i>Desktop Excels At:</h4>
+              <ul style="list-style: none; padding: 0; line-height: 2.2; color: #555;">
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>Advanced inventory (FIFO, barcodes, assemblies)</li>
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>Complex job costing & progress invoicing</li>
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>Industry-specific reports & workflows</li>
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>Processing speed with massive data files</li>
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>One-time licensing (no monthly fees)</li>
+                <li><i class="fa fa-check" style="color: #28a745; margin-right: 10px;"></i>Working offline without internet</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #007bff;">
+              <h4 style="margin-bottom: 20px; color: #007bff;"><i class="fa fa-cloud" style="margin-right: 10px;"></i>Consider Online Instead If:</h4>
+              <ul style="list-style: none; padding: 0; line-height: 2.2; color: #555;">
+                <li><i class="fa fa-arrow-right" style="color: #007bff; margin-right: 10px;"></i>You need remote access from anywhere</li>
+                <li><i class="fa fa-arrow-right" style="color: #007bff; margin-right: 10px;"></i>Your team is small with simple needs</li>
+                <li><i class="fa fa-arrow-right" style="color: #007bff; margin-right: 10px;"></i>You want automatic backups & updates</li>
+                <li><i class="fa fa-arrow-right" style="color: #007bff; margin-right: 10px;"></i>Your CPA prefers cloud collaboration</li>
+                <li><i class="fa fa-arrow-right" style="color: #007bff; margin-right: 10px;"></i>You rely on 700+ app integrations</li>
+                <li><a href="quickbooks-online.html" style="color: #007bff; font-weight: 600;">See our QuickBooks Online setup →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VERSION COMPARISON TABLE -->
+    <div class="more-info" style="padding: 80px 0; background: #f9f9f9;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>Pro vs. Premier vs. <em>Enterprise</em></h2>
+              <span>Choosing the right version saves you thousands</span>
+            </div>
+
+            <div style="overflow-x: auto;">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Pro</th>
+                    <th>Premier</th>
+                    <th>Enterprise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Max Simultaneous Users</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td><strong>30</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Industry-Specific Editions</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓ (5 editions)</td>
+                    <td class="yes">✓ (5 editions)</td>
+                  </tr>
+                  <tr>
+                    <td>Advanced Inventory</td>
+                    <td class="no">✗</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓</td>
+                  </tr>
+                  <tr>
+                    <td>Barcoding & FIFO Costing</td>
+                    <td class="no">✗</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓</td>
+                  </tr>
+                  <tr>
+                    <td>Job Costing & Progress Invoicing</td>
+                    <td>Basic</td>
+                    <td class="yes">✓</td>
+                    <td class="yes">✓ Enhanced</td>
+                  </tr>
+                  <tr>
+                    <td>Forecasting & Business Plans</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓</td>
+                    <td class="yes">✓</td>
+                  </tr>
+                  <tr>
+                    <td>Sales Orders & Purchase Orders</td>
+                    <td>PO only</td>
+                    <td class="yes">✓ Both</td>
+                    <td class="yes">✓ Both</td>
+                  </tr>
+                  <tr>
+                    <td>List Capacity (Items/Names)</td>
+                    <td>14,500</td>
+                    <td>14,500</td>
+                    <td><strong>1,000,000+</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Role-Based User Permissions</td>
+                    <td class="no">✗</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓ (115+ roles)</td>
+                  </tr>
+                  <tr>
+                    <td>Audit Trail</td>
+                    <td class="no">✗</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓</td>
+                  </tr>
+                  <tr>
+                    <td>Hosting / Cloud Access</td>
+                    <td class="no">✗</td>
+                    <td class="no">✗</td>
+                    <td class="yes">✓</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p style="text-align: center; margin-top: 25px; font-size: 15px; color: #777;">
+              Not sure which version fits? We assess your business needs during a <a href="#contact" style="color: #a4c639; font-weight: 600;">free consultation</a> and recommend the best fit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SETUP PROCESS TIMELINE -->
+    <div class="services" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>Our Desktop Setup <em>Process</em></h2>
+              <span>A methodical implementation in five phases</span>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Needs Assessment & Version Selection</h4>
+                <p style="line-height: 1.8; color: #555;">We analyze your industry, transaction volume, user count, and inventory complexity to recommend the right Desktop version — or advise if <a href="quickbooks-online.html">QuickBooks Online</a> is a better fit.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Company File Creation & Chart of Accounts</h4>
+                <p style="line-height: 1.8; color: #555;">We build your company file with a custom, industry-tailored chart of accounts — not the generic Intuit template. This is the foundation for accurate reporting for years to come.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Items, Inventory & Payroll Configuration</h4>
+                <p style="line-height: 1.8; color: #555;">We set up your product/service items, inventory assemblies, and pricing tiers. If you need payroll, we configure <a href="payroll-services.html">Desktop Payroll</a> with correct tax rates and employee data.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Multi-User Access & Permissions</h4>
+                <p style="line-height: 1.8; color: #555;">For Enterprise clients, we configure user roles and permissions so staff only see what they need to. We also set up hosting if your team needs remote access.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4>Training & Handover</h4>
+                <p style="line-height: 1.8; color: #555;">We train you and your team on daily workflows, then optionally transition you to our <a href="monthly-bookkeeping-services.html">monthly bookkeeping services</a> so your Desktop file stays perfectly maintained.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INDUSTRY EDITIONS GRID -->
+    <div class="more-info" style="padding: 80px 0; background: #f9f9f9;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading text-center" style="margin-bottom: 50px;">
+              <h2>Industry-Specific <em>Editions</em></h2>
+              <span>Premier & Enterprise editions tailored to how you actually work</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #a4c639;">
+              <div style="font-size: 36px; color: #a4c639; margin-bottom: 15px;"><i class="fa fa-wrench"></i></div>
+              <h4 style="margin-bottom: 15px;">General Contractor</h4>
+              <p style="line-height: 1.8;">Job costing, change orders, and per-project profitability reports. Track labor, materials, and subcontractor costs against estimates in real time.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #007bff;">
+              <div style="font-size: 36px; color: #007bff; margin-bottom: 15px;"><i class="fa fa-industry"></i></div>
+              <h4 style="margin-bottom: 15px;">Manufacturing & Wholesale</h4>
+              <p style="line-height: 1.8;">Bill of materials, inventory assemblies, and unit-of-measure conversions. Built for businesses that build or distribute physical products.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #dc3545;">
+              <div style="font-size: 36px; color: #dc3545; margin-bottom: 15px;"><i class="fa fa-briefcase"></i></div>
+              <h4 style="margin-bottom: 15px;">Professional Services</h4>
+              <p style="line-height: 1.8;">Time tracking, billing rate levels, and unbilled time reports. Perfect for law firms, consultants, agencies, and medical practices.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #ffc107;">
+              <div style="font-size: 36px; color: #ffc107; margin-bottom: 15px;"><i class="fa fa-handshake-o"></i></div>
+              <h4 style="margin-bottom: 15px;">Nonprofit</h4>
+              <p style="line-height: 1.8;">Fund accounting, donation tracking, and Form 990-ready reports. Track restricted vs. unrestricted funds and generate donor statements.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #28a745;">
+              <div style="font-size: 36px; color: #28a745; margin-bottom: 15px;"><i class="fa fa-shopping-cart"></i></div>
+              <h4 style="margin-bottom: 15px;">Retail</h4>
+              <p style="line-height: 1.8;">Sales orders, daily sales summaries, and Point of Sale integration. Manage inventory across multiple locations and track margins by item.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="premium-card" style="border-top: 5px solid #17a2b8;">
+              <div style="font-size: 36px; color: #17a2b8; margin-bottom: 15px;"><i class="fa fa-question-circle"></i></div>
+              <h4 style="margin-bottom: 15px;">Not Sure Which Edition?</h4>
+              <p style="line-height: 1.8;">Our experts analyze your workflows and recommend the perfect edition. Don't guess and overpay for features you'll never use.</p>
+              <a href="#contact" class="filled-button" style="margin-top: 15px;">Ask an Expert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIGRATION HUB -->
+    <div class="services" style="padding: 80px 0; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading text-center" style="margin-bottom: 30px;">
+              <h2>Migrating Into <em>Desktop?</em></h2>
+              <span>We move your data from any platform into QuickBooks Desktop</span>
+            </div>
+          </div>
+          
+          <div class="col-lg-10 offset-lg-1 text-center">
+            <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 40px;">
+              Coming from another platform? We migrate your historical data into a clean Desktop file. Learn more on our <a href="accounting-software-migration.html">software migration hub</a> or jump straight to your platform:
+            </p>
+            <div style="background: #f9f9f9; padding: 40px 20px; border-radius: 15px; border: 1px solid #eef0f2;">
+              <a href="sage-to-quickbooks.html" class="platform-badge">Sage</a> 
+              <a href="netsuite-to-quickbooks.html" class="platform-badge">NetSuite</a> 
+              <a href="xero-to-quickbooks.html" class="platform-badge">Xero</a> 
+              <a href="zoho-books-to-quickbooks.html" class="platform-badge">Zoho Books</a> 
+              <a href="wave-to-quickbooks.html" class="platform-badge">Wave</a> 
+              <a href="accountedge-to-quickbooks.html" class="platform-badge">AccountEdge</a> 
+              <a href="freshbooks-to-quickbooks.html" class="platform-badge">FreshBooks</a>
+              <a href="quickbooks-online.html" class="platform-badge platform-badge-dark">Moving from Online?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSULTATION FORM -->
+    <div id="contact" class="callback-form callback-services" style="background: #f9f9f9; padding: 80px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 40px;">
+              <h2>Request a <em>Free Consultation</em></h2>
+              <span>Schedule a call to discuss your QuickBooks Desktop setup.</span>
+            </div>
+            
+            <div style="background: linear-gradient(145deg, #8fb323 0%, #a4c639 100%); padding: 50px 40px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+              
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+                <input type="hidden" name="_subject" value="QuickBooks Desktop Setup Enquiry - CountRights">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="quickbooks-desktop.html">
+                <input type="hidden" name="Form Type" value="Main Consultation Form">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
+                      <input name="name" type="text" class="form-control" placeholder="Full Name" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span></div>
+                      <input name="email" type="email" class="form-control" placeholder="Email Address" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span></div>
+                      <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-group mb-4">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span></div>
+                      <textarea name="message" rows="4" class="form-control" placeholder="Tell us about your business and current setup..." required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px; padding: 0 40px;">Send Message</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600; color: #fff;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPANDED SEO CONTENT (3,000+ Words) -->
+    <div class="services" style="background:#ffffff; padding:90px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            
+            <div style="background: #ffffff; padding: 60px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border-top: 5px solid #a4c639;">
+              
+              <div class="section-heading" style="text-align: left; margin-bottom: 40px;">
+                <h2 style="font-size: 32px; margin-bottom: 10px;">Professional <em>QuickBooks Desktop Setup & Implementation</em></h2>
+                <span style="color: #777; font-size: 16px;">Expert desktop accounting configuration for demanding US businesses</span>
+              </div>
+              
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                While the world shifts toward cloud accounting, QuickBooks Desktop remains the undisputed powerhouse for businesses with complex inventory, heavy transaction volumes, and industry-specific workflows. For over twenty years, Desktop has been the trusted backbone of contractors, manufacturers, wholesalers, and retailers across America. Its raw processing power, deep inventory management, and locally-installed reliability simply can't be matched by cloud platforms.
+              </p>
+              
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                However, the same rule applies to Desktop as any other platform: a poor setup creates years of problems. At CountRights, we provide professional <strong>QuickBooks Desktop setup services</strong> that configure every element correctly from day one. From designing your chart of accounts to setting up multi-user permissions, we ensure your Desktop file becomes an asset — not a liability. And if your existing Desktop file is a mess, our <a href="catch-up-bookkeeping-services.html">catch-up bookkeeping</a> team can clean it up and get you back on track.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">The Future of QuickBooks Desktop: What Business Owners Need to Know</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Intuit has been steering new customers toward <a href="quickbooks-online.html">QuickBooks Online</a>, and new subscriptions of Desktop Pro Plus and Premier Plus are no longer sold to first-time buyers. But this doesn't mean Desktop is dead. QuickBooks Desktop Enterprise remains fully available, actively developed, and supported. Existing Pro and Premier subscribers can continue renewing their licenses. The reality is that certain businesses genuinely need Desktop's capabilities, and Intuit continues to serve that market through Enterprise.
+              </p>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                If you're currently on Pro or Premier and worried about the future, you have three options: continue renewing as long as Intuit allows, upgrade to Enterprise for continued long-term support, or migrate to QuickBooks Online. Our experts walk you through the pros and cons of each path based on your specific situation — no pressure, no upselling, just honest advice. Many businesses also discover that Enterprise hosting gives them the best of both worlds: Desktop power with cloud accessibility.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Why Enterprise Is Worth the Investment for Growing Businesses</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                QuickBooks Desktop Enterprise is the crown jewel of the Desktop line, and for good reason. It supports up to 30 simultaneous users with 115+ role-based permission levels, meaning your warehouse staff can only see inventory while your sales team only sees orders. It handles over 1 million list items — twenty times the capacity of Pro or Premier — making it viable for businesses with enormous product catalogs or extensive customer bases.
+              </p>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                The Advanced Inventory add-on transforms Enterprise into a true warehouse management system. FIFO costing, barcode scanning, bin location tracking, multi-location inventory, and automatic reorder points put Enterprise in direct competition with systems costing three times as much. For manufacturers, the Assembly management feature tracks bill of materials and sub-assemblies automatically. When combined with our <a href="outsourced-bookkeeping-accounting.html">outsourced bookkeeping services</a>, Enterprise becomes a complete financial management solution.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Desktop Hosting: The Best of Both Worlds</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                The biggest historical complaint about Desktop was the inability to access it remotely. That problem is solved. Through Intuit's authorized hosting program, your Desktop software runs on secure cloud servers. Your entire team — and your CPA — can access the same company file simultaneously from anywhere with an internet connection. You get all the power of Desktop with all the flexibility of the cloud.
+              </p>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Hosting also solves the backup and security problem. Instead of relying on local backups that might fail, your data lives on redundant enterprise servers with automatic daily backups. If your office computer crashes, your data is safe. If your bookkeeper works from home, they simply log in. Hosting typically costs a fraction of what businesses expect, and we help you evaluate whether it makes sense for your situation.
+              </p>
+
+              <!-- Highlighted Callout Box -->
+              <div style="background: #eef2ff; border-left: 4px solid #007bff; padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0;">
+                <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
+                  <strong style="color: #333;">Is your Desktop file slow or corrupted?</strong> Over years of use, Desktop files bloat with old transactions and fragment internally. Symptoms include sluggish performance, freezing, and error messages like "A data problem prevents QuickBooks from continuing." Our file optimization and repair services rebuild your data integrity, compress your file size, and restore speed — often rescuing files businesses feared were lost forever.
+                </p>
+              </div>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Migrating Into Desktop From Any Platform</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Many businesses actually migrate into Desktop rather than away from it. If you've outgrown basic software and need serious inventory or job costing capabilities, Desktop Enterprise is often the destination. We handle migrations from <a href="sage-50-to-quickbooks.html">Sage 50</a>, <a href="sage-100-to-quickbooks.html">Sage 100</a>, <a href="xero-to-quickbooks.html">Xero</a>, <a href="wave-to-quickbooks.html">Wave</a>, and even <a href="quickbooks-online.html">QuickBooks Online</a> — yes, businesses do move from Online back to Desktop when they discover Online's inventory features don't meet their needs.
+              </p>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Our migration process is meticulous. We extract your historical transactions, map your old chart of accounts to Desktop's structure, and import everything with verified accuracy. Your Profit & Loss and Balance Sheet reports will match to the penny before we hand over the file. Learn more about our full process on the <a href="accounting-software-migration.html">software migration hub</a>.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Payroll for QuickBooks Desktop</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Desktop Payroll remains one of the most robust payroll engines available. Unlike Online payroll, Desktop payroll gives you deeper control over tax tables, garnishment calculations, and custom deductions. We set up the entire payroll module, import employee data, configure tax rates for your state, and train your team on running payrolls. For businesses that want payroll completely off their plate, our managed <a href="payroll-services.html">payroll services</a> run everything for you on Desktop.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Ongoing Support and Bookkeeping for Desktop</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                Setup is just the beginning. Desktop files require ongoing maintenance to stay healthy — periodic file optimization, data integrity checks, and cleanups of old entries. Our <a href="monthly-bookkeeping-services.html">monthly bookkeeping services</a> include all of this plus daily transaction categorization, bank reconciliation, and financial reporting. Whether you need full-service bookkeeping or just quarterly tune-ups, we scale our support to match your needs.
+              </p>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                We also handle <a href="accounts-payable-receivable.html">AP and AR management</a> within Desktop, ensuring vendor bills are paid on time and customer invoices are collected promptly. Your aging reports stay accurate, your cash flow stays predictable, and your books stay audit-ready.
+              </p>
+
+              <h3 style="font-size: 24px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700;">Serving Businesses Across the United States</h3>
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px;">
+                As a remote accounting firm, CountRights serves Desktop clients across the US and globally. With hosting solutions, physical location is irrelevant — we connect to your file from anywhere. Our team has configured Desktop for general contractors in Texas, manufacturers in Ohio, nonprofit organizations in California, and retail chains in New York. Every industry has unique requirements, and our experience ensures yours are met.
+              </p>
+
+              <p style="font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 0;">
+                Ready to harness the full power of QuickBooks Desktop? Click the "Request Callback" button above or explore our <a href="resources/index.html" style="color: #a4c639; font-weight: 600;">Knowledge Hub</a> for more expert insights. Your books — and your bottom line — will thank you.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ SECTION (15 Questions) -->
+    <div class="services" style="background:#f9f9f9; padding:80px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+              <h2>Frequently Asked <em>Questions</em></h2>
+              <span>Common questions about QuickBooks Desktop setup</span>
+            </div>
+          </div>
+          
+          <div class="col-lg-10 offset-lg-1">
+            <div class="accordion" id="faqAccordion">
+              
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead1" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Is QuickBooks Desktop being discontinued?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq1" class="collapse show" aria-labelledby="faqHead1" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Intuit has stopped selling new subscriptions of Desktop Pro and Premier to new customers, but existing subscribers can still renew. QuickBooks Desktop Enterprise remains fully available and actively supported. We help you plan the right path forward.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead2" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      What is the difference between QuickBooks Pro, Premier, and Enterprise?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq2" class="collapse" aria-labelledby="faqHead2" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Pro handles basic bookkeeping for up to 3 users. Premier adds forecasting, industry-specific reports, and up to 5 users. Enterprise supports up to 30 users, advanced inventory, and massive list capacities.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead3" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Can QuickBooks Desktop be accessed remotely?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq3" class="collapse" aria-labelledby="faqHead3" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, through Intuit's hosting program or third-party providers, Desktop can run in the cloud. This gives you the power of Desktop with the remote access of Online.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead4" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      What is QuickBooks Desktop hosting?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq4" class="collapse" aria-labelledby="faqHead4" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Hosting runs your Desktop software on a cloud server instead of a local computer. Your team and CPA can access the same file simultaneously from anywhere, just like QuickBooks Online.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead5" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Can I move from QuickBooks Desktop to Online?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, Intuit provides a built-in conversion tool, and our experts handle the entire process to ensure your historical data, inventory, and payroll history transfer accurately.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead6" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Can you migrate data from other software into QuickBooks Desktop?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq6" class="collapse" aria-labelledby="faqHead6" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Absolutely. We migrate data from Sage, Xero, NetSuite, Wave, FreshBooks, and more into QuickBooks Desktop with 100% accuracy, preserving all historical transactions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Which industries have specific QuickBooks Desktop editions?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Premier and Enterprise offer editions for General Contractor, Manufacturing & Wholesale, Professional Services, Nonprofit, and Retail, each with tailored reports and features.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      How many users can access QuickBooks Desktop at once?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Pro allows up to 3 users, Premier up to 5, and Enterprise up to 30 simultaneous users with role-based permissions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Does QuickBooks Desktop have payroll?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, QuickBooks Desktop Payroll is available as an add-on. We can set it up, configure tax filings, and ensure it syncs with your general ledger.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Is QuickBooks Desktop better than Online for inventory?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    For complex inventory, yes. Desktop Enterprise offers advanced inventory including FIFO costing, barcode scanning, multi-location tracking, and assembly management that Online can't match.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead11" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq11" aria-expanded="false" aria-controls="faq11" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      How much does QuickBooks Desktop cost?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq11" class="collapse" aria-labelledby="faqHead11" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Enterprise pricing starts around $1,400/year and scales with user count. Since Pro and Premier are limited to existing subscribers, many businesses are transitioning to Enterprise or Online. We help you choose the best value.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead12" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq12" aria-expanded="false" aria-controls="faq12" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Can I import bank transactions into QuickBooks Desktop?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq12" class="collapse" aria-labelledby="faqHead12" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, Desktop connects to bank feeds for automatic transaction downloads. We set up all your accounts and establish rules for automatic categorization.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead13" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq13" aria-expanded="false" aria-controls="faq13" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      What happens if my QuickBooks Desktop file is corrupted or slow?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq13" class="collapse" aria-labelledby="faqHead13" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    We specialize in file repair and optimization. We rebuild data, resolve corruption errors, and restructure bloated files to make your Desktop run fast again.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead14" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq14" aria-expanded="false" aria-controls="faq14" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      Do you provide ongoing QuickBooks Desktop support?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq14" class="collapse" aria-labelledby="faqHead14" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Yes, we offer ongoing support, troubleshooting, and monthly bookkeeping services for Desktop users, ensuring your file stays healthy year-round.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+                <div class="card-header" id="faqHead15" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq15" aria-expanded="false" aria-controls="faq15" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
+                      How do I get started with QuickBooks Desktop setup?
+                    </button>
+                  </h5>
+                </div>
+                <div id="faq15" class="collapse" aria-labelledby="faqHead15" data-parent="#faqAccordion">
+                  <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
+                    Simply click the 'Request Callback' button in the navigation menu or fill out the contact form on this page. We'll schedule a free consultation to assess your needs.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4>CountRights</h4>
+            <p>CountRights provides professional outsourced bookkeeping, financial reporting, and accounting software migration services to help small businesses stay organized, compliant, and financially confident.</p>
+            <p>Serving businesses remotely across the US, UK, and globally.</p>
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Useful Links</h4>
+            <ul class="menu-list">
+              <li><a href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a></li>
+              <li><a href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a></li>
+              <li><a href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a></li>
+              <li><a href="accounts-payable-receivable.html">AP &amp; AR Management</a></li>
+              <li><a href="payroll-services.html">Payroll Services</a></li>
+              <li><a href="forensic-accounting.html">Forensic Accounting</a></li>
+              <li><a href="accounting-software-migration.html">Software Migration</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="resources/index.html">Resources</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+                <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (QBD Setup)">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="quickbooks-desktop.html">
+                <input type="hidden" name="Form Type" value="Footer Form">
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <input name="name" type="text" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col-lg-12">
+                    <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
+                  </div>
+                  <div class="col-lg-12">
+                    <input name="phone" type="text" class="form-control" placeholder="Phone Number">
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="filled-button">Send Message</button>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="result-box" style="margin-top:10px;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOATING FORM -->
+    <div id="floatingFormWrapper" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999;">
+      <button id="floatToggleBtn" style="background: #a4c639; color: #fff; border: none; border-radius: 50px; width: 60px; height: 60px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; font-size: 24px; transition: transform 0.3s;">
+        <i class="fa fa-envelope"></i>
+      </button>
+      <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
+        <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
+        <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+          <input type="hidden" name="_subject" value="Floating Form Lead - QBD Setup">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Page Origin" value="quickbooks-desktop.html">
+          <input type="hidden" name="Form Type" value="Floating Hover Form">
+          <input type="text" name="name" placeholder="Your Name" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+          <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;">
+          <textarea name="message" placeholder="How can we help?" rows="3" required style="width:100%; margin-bottom:10px; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+          <button type="submit" style="width:100%; background:#1f272b; color:white; border:none; padding:12px; border-radius:5px; font-weight:600; cursor:pointer;">Send Message</button>
+          <div class="result-box" style="margin-top:10px; font-size:14px; color:#28a745; text-align:center;"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Toggle & FormSubmit AJAX Script -->
+    <script>
+      $(document).ready(function() {
+        $(window).on('load', function() {
+          $('#preloader').fadeOut('slow', function() { $(this).remove(); });
+        });
+
+        $("#floatToggleBtn").click(function() {
+          $("#floatFormPanel").toggle();
+        });
+
+        $("form.ajax-form").submit(function(e) {
+          e.preventDefault();
+          var form = $(this);
+          var url = form.attr("action");
+          var data = form.serialize();
+          var resultBox = form.find(".result-box");
+
+          $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            cache: false,
+            success: function() {
+              resultBox.html("✔ Thank you! Your message has been sent.").css("color", "#155724");
+              form[0].reset();
+              setTimeout(function() {
+                if (form.closest("#floatFormPanel").length) {
+                  $("#floatFormPanel").hide();
+                  resultBox.html("");
+                }
+              }, 4000);
+            },
+            error: function() {
+              resultBox.html("⚠ Oops! Something went wrong. Please email us directly.").css("color", "#dc3545");
+            }
+          });
+        });
+      });
+    </script>
+
+</body>
+</html>
