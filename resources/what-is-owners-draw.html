@@ -7,17 +7,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Primary SEO -->
-<title>What Is an Owner's Draw? How It Works + Tax Impact | CountRights</title>
-<meta name="description" content="What is an owner's draw? Learn how draws work for LLC owners, how they affect taxes, and how to record them in QuickBooks. Complete 2026 guide.">
-<meta name="keywords" content="what is owners draw, owner draw LLC, how does owners draw work, owners draw vs salary, record owners draw QuickBooks, draw from LLC, self employed pay, owner equity account, Schedule C draws">
+<title>What Is an Owner's Draw? How It Works + Tax Rules (2026) | CountRights</title>
+<meta name="description" content="Learn what an owner's draw is, how it differs from salary, and the tax rules. Complete guide for LLC owners and self-employed professionals.">
+<meta name="keywords" content="owners draw, what is owners draw, LLC draw vs salary, owner draw taxes, owner distribution, self employed pay, LLC owner compensation">
 <meta name="author" content="CountRights">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://countrights.com/resources/what-is-owners-draw.html" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="What Is an Owner's Draw? Complete Guide">
-<meta property="og:description" content="Learn how owner's draws work, tax implications, and how to record them correctly.">
+<meta property="og:title" content="What Is an Owner's Draw? Complete Guide (2026)">
+<meta property="og:description" content="Learn what an owner's draw is, how it differs from salary, and the tax implications for LLC owners.">
 <meta property="og:url" content="https://countrights.com/resources/what-is-owners-draw.html">
 <meta property="og:site_name" content="CountRights">
 
@@ -69,7 +69,7 @@
     transition: all 0.3s ease;
     text-transform: uppercase;
     font-size: 14px;
-    box-shadow: 0 4px 10px rgba(164, 201, 57, 0.3);
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
     white-space: nowrap;
   }
   .nav-callback-btn:hover {
@@ -83,76 +83,160 @@
   .blog-post p { font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 25px; }
   .blog-post h2 { font-size: 28px; color: #1f272b; margin-top: 40px; margin-bottom: 20px; font-weight: 700; }
   .blog-post h3 { font-size: 22px; color: #1f272b; margin-top: 30px; margin-bottom: 15px; font-weight: 600; }
-  .blog-post ul li, .blog-post ol li { font-size: 17px; line-height: 1.9; color: #555; margin-bottom: 10px; }
-  .blog-post a { color: #a4c639; font-weight: 600; text-decoration: none; }
-  .blog-post a:hover { text-decoration: underline; }
   
-  /* EQUITY FLOW DIAGRAM */
-  .equity-flow {
-    background: #fff;
-    border-radius: 18px;
-    padding: 45px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-    margin: 35px 0;
-  }
-  .equity-flow h3 { text-align: center; margin-bottom: 35px; }
-  .flow-diagram {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .flow-box {
-    padding: 20px 25px;
-    border-radius: 12px;
-    text-align: center;
-    position: relative;
-  }
-  .flow-revenue {
-    background: #e8f5e9;
-    border: 2px solid #28a745;
-  }
-  .flow-revenue h5 { color: #28a745; font-weight: 700; font-size: 16px; margin: 0; }
-  .flow-revenue p { font-size: 13px; color: #555; margin: 5px 0 0 0; }
-  .flow-arrow {
-    text-align: center;
-    color: #1f272b;
-    font-size: 22px;
-    padding: 8px 0;
-  }
-  .flow-business {
-    background: #eef2ff;
-    border: 2px solid #007bff;
-  }
-  .flow-business h5 { color: #007bff; font-weight: 700; font-size: 16px; margin: 0; }
-  .flow-business p { font-size: 13px; color: #555; margin: 5px 0 0 0; }
-  .flow-split {
-    display: flex;
-    gap: 15px;
-  }
-  .flow-expense {
-    background: #fff3cd;
-    border: 2px solid #ffc107;
-    flex: 1;
-  }
-  .flow-expense h5 { color: #856404; font-weight: 700; font-size: 14px; margin: 0; }
-  .flow-expense p { font-size: 12px; color: #666; margin: 4px 0 0 0; }
-  .flow-draw {
-    background: #f4f9ea;
+  /* ===== QUICK ANSWER BOX (fills white stripe) ===== */
+  .quick-answer {
+    background: linear-gradient(135deg, #f4f9ea 0%, #e8f5d0 100%);
     border: 2px solid #a4c639;
-    flex: 1;
+    border-radius: 18px;
+    padding: 35px 40px;
+    margin: -60px auto 35px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    max-width: 850px;
   }
-  .flow-draw h5 { color: #6b8e23; font-weight: 700; font-size: 14px; margin: 0; }
-  .flow-draw p { font-size: 12px; color: #666; margin: 4px 0 0 0; }
-  .flow-personal {
-    background: #fdeaea;
-    border: 2px solid #dc3545;
+  .quick-answer .qa-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #a4c639;
+    color: #1f272b;
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
   }
-  .flow-personal h5 { color: #dc3545; font-weight: 700; font-size: 14px; margin: 0; }
-  .flow-personal p { font-size: 12px; color: #666; margin: 4px 0 0 0; }
+  .quick-answer p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+  }
   
-  /* QUICK COMPARISON TABLE */
+  /* ===== SIDEBAR WIDGETS ===== */
+  /* Popular Guides Widget */
+  .popular-widget {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+    border: 1px solid #eef0f2;
+  }
+  .popular-widget .pop-head {
+    background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%);
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .popular-widget .pop-head i { color: #a4c639; font-size: 18px; }
+  .popular-widget .pop-head h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .popular-widget .pop-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .popular-widget .pop-item:last-child { border-bottom: none; }
+  .popular-widget .pop-item:hover { background: #f8f9ea; }
+  .popular-widget .pop-num {
+    width: 28px;
+    height: 28px;
+    background: #f4f9ea;
+    color: #a4c639;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  .popular-widget .pop-item h6 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f272b;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .popular-widget .pop-item small { font-size: 11px; color: #888; }
+  
+  /* Quick Tip Card */
+  .tip-widget {
+    background: linear-gradient(145deg, #a4c639 0%, #8fb323 100%);
+    border-radius: 15px;
+    padding: 25px;
+    color: #1f272b;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tip-widget::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+  }
+  .tip-widget .tip-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  .tip-widget p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Trust Badge Strip */
+  .trust-strip {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eef0f2;
+  }
+  .trust-strip .trust-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .trust-strip .trust-icons span {
+    font-size: 20px;
+  }
+  .trust-strip p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Method Compare Table */
   .draw-table {
     width: 100%;
     border-collapse: separate;
@@ -167,161 +251,48 @@
     background: #1f272b;
     color: #fff;
     padding: 18px 15px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     text-align: left;
   }
-  .draw-table th:first-child { color: #a4c639; }
   .draw-table td {
-    padding: 15px;
+    padding: 14px 15px;
     font-size: 14px;
     border-bottom: 1px solid #eef0f2;
     color: #555;
   }
   .draw-table tr:last-child td { border-bottom: none; }
   .draw-table tr:hover td { background: #f9f9f9; }
+  .draw-table td:first-child { font-weight: 600; color: #1f272b; }
   
-  /* METHOD CARDS */
-  .method-pair {
-    display: flex;
-    gap: 25px;
-    margin: 35px 0;
-  }
-  .method-card {
-    flex: 1;
+  /* FAQ Cards */
+  .faq-card {
     background: #fff;
-    padding: 35px;
-    border-radius: 18px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.07);
-    transition: all 0.3s;
-    border-top: 6px solid;
-  }
-  .method-card:hover { transform: translateY(-6px); box-shadow: 0 18px 45px rgba(0,0,0,0.12); }
-  .method-card.draw-card { border-top-color: #a4c639; }
-  .method-card.salary-card { border-top-color: #007bff; }
-  .method-card .m-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-  }
-  .draw-card .m-badge { background: #f4f9ea; color: #6b8e23; }
-  .salary-card .m-badge { background: #eef2ff; color: #0056b3; }
-  .method-card h3 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
-  .method-card .m-sub { font-size: 13px; color: #888; margin-bottom: 20px; }
-  .method-card ul { list-style: none; padding: 0; margin: 0; }
-  .method-card ul li { font-size: 14px; color: #555; margin-bottom: 10px; padding-left: 22px; position: relative; line-height: 1.7; }
-  .method-card ul li::before { content: '\f058'; font-family: 'FontAwesome'; position: absolute; left: 0; font-size: 13px; }
-  .draw-card ul li::before { color: #a4c639; }
-  .salary-card ul li::before { color: #007bff; }
-  @media (max-width: 768px) {
-    .method-pair { flex-direction: column; }
-  }
-  
-  /* RECORDING STEPS */
-  .rec-step {
-    background: #fff;
+    padding: 30px 35px;
     border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 25px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    display: flex;
-    align-items: flex-start;
+    height: 100%;
     transition: all 0.3s;
-    border-left: 6px solid transparent;
+    border-top: 5px solid transparent;
   }
-  .rec-step:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
-  .rec-step .step-num {
-    width: 50px;
-    height: 50px;
-    background: #1f272b;
-    color: #a4c639;
-    border-radius: 14px;
+  .faq-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+  .faq-card .fc-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
-    font-weight: 800;
-    margin-right: 22px;
-    flex-shrink: 0;
+    font-size: 24px;
+    margin-bottom: 18px;
   }
-  .rec-step .step-body h4 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-  .rec-step .step-body p { font-size: 15px; color: #555; line-height: 1.8; margin: 0; }
-  .rec-step .step-body code {
-    background: #f4f9ea;
-    color: #6b8e23;
-    padding: 2px 8px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  
-  /* TAX WARNING BANNER */
-  .tax-warning {
-    background: linear-gradient(145deg, #1f272b 0%, #3a2800 100%);
-    border-radius: 18px;
-    padding: 45px;
-    color: #fff;
-    margin: 40px 0;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #ffc107;
-  }
-  .tax-warning::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 180px;
-    height: 180px;
-    background: rgba(255, 193, 7, 0.08);
-    border-radius: 50%;
-  }
-  .tax-warning h3 { color: #ffca2c; margin-bottom: 20px; position: relative; z-index: 2; }
-  .tax-warning p { color: #ccc; font-size: 16px; line-height: 1.8; position: relative; z-index: 2; }
-  
-  /* INTERLINK BOX */
-  .interlink-box {
-    background: linear-gradient(145deg, #f0f7ea 0%, #e6f3d8 100%);
-    border: 2px solid #a4c639;
-    border-radius: 18px;
-    padding: 40px;
-    margin: 35px 0;
-  }
-  .interlink-box h3 { color: #1f272b; margin-bottom: 20px; }
-  .interlink-box .link-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-  }
-  .interlink-box .quick-link {
-    background: #fff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s;
-  }
-  .interlink-box .quick-link:hover { transform: translateX(5px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
-  .interlink-box .quick-link i { color: #a4c639; font-size: 18px; margin-right: 12px; }
-  .interlink-box .quick-link span { font-size: 14px; font-weight: 600; color: #1f272b; }
+  .faq-card h5 { font-weight: 700; font-size: 17px; margin-bottom: 10px; }
+  .faq-card p { font-size: 14px; color: #666; line-height: 1.7; margin: 0; }
   
   /* Callouts */
   .callout-green {
     background: linear-gradient(135deg, #f4f9ea 0%, #e8f5d0 100%);
     border-left: 5px solid #a4c639;
-    padding: 30px;
-    border-radius: 0 12px 12px 0;
-    margin: 35px 0;
-  }
-  .callout-red {
-    background: linear-gradient(135deg, #fdeaea 0%, #f9d4d4 100%);
-    border-left: 5px solid #dc3545;
     padding: 30px;
     border-radius: 0 12px 12px 0;
     margin: 35px 0;
@@ -333,14 +304,19 @@
     border-radius: 0 12px 12px 0;
     margin: 35px 0;
   }
-  .callout-green p, .callout-red p, .callout-blue p { margin: 0; font-size: 17px; line-height: 1.9; color: #555; }
+  .callout-red {
+    background: linear-gradient(135deg, #fdeaea 0%, #f9d4d4 100%);
+    border-left: 5px solid #dc3545;
+    padding: 30px;
+    border-radius: 0 12px 12px 0;
+    margin: 35px 0;
+  }
   
   /* Sidebar */
   .sidebar-item { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; }
   
   /* Accordion */
   .accordion .card-header button:hover { color: #a4c639 !important; }
-  .accordion .card-body a { color: #a4c639; font-weight: 600; }
 
   /* Page Heading */
   .page-heading.header-text h1 { color: #ffffff !important; font-weight: 800; font-size: 48px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
@@ -350,7 +326,7 @@
   .section-heading h2 em { color: #a4c639; font-style: normal; }
 </style>
 
-<!-- US-wide business schema (Rule 25) -->
+<!-- US-wide business schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -360,10 +336,7 @@
   "url": "https://countrights.com/",
   "email": "contact@countrights.com",
   "priceRange": "$$",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
+  "areaServed": { "@type": "Country", "name": "United States" },
   "sameAs": [
     "https://www.facebook.com/countrights",
     "https://x.com/CountRights",
@@ -378,8 +351,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "What Is an Owner's Draw? How It Works + Tax Impact",
-  "description": "A complete guide to owner's draws for LLC owners, including how draws work, tax implications, and how to record them in QuickBooks.",
+  "headline": "What Is an Owner's Draw? How It Works + Tax Rules (2026)",
+  "description": "A complete guide to understanding owner's draws, how they differ from salaries, and the tax implications for LLC owners.",
   "author": { "@type": "Organization", "name": "CountRights" },
   "publisher": { "@type": "Organization", "name": "CountRights" },
   "datePublished": "2026-08-15",
@@ -401,27 +374,27 @@
 }
 </script>
 
-<!-- FAQ Schema (15 Questions with Interlinks) -->
+<!-- FAQ Schema (15 Questions) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is an owner's draw?", "acceptedAnswer": { "@type": "Answer", "text": "An owner's draw is money taken from your business profits by the business owner for personal use. Unlike a salary, it's not subject to payroll tax withholding. It reduces your owner's equity account rather than appearing as a business expense on your Profit & Loss statement. Common for LLCs and sole proprietorships." } },
-    { "@type": "Question", "name": "Do I pay taxes on owner's draws?", "acceptedAnswer": { "@type": "Answer", "text": "You don't pay tax at the moment of withdrawal, but you DO pay income tax and self-employment tax on your full share of business profits regardless of how much you drew. This is why quarterly estimated tax payments are critical." } },
-    { "@type": "Question", "name": "Owner's draw vs salary — what's the difference?", "acceptedAnswer": { "@type": "Answer", "text": "A draw is a flexible withdrawal from equity with no withholding. A salary is formal W-2 payroll with taxes withheld. Draws work for LLCs taxed as sole proprietorships/partnerships. S-corps and C-corps owners must use salary (plus distributions)." } },
-    { "@type": "Question", "name": "How do I record an owner's draw in QuickBooks?", "acceptedAnswer": { "@type": "Answer", "text": "Write a check or transfer from your business account, categorize it to the Owner's Draw equity account. Never code it as a business expense. Set up the account in your chart of accounts under Equity." } },
-    { "@type": "name": "Question", "name": "Can I take draws from my S-corp?", "acceptedAnswer": { "@type": "Answer", "text": "S-corp owners who work in the business must pay themselves a reasonable W-2 salary first. They can supplement with non-wage distributions, but skipping salary to take only distributions attracts IRS scrutiny." } },
-    { "@type": "Question", "name": "Is there a limit on how much I can draw?", "acceptedAnswer": { "@type": "Answer", "text": "No legal limit, but you can only draw from available profits/capital. Drawing more than business equity creates a negative capital account and cash flow problems. Always leave enough for taxes and expenses." } },
-    { "@type": "Question", "name": "What's the difference between a draw and a distribution?", "acceptedAnswer": { "@type": "Answer", "text": "They're essentially the same concept — taking money from business profits. 'Draw' is used for sole props and partnerships. 'Distribution' is the term for S-corps and LLCs taxed as corporations." } },
-    { "@type": "Question", "name": "Can I write off owner's draws as a business expense?", "acceptedAnswer": { "@type": "Answer", "text": "No. Draws are never business expenses. They're equity reductions. If you tried to deduct them, you'd understate profit and create tax errors requiring expensive cleanup." } },
-    { "@type": "Question", "name": "How do draws affect my balance sheet?", "acceptedAnswer": { "@type": "Answer", "text": "Draws reduce your Owner's Equity. The Owner's Draw account carries a debit balance that decreases total equity. They never appear on the Profit & Loss." } },
-    { "@type": "Question", "name": "Should I set up draws as regular payments?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scheduling weekly or monthly draws creates consistency and makes bookkeeping cleaner than random withdrawals. It also helps with personal budgeting." } },
-    { "@type": "Question", "name": "Can multiple LLC members take different draw amounts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your operating agreement allows it. Active members can also receive guaranteed payments for services before profits are split by ownership percentage." } },
-    { "@type": "Question", "name": "What's a capital account?", "acceptedAnswer": { "@type": "Answer", "text": "Your capital account tracks your ownership stake: initial contributions + accumulated profits − accumulated draws. A negative capital account may indicate financial trouble or tax issues." } },
-    { "@type": "Question", "name": "How do draws work with quarterly taxes?", "acceptedAnswer": { "@type": "Answer", "text": "Draws don't trigger tax withholding, so YOU must set aside money. Best practice: transfer 25-30% of profits to a separate tax savings account before taking draws." } },
-    { "@type": "Question", "name": "What if I pay personal expenses from my business account?", "acceptedAnswer": { "@type": "Answer", "text": "Record them as owner's draws, never as business expenses. Repeated commingling can jeopardize LLC liability protection." } },
-    { "@type": "Question", "name": "Do I need to track draws if my business is small?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Even solo owners need clean equity tracking for accurate taxes and legal protection. Professional bookkeeping handles this automatically." } }
+    { "@type": "Question", "name": "What is an owner's draw?", "acceptedAnswer": { "@type": "Answer", "text": "An owner's draw is money you take from your business profits for personal use. It reduces your owner's equity in the company. It's not a salary, not a business expense, and you don't withhold taxes at the time of the draw. Instead, you pay income and self-employment tax on your share of the business's overall profits." } },
+    { "@type": "Question", "name": "Is an owner's draw the same as a salary?", "acceptedAnswer": { "@type": "Answer", "text": "No. A salary goes through payroll with tax withholding and W-2 reporting. An owner's draw is simply a transfer from your business account to your personal account, recorded against your equity. Sole proprietors and LLC partners take draws; only S-Corp and C-Corp owners on payroll receive salaries." } },
+    { "@type": "Question", "name": "Do I pay taxes on owner's draws?", "acceptedAnswer": { "@type": "Answer", "text": "Not at the moment of the draw itself. You pay income tax and self-employment tax on your share of the LLC's total profits for the year, regardless of how much you actually withdrew. This is why quarterly estimated payments are essential." } },
+    { "@type": "Question", "name": "How do I record an owner's draw in QuickBooks?", "acceptedAnswer": { "@type": "Answer", "text": "Record draws using an Owner's Draw or Owner's Equity account (equity type). Write a check or make a transfer from the business account, categorizing it to the Owner's Draw account — never as a business expense. Miscategorizing draws as expenses is a common error that requires costly cleanup." } },
+    { "@type": "Question", "name": "How often can I take an owner's draw?", "acceptedAnswer": { "@type": "Answer", "text": "There's no legal limit on frequency. Some owners take weekly draws like a paycheck; others prefer monthly or quarterly. The key is consistency and always leaving enough for taxes (25-30% of profits) and business expenses." } },
+    { "@type": "Question", "name": "What's the difference between a draw and a distribution?", "acceptedAnswer": { "@type": "Answer", "text": "They're essentially the same thing. 'Draw' is commonly used for sole proprietorships and partnerships, while 'distribution' is the term for S-corps and LLCs taxed as corporations. The mechanics differ slightly by entity type but both represent taking profits out of the business." } },
+    { "@type": "Question", "name": "Can I take unlimited draws?", "acceptedAnswer": { "@type": "Answer", "text": "You can only draw from available profits and contributed capital. You can't draw more than the business can sustainably spare. Taking excessive draws that harm the company's ability to pay debts may be considered reckless and could complicate liability protection." } },
+    { "@type": "Question", "name": "What are guaranteed payments vs owner's draws?", "acceptedAnswer": { "@type": "Answer", "text": "Guaranteed payments are set amounts paid to specific LLC members for services regardless of profitability, deducted as a business expense. Owner's draws are discretionary withdrawals from profits based on ownership percentage. Multi-member LLCs often use both: guaranteed payments for working members, draws for profit distribution." } },
+    { "@type": "Question", "name": "Does an owner's draw affect my Profit & Loss?", "acceptedAnswer": { "@type": "Answer", "text": "No. Draws never appear on your Profit & Loss statement as expenses. They're recorded in the equity section of your Balance Sheet, reducing your owner's equity. If draws appear as expenses on your P&L, your books are miscategorized and need correction." } },
+    { "@type": "Question", "name": "Should I switch from draws to S-Corp salary?", "acceptedAnswer": { "@type": "Answer": { "@type": "Answer", "text": "It depends on profit level. S-Corp election potentially saves on self-employment taxes when profits consistently exceed $60,000-$80,000 net. Below that threshold, draws with default taxation are usually simpler and cost-effective. Consult a professional to run the numbers." } } },
+    { "@type": "Question", "name": "Can an S-Corp owner take draws?", "acceptedAnswer": { "@type": "Answer", "text": "S-Corp owners can take distributions from after-tax profits, but only AFTER paying themselves a reasonable W-2 salary. Taking distributions without salary to avoid payroll taxes is a major IRS audit trigger. The reasonable salary requirement comes first." } },
+    { "@type": "Question", "name": "What happens to draws in a multi-member LLC?", "acceptedAnswer": { "@type": "Answer", "text": "In multi-member LLCs, draws are typically distributed according to ownership percentages unless the operating agreement specifies otherwise. Members can draw against their capital accounts. The operating agreement governs who can draw and when." } },
+    { "@type": "Question", "name": "Are owner draws reported on Schedule C?", "acceptedAnswer": { "@type": "Answer", "text": "No. Draws don't appear on Schedule C at all — they're balance sheet equity transactions. What IS reported is your net profit (revenue minus expenses). You pay tax on the full net profit whether you drew the money or left it in the business." } },
+    { "@type": "Question", "name": "What if my business loses money — can I still draw?", "acceptedAnswer": { "@type": "Answer", "text": "You can draw from previously contributed capital or accumulated profits, but drawing beyond that may create loans from the company to you (documented properly) or reduce equity below zero. Consult your accountant before drawing during unprofitable periods." } },
+    { "@type": "Question", "name": "How much should I set aside for taxes before drawing?", "acceptedAnswer": { "@type": "Answer", "text": "A common guideline is 25-30% of profits set aside for federal income tax and self-employment tax combined. State taxes may add more depending on your state. Opening a dedicated tax savings account and transferring this percentage with every deposit prevents year-end surprises." } }
   ]
 }
 </script>
@@ -431,9 +404,7 @@
 <body>
 
 <!-- Preloader -->
-<div id="preloader">
-  <div class="jumper"><div></div><div></div><div></div></div>
-</div>
+<div id="preloader"><div class="jumper"><div></div><div></div><div></div></div></div>
 
 <!-- Sub Header -->
 <div class="sub-header">
@@ -462,13 +433,12 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="../index.html"><h2>CountRights</h2></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           
+          <!-- OUR SERVICES DROPDOWN -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="../services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
             <div class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -482,6 +452,7 @@
             </div>
           </li>
 
+          <!-- Conversions Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
             <div class="dropdown-menu">
@@ -492,7 +463,7 @@
                   <a class="dropdown-item" href="../sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
                   <a class="dropdown-item" href="../sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
                   <a class="dropdown-item" href="../sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
-                  <a class="dropdown-item" href="../sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                  <a class="dropdown-item href="../sage-intacct-to-quickbooks.html">Sage Intacct</a>
                 </div>
               </div>
               <a class="dropdown-item" href="../xero-to-quickbooks.html">Xero to QuickBooks</a>
@@ -519,14 +490,20 @@
     <div class="row">
       <div class="col-md-12">
         <h1>What Is an Owner's Draw?</h1>
-        <span>Resources • LLC Compensation • 9 min read</span>
+        <span>Resources • LLC Compensation • 8 min read</span>
       </div>
     </div>
   </div>
 </div>
 
+<!-- ===== QUICK ANSWER BOX (fills white stripe) ===== -->
+<div class="quick-answer">
+  <div class="qa-label"><i class="fa fa-bolt"></i> Quick Answer</div>
+  <p><strong>An owner's draw is money you take from your business profits for personal use.</strong> It reduces your equity stake, isn't a business expense, and doesn't appear on your Profit & Loss. You pay income and self-employment tax on total business profits — not on individual draws. LLCs and partnerships use draws; S-Corp owners must pay themselves a W-2 salary first, then supplement with distributions.</p>
+</div>
+
 <!-- Blog Post Content -->
-<div class="services" style="padding: 80px 0; background: #f9f9f9;">
+<div class="services" style="padding: 0 0 80px; background: #f9f9f9;">
   <div class="container">
     <div class="row">
       
@@ -536,64 +513,17 @@
         <div style="background: #ffffff; padding: 50px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border-top: 5px solid #a4c639;" class="blog-post">
           
           <p>
-            Money comes into your business. You need money to live. So you just... take some, right? Sort of — but <strong>how</strong> you take that money matters enormously for taxes, legal protection, and clean books. That's the owner's draw.
-
+            Your business made money this month. You need some of it for rent, groceries, or that vacation you've been postponing. But how do you actually get paid when you're the owner? For most LLC owners and self-employed professionals, the answer is an <strong>owner's draw</strong>.
           </p>
           <p>
-            An <strong>owner's draw</strong> is money you withdraw from your business's profits for personal use. Simple concept, but it comes with rules that surprise most first-time business owners. This guide covers everything.
-
+            The concept sounds simple — transfer money from your business account to your personal account. But the tax treatment catches many business owners off guard. Draws aren't salaries, aren't expenses, and aren't taxed at the moment you take them. Understanding how they actually work is essential for avoiding IRS problems and managing your cash flow.
           </p>
-
-          <h2>The Simple Definition</h2>
           <p>
-            Think of your business as a bucket. Revenue flows in, expenses flow out, and what remains is profit. An owner's draw is you dipping into that bucket to pay yourself. Unlike a <a href="how-to-pay-yourself-llc-owner.html">W-2 salary</a>, draws aren't payroll — no taxes are withheld, no payroll system is needed, and the amount is flexible.
+            This guide explains everything: what draws are, how they differ from salaries, how they affect your taxes, and how to record them properly.
           </p>
 
-          <!-- EQUITY FLOW DIAGRAM -->
-          <div class="equity-flow">
-            <h3><i class="fa fa-sitemap" style="color: #a4c639; margin-right: 10px;"></i>How Money Flows Through Your Business</h3>
-            
-            <div class="flow-diagram">
-              <div class="flow-box flow-revenue">
-                <h5>💰 Business Revenue</h5>
-                <p>Client payments, sales, deposits</p>
-              </div>
-              
-              <div class="flow-arrow">↓</div>
-              
-              <div class="flow-box flow-business">
-                <h5>🏢 Business Account</h5>
-                <p>Revenue arrives here first — never into personal</p>
-              </div>
-              
-              <div class="flow-arrow">↙ ↓ ↘</div>
-              
-              <div class="flow-split">
-                <div class="flow-box flow-expense">
-                  <h5>📊 Business Expenses</h5>
-                  <p>Rent, software, contractors</p>
-                </div>
-                <div class="flow-box flow-draw">
-                  <h5>✅ Owner's Draw</h5>
-                  <p>Scheduled transfer to personal</p>
-                </div>
-              </div>
-              
-              <div class="flow-arrow">↓</div>
-              
-              <div class="flow-box flow-personal">
-                <h5>🏠 Personal Account</h5>
-                <p>Pay personal bills from here</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="callout-green">
-            <p><strong>💡 The Golden Rule:</strong> Money flows <em>into</em> your business and exits via two channels: business expenses or owner's draws. Personal expenses <strong>never</strong> leave the business account directly. This is the core principle behind <a href="how-to-separate-business-personal-finances.html">separating business and personal finances</a>.</p>
-          </div>
-
-          <h2>Draw vs. Salary: Quick Comparison</h2>
-
+          <h2>Owner's Draw vs. Salary: The Key Differences</h2>
+          
           <table class="draw-table">
             <thead>
               <tr>
@@ -604,292 +534,242 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Payroll taxes withheld</strong></td>
-                <td>❌ No</td>
-                <td>✅ Yes</td>
+                <td>Who uses it</td>
+                <td>Sole props, LLCs (default taxation), Partnerships</td>
+                <td>S-Corps, C-Corps</td>
               </tr>
               <tr>
-                <td><strong>Requires payroll system</strong></td>
-                <td>❌ No</td>
-                <td>✅ Yes</td>
-              </tr>
-              <tr>
-                <td><strong>Flexible amounts</strong></td>
-                <td>✅ Yes</td>
-                <td>❌ Fixed schedule</td>
-              </tr>
-              <tr>
-                <td><strong>Appears on P&L</strong></td>
-                <td>❌ No (equity only)</td>
-                <td>✅ Yes (wage expense)</td>
-              </tr>
-              <tr>
-                <td><strong>Works for sole props/LLCs</strong></td>
-                <td>✅ Yes</td>
-                <td>❌ Generally no</td>
-              </tr>
-              <tr>
-                <td><strong>Required for S-corps</strong></td>
-                <td>❌ No</td>
-                               <td>✅ Yes (reasonable comp)</td>
-              </tr>
-              <tr>
-                <td><strong>Tax timing</strong></td>
-                <td>On profits (quarterly)</td>
+                <td>Tax withholding</td>
+                <td>None at time of draw</td>
                 <td>Withheld each paycheck</td>
+              </tr>
+              <tr>
+                <td>Frequency</td>
+                <td>Flexible (whenever needed)</td>
+                <td>Fixed schedule (weekly, biweekly)</td>
+              <td>Amount</td>
+                <td>Flexible, based on available profits</td>
+                <td>Must be "reasonable compensation"</td>
+              </tr>
+              <tr>
+                <td>Appears on P&L?</td>
+                <td>No (equity transaction only)</td>
+                <td>Yes (business expense)</td>
+              </tr>
+              <tr>
+                <td>Payroll taxes</td>
+                <td>Self-employment tax on profits</td>
+                <td>FICA withheld + employer match</td>
+              </tr>
+              <tr>
+                <td>Software recording</td>
+                <td>Owner's Draw / Equity account</td>
+                <td>Payroll module / Wages expense</td>
               </tr>
             </tbody>
           </table>
 
-          <h2>Who Can Use Owner's Draws?</h2>
-
-          <div class="method-pair">
-            <div class="method-card draw-card">
-              <div class="m-badge">Draw Eligible</div>
-              <h3>Default LLCs & Sole Props</h3>
-              <div class="m-sub">Use draws freely</div>
-              <ul>
-                <li>Sole proprietors</li>
-                <li>Single-member LLCs (disregarded)</li>
-                <li>Multi-member LLCs (partnership)</li>
-                <li>General partnerships</li>
-              </ul>
-            </div>
-
-            <div class="method-card salary-card">
-              <div class="m-badge">Salary Required</div>
-              <h3>S-corps & C-corps</h3>
-              <div class="m-sub">W-2 first, then distributions</div>
-              <ul>
-                <li>LLCs taxed as S-corps</li>
-                <li>LLCs taxed as C-corps</li>
-                <li>Traditional corporations</li>
-                <li>Must pay "reasonable salary" first</li>
-              </ul>
-            </div>
-          </div>
-
-          <h2>How to Record a Draw in QuickBooks</h2>
-
-          <!-- RECORDING STEPS -->
-          <div class="rec-step" style="border-left-color: #a4c639;">
-            <div class="step-num">1</div>
-            <div class="step-body">
-              <h4>Create the Equity Account</h4>
-              <p>In your <a href="chart-of-accounts-explained.html">chart of accounts</a>, create an <code>Owner's Draw</code> account under the <strong>Equity</strong> section. QuickBooks Online: Gear → Chart of Accounts → New → Account Type: Equity.</p>
-            </div>
-          </div>
-
-          <div class="rec-step" style="border-left-color: #007bff;">
-            <div class="step-num">2</div>
-            <div class="step-body">
-              <h4>Write the Check or Transfer</h4>
-              <p>From your <strong>business</strong> bank account, write a check to yourself or make a bank transfer. Categorize it to the <code>Owner's Draw</code> account — <strong>never</strong> to an expense account.</p>
-            </div>
-          </div>
-
-          <div class="rec-step" style="border-left-color: #dc3545;">
-            <div class="step-num">3</div>
-            <div class="step-body">
-              <h4>Verify Balance Sheet Impact</h4>
-              <p>Check your Balance Sheet. Owner's Draw should show a <strong>debit balance</strong> that reduces total equity. Your Profit & Loss should be completely unaffected by draws.</p>
-            </div>
-          </div>
-
-          <!-- TAX WARNING -->
-          <div class="tax-warning">
-            <h3><i class="fa fa-exclamation-triangle" style="margin-right: 10px;"></i>The Tax Trap Most Owners Fall Into</h3>
-            <p>
-              You drew $40,000 but your business earned $100,000 in profit? You owe income tax AND self-employment tax on the <strong>full $100,000</strong> — not just what you withdrew. The IRS taxes allocated profit, not draws. This is why <a href="quarterly-tax-deadlines-guide.html" style="color: #ffca2c;">quarterly estimated taxes</a> are non-negotiable.
+          <h2>How Taxes Actually Work on Draws</h2>
+          <p>
+            Here's what surprises most LLC owners: <strong>you pay taxes on profits, not on draws.</strong> If your business earns $80,000 in profit and you only drew $30,000, you still owe income and self-employment tax on the full $80,000.
+          </p>
+          <p>
+            This means draws don't reduce your tax bill — they're just withdrawals of money you've already earned (or will owe taxes on). The self-employment tax rate is 15.3% (covering both employer and employee portions of Social Security and Medicare), applied on 92.35% of your net self-employment earnings.
+          </p>
+          
+          <div class="callout-green">
+            <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
+              <strong style="color: #333;">💡 Critical Habit:</strong> Set aside 25-30% of every deposit into a separate tax savings account. When quarterly estimated taxes are due, the money is already there. This single practice prevents the #1 cash flow crisis for self-employed owners. See our <a href="quarterly-tax-deadlines-guide.html" style="color: #a4c639; font-weight: 600;">quarterly tax deadlines guide</a>.
             </p>
           </div>
 
-          <h2>Best Practices</h2>
-          <ul>
-            <li><strong>Set a schedule:</strong> Weekly or monthly draws create consistency and cleaner books</li>
-            <li><strong>Leave a tax reserve:</strong> Always set aside 25-30% before drawing</li>
-            <li><strong>Document everything:</strong> Every draw should be traceable in your <a href="../quickbooks-online.html">QuickBooks</a> file</li>
-            <li><strong>Check your operating agreement:</strong> Multi-member LLCs should follow the draw terms specified</li>
-            <li><strong>Never code draws as expenses:</strong> This is the #1 categorization error we fix in <a href="../catch-up-bookkeeping-services.html">catch-up bookkeeping</a></li>
-          </ul>
-
-          <!-- INTERLINK HUB -->
-          <div class="interlink-box">
-            <h3><i class="fa fa-link" style="color: #a4c639; margin-right: 10px;"></i>Related Guides You'll Find Helpful</h3>
-            <div class="link-grid">
-              <a href="how-to-pay-yourself-llc-owner.html" class="quick-link"><i class="fa fa-user-circle"></i><span>How to Pay Yourself (LLC Owner)</span></a>
-              <a href="how-to-separate-business-personal-finances.html" class="quick-link"><i class="fa fa-exchange"></i><span>Separate Business & Personal</span></a>
-              <a href="quarterly-tax-deadlines-guide.html" class="quick-link"><i class="fa fa-calendar"></i><span>Quarterly Tax Deadlines</span></a>
-              <a href="chart-of-accounts-explained.html" class="quick-link"><i class="fa fa-sitemap"></i><span>Chart of Accounts</span></a>
-              <a href="debits-and-credits-explained.html" class="quick-link"><i class="fa fa-balance-scale"></i><span>Debits & Credits</span></a>
-              <a href="../monthly-bookkeeping-services.html" class="quick-link"><i class="fa fa-book"></i><span>Monthly Bookkeeping</span></a>
-              <a href="small-business-payroll-guide.html" class="quick-link"><i class="fa fa-users"></i><span>Payroll Guide</span></a>
-              <a href="../accounting-software-migration.html" class="quick-link"><i class="fa fa-exchange"></i><span>Software Migration</span></a>
-            </div>
+          <h2>Recording Draws Correctly</h2>
+          <p>
+            Proper bookkeeping of draws protects your LLC's liability shield and keeps your books accurate. In <a href="../quickbooks-online.html">QuickBooks Online</a> or any software, draws go to an <strong>Owner's Draw</strong> or <strong>Owner's Equity</strong> account (equity type on your Balance Sheet).
+          </p>
+          <p>
+            The most common error: coding draws as business expenses. This artificially deflates your P&L, triggers incorrect tax calculations, and creates months of cleanup. If your books already have this problem, our <a href="../catch-up-bookkeeping-services.html">catch-up bookkeeping service</a> reclassifies historical draws correctly.
+          </p>
+          
+          <div class="callout-red">
+            <p style="font-size: 17px; line-height: 1.9; color: #555; margin: 0;">
+              <strong style="color: #dc3545;">⚠ Never Do This:</strong> Don't code personal expenses paid from the business account as business expenses. Record them as draws instead. Mixing personal and business expenses (commingling) jeopardizes your liability protection. See our guide on <a href="how-to-separate-business-personal-finances.html" style="color: #a4c639; font-weight: 600;">separating business & personal finances</a>.
+            </p>
           </div>
 
-          <h2>Get Professional Equity Tracking</h2>
+          <h2>When Should You Switch to S-Corp Salary?</h2>
           <p>
-            Draws are one of the most miscategorized transactions in small business bookkeeping. Our <a href="../monthly-bookkeeping-services.html">monthly bookkeeping services</a> track every draw correctly, maintain your equity accounts, and ensure your <a href="tax-preparation-checklist-for-small-businesses.html">tax preparation</a> is stress-free. <a href="../contact.html">Contact CountRights today</a> for a free consultation.
+            Here's the strategic question: with default LLC taxation, you pay 15.3% self-employment tax on ALL profits. With S-Corp election, you only pay payroll taxes on your salary — remaining distributions avoid SE tax. The savings typically kick in when consistent net profits exceed $60,000-$80,000.
+          </p>
+          
+          <div class="row" style="margin: 30px 0;">
+            <div class="col-md-6 mb-4">
+              <div class="faq-card" style="border-top: 5px solid #a4c639;">
+                <div class="fc-icon" style="background: #f4f9ea; color: #a4c639;"><i class="fa fa-money-bill-wave"></i></div>
+                <h5>Stick With Draws If:</h5>
+                <p style="font-size: 14px; line-height: 1.8; color: #555;">Profits are under $60K/year, you value simplicity, your income varies significantly, or you're reinvesting heavily back into the business.</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="faq-card" style="border-top: 5px solid #007bff;">
+                <div class="fc-icon" style="background: #eef2ff; color: #007bff;"><i class="fa fa-building"></i></div>
+                <h5>Consider S-Corp If:</h5>
+                <p style="font-size: 14px; line-height: 1.8; color: #555;">Consistent profits over $60-80K, stable income, you work full-time in the business, and payroll setup costs won't eat the savings.</p>
+              </div>
+            </div>
+          </div>
+          
+          <p>
+            Our team helps you evaluate this decision with real numbers and handles the <a href="../payroll-services.html">payroll setup</a> if S-Corp election makes sense. For deeper coverage, see our comprehensive <a href="how-to-pay-yourself-llc-owner.html">LLC owner compensation guide</a>.
+          </p>
+
+          <h2>Let Us Handle Your Books</h2>
+          <p>
+            Tracking draws, maintaining proper equity accounts, and calculating quarterly taxes is exactly what our <a href="../monthly-bookkeeping-services.html">monthly bookkeeping services</a> handle for you. Every draw is recorded correctly, every receipt is categorized, and you always know your true financial position. <a href="../contact.html" style="color: #a4c639; font-weight: 600;">Get a free consultation today</a>.
           </p>
 
         </div>
+        <!-- End of Card -->
         
-        <!-- FAQ Section (With Interlinks Inside Answers) -->
+        <!-- FAQ Section -->
         <div style="margin-top: 50px;">
           <div class="section-heading" style="text-align: left; margin-bottom: 30px;">
             <h2>Frequently Asked <em>Questions</em></h2>
           </div>
           
           <div class="accordion" id="faqAccordion">
-            
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead1" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    What is an owner's draw?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link" data-toggle="collapse" data-target="#faq1" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What is an owner's draw?</button></h5>
               </div>
               <div id="faq1" class="collapse show" aria-labelledby="faqHead1" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  An owner's draw is money taken from your business profits for personal use. It reduces your owner's equity — not your business expenses. It's the standard way sole proprietors and LLC owners pay themselves. See our full <a href="how-to-pay-yourself-llc-owner.html">LLC compensation guide</a> for the complete framework.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">An owner's draw is money you take from your business profits for personal use. It reduces your equity, isn't a business expense, and you pay taxes on total business profits rather than individual draws.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead2" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    Do I pay taxes on owner's draws?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Is an owner's draw the same as a salary?</button></h5>
               </div>
               <div id="faq2" class="collapse" aria-labelledby="faqHead2" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Not at the time of withdrawal — but you pay income tax and self-employment tax on ALL business profits regardless of draws. This is why <a href="quarterly-tax-deadlines-guide.html">quarterly estimated tax payments</a> are essential for LLC owners.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">No. A salary goes through payroll with withholding and W-2 reporting. A draw is a transfer from business to personal account recorded against equity. Different entity types use different methods.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead3" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    Owner's draw vs salary — what's the difference?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Do I pay taxes on owner's draws?</button></h5>
               </div>
               <div id="faq3" class="collapse" aria-labelledby="faqHead3" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Draws are flexible equity withdrawals with no withholding. Salary is formal W-2 payroll. Draws work for default LLCs; S-corps require salary. Our <a href="how-to-pay-yourself-llc-owner.html">complete LLC pay guide</a> walks through which applies to your situation.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Not at the moment of the draw. You pay income and self-employment tax on your share of total business profits regardless of how much you withdrew. Quarterly estimated payments are essential.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead4" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    How do I record an owner's draw in QuickBooks?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">How do I record an owner's draw in QuickBooks?</button></h5>
               </div>
               <div id="faq4" class="collapse" aria-labelledby="faqHead4" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Create an Owner's Draw equity account, then categorize transfers from your business account to that account. Never code it as an expense. If you're setting up new software, our <a href="../quickbooks-online.html">QuickBooks Online setup</a> or <a href="../quickbooks-desktop.html">Desktop setup</a> services handle this for you.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Use an Owner's Draw or Owner's Equity account (equity type). Write a check or transfer from the business account to that account — never as a business expense.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead5" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    Can I write off owner's draws as a business expense?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq5" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">How often can I take an owner's draw?</button></h5>
               </div>
-              <div="faq5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  No. Draws are equity reductions, never expenses. Miscategorized draws are one of the most common issues we fix in <a href="../catch-up-bookkeeping-services.html">catch-up bookkeeping</a>. Learn more in our guide on <a href="how-to-categorize-business-expenses.html">expense categorization</a>.
-                </div>
+              <div id="faq5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">There's no legal limit on frequency. Weekly, monthly, or quarterly — the key is consistency and leaving enough for taxes and business expenses.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead6" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    How do draws affect my balance sheet?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq6" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What's the difference between a draw and a distribution?</button></h5>
               </div>
               <div id="faq6" class="collapse" aria-labelledby="faqHead6" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Draws reduce owner's equity on your Balance Sheet. They never touch the Profit & Loss. To understand the full reporting picture, see our guide on <a href="understanding-financial-statements.html">understanding financial statements</a>.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">They're essentially the same. 'Draw' is used for sole props and partnerships; 'distribution' for S-corps and LLCs taxed as corporations.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead7" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    How do draws work with quarterly taxes?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq7" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Can I take unlimited draws?</button></h5>
               </div>
               <div id="faq7" class="collapse" aria-labelledby="faqHead7" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Draws don't trigger withholding, so YOU must set aside tax money. Best practice: transfer 25-30% of profits to a tax savings account before drawing. See our <a href="quarterly-tax-deadlines-guide.html">quarterly tax deadlines guide</a> for all dates and safe harbor rules.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">You can only draw from available profits and contributed capital. Excessive draws that harm the company's ability to pay debts may be considered reckless.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead8" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    What if I pay personal expenses from my business account?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq8" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What are guaranteed payments vs owner's draws?</button></h5>
               </div>
               <div id="faq8" class="collapse" aria-labelledby="faqHead8" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Record them as owner's draws, never business expenses. Repeated commingling can jeopardize your LLC liability protection. See our full guide on <a href="how-to-separate-business-personal-finances.html">separating business and personal finances</a>.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Guaranteed payments are set amounts paid to specific LLC members regardless of profitability (deductible as business expense). Draws are discretionary withdrawals based on ownership share and available profits.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
               <div class="card-header" id="faqHead9" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    Can I take draws from my S-corp?
-                  </button>
-                </h5>
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq9" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Does an owner's draw affect my Profit & Loss?</button></h5>
               </div>
               <div id="faq9" class="collapse" aria-labelledby="faqHead9" data-parent="#faqAccordion">
-                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  S-corp owners who work in the business must pay themselves a reasonable W-2 salary first, then can supplement with distributions. Skipping salary is a major IRS red flag. Our <a href="../payroll-services.html">payroll services</a> handle S-corp salary setup.
-                </div>
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">No. Draws never appear on your P&L. They're equity transactions on your Balance Sheet. If they appear as expenses, your books are miscategorized and need correction.</div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12 rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Should I switch from draws to S-Corp salary?</button></h5>
+              </div>
+              <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Consider S-Corp when consistent profits exceed $60,000-$80,000 net. Below that, default taxation with draws is usually simpler and cost-effective. Consult a professional for your specific numbers.</div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.003); overflow: hidden;">
+              <div class="card-header" id="faqHead11" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq11" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Can an S-Corp owner take draws?</button></h5>
+              </div>
+              <div id="faq11" class="collapse" aria-labelledby="faqHead11" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">S-Corp owners can take distributions from after-tax profits, but only AFTER paying a reasonable W-2 salary. Skipping salary to take only distributions is a major IRS audit trigger.</div>
               </div>
             </div>
 
             <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
-              <div class="card-header" id="faqHead10" style="background-color: #ffffff; border-bottom: none; padding: 0;">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq10" aria-expanded="false" aria-controls="faq10" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">
-                    What's a capital account?
-                  </button>
-                </h5>
+              <div class="card-header" id="faqHead12" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq12" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What happens to draws in a multi-member LLC?</button></h5>
               </div>
-              <div id="faq10" class="collapse" aria-labelledby="faqHead10" data-parent="#faqAccordion">
-                <div="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">
-                  Your capital account tracks your ownership stake: contributions + profits − draws. A negative capital account may signal financial or tax issues. Proper tracking is included in our <a href="../monthly-bookkeeping-services.html">monthly bookkeeping</a> service.
-                </div>
+              <div id="faq12" class="collapse" aria-labelledby="faqHead12" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Draws are typically distributed according to ownership percentages unless your operating agreement specifies otherwise. Members can draw against their capital accounts as governed by the agreement.</div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead13" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq13" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">Are owner draws reported on Schedule C?</button></h5>
+              </div>
+              <div id="faq13" class="collapse" aria-labelledby="faqHead13" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">No. Draws don't appear on Schedule C. What IS reported is your net profit. You pay tax on total net profit whether you drew the money or left it in the business.</div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead14" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq14" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">What if my business loses money — can I still draw?</button></h5>
+              </div>
+              <div id="faq14" class="collapse" aria-labelledby="faqHead14" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">You can draw from previously contributed capital or accumulated profits. Drawing beyond that may need to be structured as documented loans. Consult your accountant before drawing during unprofitable periods.</div>
+              </div>
+            </div>
+
+            <div class="card" style="border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); overflow: hidden;">
+              <div class="card-header" id="faqHead15" style="background-color: #ffffff; border-bottom: none; padding: 0;">
+                <h5 class="mb-0"><button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq15" style="display: block; width: 100%; text-align: left; padding: 20px 25px; color: #1f272b; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 16px; text-decoration: none;">How much should I set aside for taxes before drawing?</button></h5>
+              </div>
+              <div id="faq15" class="collapse" aria-labelledby="faqHead15" data-parent="#faqAccordion">
+                <div class="card-body" style="padding: 0 25px 25px; color: #5a5a5a; font-size: 15px; line-height: 1.8;">Set aside 25-30% of profits for federal income tax and self-employment tax. State taxes may add more. A dedicated tax savings account with automatic transfers prevents year-end surprises.</div>
               </div>
             </div>
 
@@ -901,12 +781,13 @@
       <!-- Sidebar Area -->
       <div class="col-lg-3" id="contact">
         
+        <!-- Sidebar CTA Form -->
         <div class="sidebar-item" style="background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%); color: #fff;">
-          <h4 style="color: #fff; font-weight: 700; margin-bottom: 15px; font-size: 20px;">Track Draws Properly?</h4>
-          <p style="color: #ccc; font-size: 14px; margin-bottom: 25px;">Let our experts manage your equity accounts and draws correctly.</p>
+          <h4 style="color: #fff; font-weight: 700; margin-bottom: 15px; font-size: 20px;">Need Help With Draws?</h4>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 25px;">Proper equity tracking and tax planning for owner compensation. We handle your books.</p>
           
           <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
-            <input type="hidden" name="_subject" value="Sidebar Enquiry - Owners Draw Guide">
+            <input type="hidden" name="_subject" value="Sidebar Enquiry - Owner's Draw Guide">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="Page Origin" value="what-is-owners-draw.html">
@@ -926,17 +807,60 @@
           </form>
         </div>
 
+        <!-- ===== NEW: POPULAR GUIDES WIDGET ===== -->
+        <div class="popular-widget">
+          <div class="pop-head"><i class="fa fa-fire"></i><h5>Popular Guides This Week</h5></div>
+          <a href="how-to-pay-yourself-llc-owner.html" class="pop-item">
+            <div class="pop-num">1</div>
+            <div><h6>How to Pay Yourself as an LLC Owner</h6><small>22K monthly searches</small></div>
+          </a>
+          <a href="quarterly-tax-deadlines-guide.html" class="pop-item">
+            <div class="pop-num">2</div>
+            <div><h6>Quarterly Tax Deadlines 2026</h6><small>18K monthly searches</small></div>
+          </a>
+          <a href="home-office-deduction-guide.html" class="pop-item">
+            <div class="pop-num">3</div>
+            <div><h6>Home Office Deduction Guide</h6><small>11K monthly searches</small></div>
+          </a>
+          <a href="business-expense-checklist.html" class="pop-item">
+            <div class="pop-num">4</div>
+            <div><h6>Business Expense Checklist</h6><small>10K monthly searches</small></div>
+          </a>
+          <a href="debits-and-credits-explained.html" class="pop-item">
+            <div class="pop-num">5</div>
+            <div><h6>Debits and Credits Explained</h6><small>15K monthly searches</small></div>
+          </a>
+        </div>
+
+        <!-- ===== NEW: QUICK TIP CARD ===== -->
+        <div class="tip-widget">
+          <div class="tip-label">💡 Quick Tax Tip</div>
+          <p>Set aside 25-30% of every business deposit into a separate tax savings account. Future-you will thank you at quarterly tax time.</p>
+        </div>
+
+        <!-- Related Services -->
         <div class="sidebar-item">
           <h4 style="font-weight: 700; margin-bottom: 20px; color: #1f272b; font-size: 20px;">Related Services</h4>
           <ul style="list-style: none; padding: 0; margin: 0; font-size: 15px;">
-            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../monthly-bookkeeping-services.html" style="color: #555; text-decoration: none;">Monthly Bookkeeping</a></li>
-            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../catch-up-bookkeeping-services.html" style="color: #555; text-decoration: none;">Catch-Up Bookkeeping</a></li>
-            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../outsourced-bookkeeping-accounting.html" style="color: #555; text-decoration: none;">Outsourced Bookkeeping</a></li>
-            <li style="margin-bottom: 10px;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../quickbooks-online.html" style="color: #555; text-decoration: none;">QuickBooks Online Setup</a></li>
-            <li style="margin-bottom: 0;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../payroll-services.html" style="color: #555; text-decoration: none;">Payroll Services</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../monthly-bookkeeping-services.html" style="color: #555; text-decoration: none;">Monthly Bookkeeping</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../catch-up-bookkeeping-services.html" style="color: #555; text-decoration: none;">Catch-Up Bookkeeping</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../payroll-services.html" style="color: #555; text-decoration: none;">Payroll Services</a></li>
+            <li style="margin-bottom: 10px; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../quickbooks-online.html" style="color: #555; text-decoration: none;">QuickBooks Online Setup</a></li>
+            <li style="margin-bottom: 0; color: #555;"><i class="fa fa-check-circle" style="color: #a4c639; margin-right: 8px;"></i> <a href="../outsourced-bookkeeping-accounting.html" style="color: #555; text-decoration: none;">Outsourced Bookkeeping</a></li>
           </ul>
         </div>
 
+        <!-- ===== NEW: TRUST BADGE STRIP ===== -->
+        <div class="trust-strip">
+          <div class="trust-icons">
+            <span style="color: #a4c639;">⭐</span>
+            <span style="color: #007bff;">🛡️</span>
+            <span style="color: #dc3545;">🔒</span>
+          </div>
+          <p>Bank-level security · 100% US-based</p>
+        </div>
+
+        <!-- Related Resources -->
         <div class="sidebar-item">
           <h4 style="font-weight: 700; margin-bottom: 20px; color: #1f272b; font-size: 20px;">Continue Learning</h4>
           <a href="how-to-pay-yourself-llc-owner.html" style="display: block; text-decoration: none; margin-bottom: 15px; border-bottom: 1px solid #eef0f2; padding-bottom: 15px;">
@@ -945,11 +869,11 @@
           </a>
           <a href="quarterly-tax-deadlines-guide.html" style="display: block; text-decoration: none; margin-bottom: 15px; border-bottom: 1px solid #eef0f2; padding-bottom: 15px;">
             <span style="color: #dc3545; font-weight: 600; font-size: 13px;">TAX DEADLINES</span>
-            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Quarterly Tax Deadlines</h5>
+            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Quarterly Tax Deadlines Guide</h5>
           </a>
           <a href="how-to-separate-business-personal-finances.html" style="display: block; text-decoration: none;">
             <span style="color: #007bff; font-weight: 600; font-size: 13px;">LLC COMPLIANCE</span>
-            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Separate Business & Personal</h5>
+            <h5 style="font-size: 15px; color: #1f272b; margin-top: 5px;">Separating Business & Personal Finances</h5>
           </a>
         </div>
 
@@ -1002,31 +926,19 @@
         <h4>Contact Us</h4>
         <div class="contact-form">
           <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
-            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Owners Draw Guide)">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Owner's Draw Guide)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="Page Origin" value="what-is-owners-draw.html">
             <input type="hidden" name="Form Type" value="Footer Form">
 
             <div class="row">
-              <div class="col-lg-12">
-                <input name="name" type="text" class="form-control" placeholder="Full Name" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="email" type="email" class="form-control" placeholder="E-Mail Address" required>
-              </div>
-              <div class="col-lg-12">
-                <input name="phone" type="text" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="col-lg-12">
-                <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="col-lg-12">
-                <button type="submit" class="filled-button">Send Message</button>
-              </div>
-              <div class="col-lg-12">
-                <div class="result-box" style="margin-top:10px;"></div>
-              </div>
+              <div class="col-lg-12"><input name="name" type="text" class="form-control" placeholder="Full Name" required></div>
+              <div class="col-lg-12"><input name="email" type="email" class="form-control" placeholder="E-Mail Address" required></div>
+              <div class="col-lg-12"><input name="phone" type="text" class="form-control" placeholder="Phone Number"></div>
+              <div class="col-lg-12"><textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea></div>
+              <div class="col-lg-12"><button type="submit" class="filled-button">Send Message</button></div>
+              <div class="col-lg-12"><div class="result-box" style="margin-top:10px;"></div></div>
             </div>
           </form>
         </div>
@@ -1038,9 +950,7 @@
 <div class="sub-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p>Copyright &copy; 2026 CountRights. All rights reserved.</p>
-      </div>
+      <div class="col-md-12"><p>Copyright &copy; 2026 CountRights. All rights reserved.</p></div>
     </div>
   </div>
 </div>
@@ -1053,7 +963,7 @@
   <div id="floatFormPanel" style="display: none; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); width: 320px; position: absolute; bottom: 70px; right: 0; border-top: 5px solid #a4c639;">
     <h4 style="margin-bottom: 15px; font-size: 18px; color: #1f272b;">Quick Contact</h4>
     <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
-      <input type="hidden" name="_subject" value="Floating Form Lead - Owners Draw Guide">
+      <input type="hidden" name="_subject" value="Floating Form Lead - Owner's Draw Guide">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="Page Origin" value="what-is-owners-draw.html">
