@@ -1,0 +1,40 @@
+name: Deploy to Pages
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+on:
+  push:
+    branches: ["main"]  # adjust to your default branch
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build your site
+        run: |
+          # Add your build commands here
+          
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: './dist'  # adjust to your build output folder
+
+  deploy:
+    needs: build
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
