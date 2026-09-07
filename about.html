@@ -172,65 +172,179 @@
       </div>
     </div>
     
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              
-              <!-- OUR SERVICES DROPDOWN -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
-                <div class="dropdown-menu" aria-labelledby="servicesMenu">
-                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
-                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
-                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
-                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
-                  <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
-                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
-                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
-                </div>
-              </li>
+    <!-- Header -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
 
-              <!-- CONVERSIONS DROPDOWN (Untouched with Sage Variants) -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
-                <div class="dropdown-menu" aria-labelledby="conversionMenu">
-                  <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
-                  <div class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
-                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
-                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
-                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
-                    </div>
-                  </div>
-                  <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
-                  <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
-                  <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
-                  <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
-                  <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
-                </div>
-              </li>
-              
-              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
-              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-              <li class="nav-item active"><a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a></li>  
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <a class="navbar-brand" href="/">
+        <h2>CountRights</h2>
+      </a>
 
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+
+          <!-- Services -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/services.html"
+              id="servicesDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Our Services
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="/outsourced-bookkeeping-accounting.html">
+                Outsourced Bookkeeping
+              </a>
+
+              <a class="dropdown-item" href="/monthly-bookkeeping-services.html">
+                Monthly Bookkeeping
+              </a>
+
+              <a class="dropdown-item" href="/catch-up-bookkeeping-services.html">
+                Catch-Up Bookkeeping
+              </a>
+
+              <a class="dropdown-item" href="/accounts-payable-receivable.html">
+                AP &amp; AR Management
+              </a>
+
+              <a class="dropdown-item" href="/payroll-services.html">
+                Payroll Services
+              </a>
+
+              <a class="dropdown-item" href="/forensic-accounting.html">
+                Forensic Accounting
+              </a>
+
+              <a class="dropdown-item" href="/accounting-software-migration.html">
+                Software Migration
+              </a>
+            </div>
+          </li>
+
+          <!-- Conversions -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="conversionMenu"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Conversions
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="conversionMenu">
+
+              <a class="dropdown-item" href="/netsuite-to-quickbooks.html">
+                NetSuite to QuickBooks
+              </a>
+
+              <div class="dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="/sage-to-quickbooks.html">
+                  Sage to QuickBooks &raquo;
+                </a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/sage-50-to-quickbooks.html">
+                    Sage 50 (Peachtree)
+                  </a>
+
+                  <a class="dropdown-item" href="/sage-100-to-quickbooks.html">
+                    Sage 100 (MAS 90/200)
+                  </a>
+
+                  <a class="dropdown-item" href="/sage-300-to-quickbooks.html">
+                    Sage 300 (Accpac)
+                  </a>
+
+                  <a class="dropdown-item" href="/sage-intacct-to-quickbooks.html">
+                    Sage Intacct
+                  </a>
+                </div>
+              </div>
+
+              <a class="dropdown-item" href="/xero-to-quickbooks.html">
+                Xero to QuickBooks
+              </a>
+
+              <a class="dropdown-item" href="/zoho-books-to-quickbooks.html">
+                Zoho Books to QuickBooks
+              </a>
+
+              <a class="dropdown-item" href="/freshbooks-to-quickbooks.html">
+                FreshBooks to QuickBooks
+              </a>
+
+              <a class="dropdown-item" href="/wave-to-quickbooks.html">
+                Wave to QuickBooks
+              </a>
+
+              <a class="dropdown-item" href="/accountedge-to-quickbooks.html">
+                AccountEdge to QuickBooks
+              </a>
+
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/resources/">
+              Resources
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing.html">
+              Pricing
+            </a>
+          </li>
+
+          <!-- ACTIVE PAGE: ABOUT -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/about.html">
+              About Us <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">
+              Contact Us
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-callback-btn" href="/contact.html">
+              Request Callback
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
     <!-- Page Content -->
     <div class="page-heading header-text">
       <div class="container">
