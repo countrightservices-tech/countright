@@ -59,7 +59,34 @@
       .logo-marquee-item { display: inline-block; width: 160px; margin: 0 25px; vertical-align: middle; }
       .logo-marquee-item img { max-width: 100%; max-height: 60px; filter: none; opacity: 0.7; transition: all 0.3s; }
       .logo-marquee-item img:hover { filter: none; opacity: 1; }
-    </style>
+       /* Fix Navbar to stay on one line */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  /* Navbar Request Callback Button */
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+ </style>
 
     <!-- US-Focused Business Schema -->
     <script type="application/ld+json">
@@ -111,29 +138,29 @@
 
     <!-- Preloader -->
     <div id="preloader"><div class="jumper"><div></div><div></div><div></div></div></div>
-
-    <!-- Header -->
+    <!-- Sub Header -->
     <div class="sub-header">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="mailto:Contact@countrights.com"><i class="fa fa-envelope"></i>Contact@countrights.com</a></li>
+              <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
             </ul>
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
               <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    
+
+        <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -143,24 +170,22 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               
-              <!-- OUR SERVICES DROPDOWN -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
-                <div class="dropdown-menu" aria-labelledby="servicesMenu">
-                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
                   <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
                   <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
-                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
                   <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
                   <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
                   <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
                 </div>
               </li>
 
-              <!-- CONVERSIONS DROPDOWN -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conversions</a>
-                <div class="dropdown-menu" aria-labelledby="conversionMenu">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+                <div class="dropdown-menu">
                   <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
                   <div class="dropdown-submenu">
                     <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
@@ -178,10 +203,11 @@
                   <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
                 </div>
               </li>
-
+              
               <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
               <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-              <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
             </ul>
           </div>
         </div>
