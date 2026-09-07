@@ -825,6 +825,18 @@
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
+  <script>
+  // Floating Form Toggle
+  document.getElementById("floatToggleBtn").addEventListener("click", function () {
+    const panel = document.getElementById("floatFormPanel");
+
+    if (panel.style.display === "none" || panel.style.display === "") {
+      panel.style.display = "block";
+    } else {
+      panel.style.display = "none";
+    }
+  });
+</script>
 
 <script>
 const forms = document.querySelectorAll("form[action*='https://formsubmit.co/']");
@@ -867,10 +879,6 @@ forms.forEach(form => {
       button.disabled = false;
       button.innerText = "Send Message";
     });
-    // Floating Form Toggle
-        $("#floatToggleBtn").click(function() {
-          $("#floatFormPanel").toggle();
-        });
   });
 });
 </script>
