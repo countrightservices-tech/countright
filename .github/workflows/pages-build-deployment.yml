@@ -16,13 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Build your site
-        run: |
-          # Add your build commands here
-          
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'  # adjust to your build output folder
+      - name: Prepare website
+  run: |
+    mkdir dist
+    cp -R *.html assets resources vendor CNAME robots.txt sitemap.xml dist/ 2>/dev/null || true
+
+- name: Upload website
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: './dist'  # adjust to your build output folder
 
   deploy:
     needs: build
