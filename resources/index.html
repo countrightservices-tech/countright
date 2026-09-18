@@ -69,6 +69,7 @@
     transition: all 0.2s;
     cursor: pointer;
     font-size: 14px;
+    margin: 4px;
   }
   .filter-btn:hover {
     border-color: #a4c639;
@@ -88,6 +89,35 @@
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
   }
+
+   /* Fix Navbar to stay on one line */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  /* Navbar Request Callback Button */
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+
 </style>
 
 <!-- Collection Page Schema -->
@@ -137,74 +167,80 @@
 </div>
 
 <!-- Sub Header -->
-<div class="sub-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-xs-12">
-        <ul class="left-info">
-          <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@CountRights.com</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="right-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
-        </ul>
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html"><h2>CountRights</h2></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="../services.html">Our Services</a></li>
-          
-          <!-- Conversions Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="../netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               
-              <!-- SAGE NESTED DROPDOWN -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="../sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="../sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
-                  <a class="dropdown-item" href="../sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
-                  <a class="dropdown-item" href="../sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
-                  <a class="dropdown-item" href="../sage-intacct-to-quickbooks.html">Sage Intacct</a>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
+                  <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
                 </div>
-              </div>
-              
-              <a class="dropdown-item" href="../xero-to-quickbooks.html">Xero to QuickBooks</a>
-              <a class="dropdown-item" href="../zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
-              <a class="dropdown-item" href="../freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
-              <a class="dropdown-item" href="../wave-to-quickbooks.html">Wave to QuickBooks</a>
-              <a class="dropdown-item" href="../accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
-            </div>
-          </li>
-          
-          <li class="nav-item active"><a class="nav-link" href="index.html">Resources <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="../pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+              </li>
 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
+                  </div>
+                  <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
+                  <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
+                  <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
+                  <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
+                  <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
+                </div>
+              </li>
+              
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
 <!-- Page Heading -->
 <div class="page-heading header-text">
   <div class="container">
@@ -270,6 +306,7 @@
         <button class="filter-btn" data-filter="payroll">Payroll</button>
         <button class="filter-btn" data-filter="reporting">Financial Reporting</button>
         <button class="filter-btn" data-filter="quickbooks">QuickBooks</button>
+        <button class="filter-btn" data-filter="taxes">Taxes</button>
         <button class="filter-btn" data-filter="tips">Business Tips</button>
       </div>
     </div>
@@ -280,9 +317,9 @@
 <div class="services" style="padding: 40px 0 80px; background: #f9f9f9;">
   <div class="container">
     <div class="row" id="resourceGrid">
-      
+
       <!-- Article 1 -->
-      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="bookkeeping tips">
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="bookkeeping">
         <a href="why-small-businesses-need-professional-bookkeeping-services.html" style="text-decoration: none;">
           <div class="resource-card">
             <img src="../assets/images/service_01.jpg" alt="Bookkeeping Guide" style="width: 100%; height: 200px; object-fit: cover;">
@@ -316,7 +353,7 @@
       </div>
 
       <!-- Article 3 -->
-      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips bookkeeping">
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips">
         <a href="5-signs-your-business-needs-a-bookkeeper.html" style="text-decoration: none;">
           <div class="resource-card">
             <img src="../assets/images/service_03.jpg" alt="Need a Bookkeeper" style="width: 100%; height: 200px; object-fit: cover;">
@@ -333,7 +370,7 @@
       </div>
 
       <!-- Article 4 -->
-      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="reporting bookkeeping">
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="reporting">
         <a href="bank-reconciliation-explained.html" style="text-decoration: none;">
           <div class="resource-card">
             <img src="../assets/images/service_04.png" alt="Bank Reconciliation" style="width: 100%; height: 200px; object-fit: cover;">
@@ -349,35 +386,341 @@
         </a>
       </div>
 
-      <!-- Article 5 (Placeholder for future post) -->
-      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="quickbooks tips">
-        <a href="#" style="text-decoration: none;">
+      <!-- Article 5 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="accounting">
+        <a href="accrual-vs-cash-basis-accounting.html" style="text-decoration: none;">
           <div class="resource-card">
-            <img src="../assets/images/more-info.jpg" alt="QuickBooks Tips" style="width: 100%; height: 200px; object-fit: cover;">
+            <img src="../assets/images/more-info.jpg" alt="Accrual vs Cash Basis Accounting" style="width: 100%; height: 200px; object-fit: cover;">
             <div style="padding: 25px;">
               <div style="margin-bottom: 15px;">
-                <span class="badge" style="background: #dc3545; color: #fff;">QuickBooks</span>
-                <span style="float:right;color:#888;font-size:13px;">10 min read</span>
+                <span class="badge" style="background: #007bff; color: #fff;">Accounting</span>
+                <span style="float:right;color:#888;font-size:13px;">7 min read</span>
               </div>
-              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Top 10 QuickBooks Online Tips for Beginners</h4>
-              <p style="color: #555; margin-top: 10px;">Master QuickBooks Online with these essential setup and daily workflow tips.</p>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Accrual vs Cash Basis Accounting</h4>
+              <p style="color: #555; margin-top: 10px;">Compare accrual and cash basis accounting methods to find the reporting approach that fits your business.</p>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- Article 6 (Placeholder for future post) -->
-      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="payroll tips">
-        <a href="#" style="text-decoration: none;">
+      <!-- Article 6 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="business-expense-checklist.html" style="text-decoration: none;">
           <div class="resource-card">
-            <img src="../assets/images/about-image.jpg" alt="Payroll Guide" style="width: 100%; height: 200px; object-fit: cover;">
+            <img src="../assets/images/about-image.jpg" alt="Business Expense Checklist" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Business Expense Checklist</h4>
+              <p style="color: #555; margin-top: 10px;">A practical checklist to track and categorize deductible business expenses throughout the year.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 7 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="bookkeeping">
+        <a href="chart-of-accounts-explained.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_01.jpg" alt="Chart of Accounts Explained" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #a4c639; color: #fff;">Bookkeeping</span>
+                <span style="float:right;color:#888;font-size:13px;">7 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Chart of Accounts Explained</h4>
+              <p style="color: #555; margin-top: 10px;">Learn how to structure a chart of accounts that keeps your bookkeeping organized and scalable.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 8 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips">
+        <a href="choosing-the-best-accounting-software.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_02.jpg" alt="Choosing the Best Accounting Software" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #ffc107; color: #1f272b;">Business Tips</span>
+                <span style="float:right;color:#888;font-size:13px;">8 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Choosing the Best Accounting Software</h4>
+              <p style="color: #555; margin-top: 10px;">Compare popular accounting platforms to find the right fit for your business size and workflow.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 9 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="bookkeeping">
+        <a href="debits-and-credits-explained.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_03.jpg" alt="Debits and Credits Explained" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #a4c639; color: #fff;">Bookkeeping</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Debits and Credits Explained</h4>
+              <p style="color: #555; margin-top: 10px;">A beginner-friendly breakdown of how debits and credits work in double-entry bookkeeping.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 10 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="home-office-deduction-guide.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_04.png" alt="Home Office Deduction Guide" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Home Office Deduction Guide</h4>
+              <p style="color: #555; margin-top: 10px;">Find out which home office expenses you can deduct and how to calculate them correctly.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 11 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="reporting">
+        <a href="how-ap-ar-affect-cash-flow.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/more-info.jpg" alt="How AP and AR Affect Cash Flow" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #17a2b8; color: #fff;">Financial Reporting</span>
+                <span style="float:right;color:#888;font-size:13px;">7 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How AP & AR Affect Cash Flow</h4>
+              <p style="color: #555; margin-top: 10px;">Understand how accounts payable and receivable timing impacts your business's cash flow.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 12 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="bookkeeping">
+        <a href="how-to-categorize-business-expenses.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/about-image.jpg" alt="How to Categorize Business Expenses" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #a4c639; color: #fff;">Bookkeeping</span>
+                <span style="float:right;color:#888;font-size:13px;">5 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How to Categorize Business Expenses</h4>
+              <p style="color: #555; margin-top: 10px;">A step-by-step guide to categorizing expenses correctly for cleaner books and easier tax filing.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 13 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="how-to-organize-receipts-taxes.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_01.jpg" alt="How to Organize Receipts for Taxes" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">5 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How to Organize Receipts for Taxes</h4>
+              <p style="color: #555; margin-top: 10px;">Simple systems for organizing receipts year-round so tax season is stress-free.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 14 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips">
+        <a href="how-to-pay-yourself-llc-owner.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_02.jpg" alt="How to Pay Yourself as an LLC Owner" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #ffc107; color: #1f272b;">Business Tips</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How to Pay Yourself as an LLC Owner</h4>
+              <p style="color: #555; margin-top: 10px;">Explore the options LLC owners have for paying themselves and the tax implications of each.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 15 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips">
+        <a href="how-to-separate-business-personal-finances.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_03.jpg" alt="How to Separate Business and Personal Finances" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #ffc107; color: #1f272b;">Business Tips</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How to Separate Business & Personal Finances</h4>
+              <p style="color: #555; margin-top: 10px;">Why mixing personal and business finances creates risk, and how to keep them cleanly separated.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 16 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="meals-entertainment-deduction-rules.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_04.png" alt="Meals and Entertainment Deduction Rules" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">5 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Meals & Entertainment Deduction Rules</h4>
+              <p style="color: #555; margin-top: 10px;">Current IRS rules on what meals and entertainment expenses your business can deduct.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 17 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="quarterly-tax-deadlines-guide.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/more-info.jpg" alt="Quarterly Tax Deadlines Guide" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">6 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Quarterly Tax Deadlines Guide</h4>
+              <p style="color: #555; margin-top: 10px;">Key quarterly estimated tax deadlines small business owners need to keep on their calendar.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 18 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="quickbooks">
+        <a href="quickbooks-online-vs-desktop.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/about-image.jpg" alt="QuickBooks Online vs Desktop" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #dc3545; color: #fff;">QuickBooks</span>
+                <span style="float:right;color:#888;font-size:13px;">7 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">QuickBooks Online vs Desktop</h4>
+              <p style="color: #555; margin-top: 10px;">A side-by-side comparison to help you decide between QuickBooks Online and Desktop.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 19 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="payroll">
+        <a href="small-business-payroll-guide.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_01.jpg" alt="Small Business Payroll Guide" style="width: 100%; height: 200px; object-fit: cover;">
             <div style="padding: 25px;">
               <div style="margin-bottom: 15px;">
                 <span class="badge" style="background: #6f42c1; color: #fff;">Payroll</span>
+                <span style="float:right;color:#888;font-size:13px;">8 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Small Business Payroll Guide</h4>
+              <p style="color: #555; margin-top: 10px;">Everything small business owners need to know to run payroll accurately and on time.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 20 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="tax-preparation-checklist-for-small-businesses.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_02.jpg" alt="Tax Preparation Checklist for Small Businesses" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">7 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Tax Preparation Checklist for Small Businesses</h4>
+              <p style="color: #555; margin-top: 10px;">A complete checklist to help you gather documents and prepare for tax filing season.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 21 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="top-tax-deductions-for-small-businesses.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_03.jpg" alt="Top Tax Deductions for Small Businesses" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">8 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Top Tax Deductions for Small Businesses</h4>
+              <p style="color: #555; margin-top: 10px;">The most commonly overlooked tax deductions small business owners should be claiming.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 22 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="reporting">
+        <a href="understanding-financial-statements.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/service_04.png" alt="Understanding Financial Statements" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #17a2b8; color: #fff;">Financial Reporting</span>
+                <span style="float:right;color:#888;font-size:13px;">9 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Understanding Financial Statements</h4>
+              <p style="color: #555; margin-top: 10px;">Learn how to read and interpret your P&L, balance sheet, and cash flow statement.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 23 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="taxes">
+        <a href="vehicle-mileage-deduction-guide.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/more-info.jpg" alt="Vehicle Mileage Deduction Guide" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #fd7e14; color: #fff;">Taxes</span>
+                <span style="float:right;color:#888;font-size:13px;">5 min read</span>
+              </div>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">Vehicle Mileage Deduction Guide</h4>
+              <p style="color: #555; margin-top: 10px;">How to track and calculate vehicle mileage deductions for business use correctly.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Article 24 -->
+      <div class="col-lg-4 col-md-6 mb-5 resource-item" data-category="tips">
+        <a href="what-is-owners-draw.html" style="text-decoration: none;">
+          <div class="resource-card">
+            <img src="../assets/images/about-image.jpg" alt="What Is an Owner's Draw" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 25px;">
+              <div style="margin-bottom: 15px;">
+                <span class="badge" style="background: #ffc107; color: #1f272b;">Business Tips</span>
                 <span style="float:right;color:#888;font-size:13px;">6 min read</span>
               </div>
-              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">How to Prepare Your Business for Payroll</h4>
-              <p style="color: #555; margin-top: 10px;">A step-by-step guide to setting up compliant and efficient payroll systems.</p>
+              <h4 style="color: #1f272b; font-size: 20px; font-weight: 600;">What Is an Owner's Draw?</h4>
+              <p style="color: #555; margin-top: 10px;">Understand what an owner's draw is and how it differs from taking a salary.</p>
             </div>
           </div>
         </a>
@@ -427,6 +770,64 @@
     </div>
   </div>
 </div>
+   <!-- CONSULTATION FORM -->
+    <div id="contact" class="callback-form callback-services" style="background: #fff; padding: 80px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 40px;">
+              <h2>Request a <em>Free Consultation</em></h2>
+              <span>Schedule a confidential call to discuss your forensic accounting needs.</span>
+            </div>
+            
+            <div style="background: linear-gradient(145deg, #8fb323 0%, #a4c639 100%); padding: 50px 40px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+              
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+                <input type="hidden" name="_subject" value="Forensic Accounting Enquiry - CountRights">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="forensic-accounting.html">
+                <input type="hidden" name="Form Type" value="Main Consultation Form">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
+                      <input name="name" type="text" class="form-control" placeholder="Full Name" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span></div>
+                      <input name="email" type="email" class="form-control" placeholder="Email Address" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span></div>
+                      <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-group mb-4">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span></div>
+                      <textarea name="message" rows="4" class="form-control" placeholder="Briefly describe the situation..." required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px; padding: 0 40px;">Send Message</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600; color: #fff;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- PREMIUM FAQ SECTION -->
 <div class="services" style="background:#f9f9f9; padding:80px 0;">
@@ -565,10 +966,9 @@
         <h4>Contact Us</h4>
         <div class="contact-form">
           <form action="https://formsubmit.co/contact@countrights.com" method="POST">
-            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Resources)">
+            <input type="hidden" name="_subject" value="Footer Enquiry - CountRights (Resources Article)">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <!-- Tracking Inputs -->
             <input type="hidden" name="Page Origin" value="resources/index.html">
             <input type="hidden" name="Form Type" value="Footer Form">
 
