@@ -59,6 +59,35 @@
   .floating-btn:hover { background: #1f272b; }
   .floating-form-container { position: fixed; bottom: 90px; right: 20px; width: 320px; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 999; display: none; border-top: 5px solid #a4c639; }
   .floating-form-container.show { display: block; }
+
+   /* Fix Navbar to stay on one line */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 12px !important;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  /* Navbar Request Callback Button */
+  .nav-callback-btn {
+    background: #a4c639 !important;
+    color: #1f272b !important;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(164, 198, 57, 0.3);
+    white-space: nowrap;
+  }
+  .nav-callback-btn:hover {
+    background: #1f272b !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(31, 39, 43, 0.3);
+  }
+
 </style>
 
 <!-- US-Focused Business Schema -->
@@ -103,86 +132,79 @@
 </div>
 
 <!-- Sub Header -->
-<div class="sub-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-xs-12">
-        <ul class="left-info">
-          <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-          <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul class="right-icons">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://clutch.co/profile/countrights"><i class="fa fa-award"></i></a></li>
-        </ul>
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="mailto:contact@countrights.com"><i class="fa fa-envelope"></i>contact@countrights.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="https://www.facebook.com/countrights"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://x.com/CountRights"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/countrights"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://clutch.co/profile/countrights" target="_blank"><span style="font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 18px; display: inline-block; color: inherit;">C</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          
-          <!-- OUR SERVICES DROPDOWN -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
-            <div class="dropdown-menu" aria-labelledby="servicesMenu">
-              <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping &amp; Accounting</a>
-              <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
-              <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
-              <a class="dropdown-item" href="accounts-payable-receivable.html">AP &amp; AR Management</a>
-              <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
-              <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
-              <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
-            </div>
-          </li>
-
-          <!-- Conversions Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>CountRights</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               
-              <!-- SAGE NESTED DROPDOWN -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
-                  <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
-                  <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
-                  <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="outsourced-bookkeeping-accounting.html">Outsourced Bookkeeping</a>
+                  <a class="dropdown-item" href="monthly-bookkeeping-services.html">Monthly Bookkeeping</a>
+                  <a class="dropdown-item" href="catch-up-bookkeeping-services.html">Catch-Up Bookkeeping</a>
+                  <a class="dropdown-item" href="accounts-payable-receivable.html">AP & AR Management</a>
+                  <a class="dropdown-item" href="payroll-services.html">Payroll Services</a>
+                  <a class="dropdown-item" href="forensic-accounting.html">Forensic Accounting</a>
+                  <a class="dropdown-item" href="accounting-software-migration.html">Software Migration</a>
                 </div>
-              </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="conversionMenu" data-toggle="dropdown">Conversions</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="netsuite-to-quickbooks.html">NetSuite to QuickBooks</a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="sage-to-quickbooks.html">Sage to QuickBooks &raquo;</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="sage-50-to-quickbooks.html">Sage 50 (Peachtree)</a>
+                      <a class="dropdown-item" href="sage-100-to-quickbooks.html">Sage 100 (MAS 90/200)</a>
+                      <a class="dropdown-item" href="sage-300-to-quickbooks.html">Sage 300 (Accpac)</a>
+                      <a class="dropdown-item" href="sage-intacct-to-quickbooks.html">Sage Intacct</a>
+                    </div>
+                  </div>
+                  <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
+                  <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
+                  <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
+                  <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
+                  <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
+                </div>
+              </li>
               
-              <a class="dropdown-item" href="xero-to-quickbooks.html">Xero to QuickBooks</a>
-              <a class="dropdown-item" href="zoho-books-to-quickbooks.html">Zoho Books to QuickBooks</a>
-              <a class="dropdown-item" href="freshbooks-to-quickbooks.html">FreshBooks to QuickBooks</a>
-              <a class="dropdown-item" href="wave-to-quickbooks.html">Wave to QuickBooks</a>
-              <a class="dropdown-item" href="accountedge-to-quickbooks.html">AccountEdge to QuickBooks</a>
-            </div>
-          </li>
-          
-          <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
-          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+              <li class="nav-item"><a class="nav-link" href="resources/index.html">Resources</a></li> 
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link nav-callback-btn" href="#contact">Request Callback</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 <!-- Page Heading -->
 <div class="page-heading header-text">
@@ -272,7 +294,7 @@
             <strong>CountRights</strong><br>
             Email: <a href="mailto:contact@countrights.com" style="color: #a4c639;">contact@countrights.com</a><br>
             Phone: Available upon request<br>
-            Service Area: Serving businesses remotely across the US, UK, and globally.
+            Service Area: Serving businesses remotely across the USA
           </p>
 
         </div>
@@ -300,7 +322,7 @@
         <!-- Trust Badge / Security -->
         <div class="sidebar-item" style="background: linear-gradient(145deg, #1f272b 0%, #2c3e50 100%); color: #fff;">
           <h4 style="color: #fff; font-weight: 700; margin-bottom: 15px;"><i class="fa fa-shield" style="color: #a4c639; margin-right: 8px;"></i>Bank-Level Security</h4>
-          <p style="color: #ccc; font-size: 15px; margin-bottom: 0;">We utilize 256-bit SSL encryption, secure document portals, and read-only bank feeds to ensure your sensitive financial data is completely protected.</p>
+          <p style="color: #ccc; font-size: 15px; margin-bottom: 0;">We utilize encryption, secure document portals, and read-only bank feeds to ensure your sensitive financial data is completely protected.</p>
         </div>
 
         <!-- Contact CTA -->
@@ -315,6 +337,64 @@
     </div>
   </div>
 </div>
+   <!-- CONSULTATION FORM -->
+    <div id="contact" class="callback-form callback-services" style="background: #fff; padding: 80px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center" style="margin-bottom: 40px;">
+              <h2>Request a <em>Free Consultation</em></h2>
+              <span>Schedule a confidential call to discuss your forensic accounting needs.</span>
+            </div>
+            
+            <div style="background: linear-gradient(145deg, #8fb323 0%, #a4c639 100%); padding: 50px 40px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
+              <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+              
+              <form action="https://formsubmit.co/contact@countrights.com" method="POST" class="ajax-form">
+                <input type="hidden" name="_subject" value="Forensic Accounting Enquiry - CountRights">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="Page Origin" value="forensic-accounting.html">
+                <input type="hidden" name="Form Type" value="Main Consultation Form">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-user" style="color: #a4c639;"></i></span></div>
+                      <input name="name" type="text" class="form-control" placeholder="Full Name" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-envelope" style="color: #a4c639;"></i></span></div>
+                      <input name="email" type="email" class="form-control" placeholder="Email Address" required style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-group mb-3" style="height: 50px;">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px;"><i class="fa fa-phone" style="color: #a4c639;"></i></span></div>
+                      <input name="phone" type="text" class="form-control" placeholder="Phone Number" style="border: none; border-radius: 0 8px 8px 0; height: 50px; box-shadow: none;">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-group mb-4">
+                      <div class="input-group-prepend"><span class="input-group-text" style="background: #fff; border: none; border-radius: 8px 0 0 8px; padding-left: 15px; padding-right: 10px; align-items: flex-start; padding-top: 15px;"><i class="fa fa-comment" style="color: #a4c639;"></i></span></div>
+                      <textarea name="message" rows="4" class="form-control" placeholder="Briefly describe the situation..." required style="border: none; border-radius: 0 8px 8px 0; resize: none; box-shadow: none;"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn" style="background: #1f272b; color: #fff; font-weight: 600; height: 55px; border-radius: 8px; border: none; text-transform: uppercase; letter-spacing: 1px; padding: 0 40px;">Send Message</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="result-box" style="margin-top:15px; text-align: center; font-weight: 600; color: #fff;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- Footer -->
 <footer>
