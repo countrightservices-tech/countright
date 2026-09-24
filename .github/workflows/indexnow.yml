@@ -1,0 +1,31 @@
+name: Submit to IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages to publish
+        run: sleep 120
+
+      - name: Build URL list from the live sitemap
+        run: |
+          curl -s https://countrights.com/sitemap.xml | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' > urls.txt
+          echo "Found $(wc -l < urls.txt) URLs"
+          jq -R -s \
+            --arg host "countrights.com" \
+            --arg key "dc4d7027532e4e11be04d4e65569a430" \
+            --arg loc "https://countrights.com/dc4d7027532e4e11be04d4e65569a430.txt" \
+            '{host:$host,key:$key,keyLocation:$loc,urlList:(split("\n")|map(select(length>0)))}' urls.txt > payload.json
+
+      - name: Submit to IndexNow
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" -d @payload.json)
+          echo "IndexNow responded: $code"
+          if [ "$code" != "200" ] && [ "$code" != "202" ]; then exit 1; fi
