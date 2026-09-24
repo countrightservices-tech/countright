@@ -1,4 +1,4 @@
-# CountRight
+# CountRights
 
 Professional bookkeeping, financial reporting, and accounting data migration services.
 
