@@ -1,128 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core Pages -->
-  <url>
-    <loc>https://countrights.com/</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/services.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/pricing.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/about.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/contact.html</loc>
-  </url>
+  <!-- Core pages -->
+  <url><loc>https://countrights.com/</loc></url>
+  <url><loc>https://countrights.com/services.html</loc></url>
+  <url><loc>https://countrights.com/pricing.html</loc></url>
+  <url><loc>https://countrights.com/about.html</loc></url>
+  <url><loc>https://countrights.com/contact.html</loc></url>
 
-  <!-- Bookkeeping & Accounting Services -->
-  <url>
-    <loc>https://countrights.com/outsourced-bookkeeping-accounting.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/monthly-bookkeeping-services.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/catch-up-bookkeeping-services.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/accounts-payable-receivable.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/payroll-services.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/forensic-accounting.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/accounting-software-migration.html</loc>
-  </url>
+  <!-- Service pages -->
+  <url><loc>https://countrights.com/outsourced-bookkeeping-accounting.html</loc></url>
+  <url><loc>https://countrights.com/monthly-bookkeeping-services.html</loc></url>
+  <url><loc>https://countrights.com/catch-up-bookkeeping-services.html</loc></url>
+  <url><loc>https://countrights.com/accounts-payable-receivable.html</loc></url>
+  <url><loc>https://countrights.com/payroll-services.html</loc></url>
+  <url><loc>https://countrights.com/forensic-accounting.html</loc></url>
+  <url><loc>https://countrights.com/accounting-software-migration.html</loc></url>
 
-  <!-- Accounting Software Migration -->
-  <url>
-    <loc>https://countrights.com/netsuite-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/sage-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/xero-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/zoho-books-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/freshbooks-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/wave-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/accountedge-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/sage-50-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/sage-100-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/sage-300-to-quickbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/sage-intacct-to-quickbooks.html</loc>
-  </url>
+  <!-- Conversion / migration pages -->
+  <url><loc>https://countrights.com/netsuite-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/sage-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/sage-50-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/sage-100-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/sage-300-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/sage-intacct-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/xero-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/zoho-books-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/freshbooks-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/wave-to-quickbooks.html</loc></url>
+  <url><loc>https://countrights.com/accountedge-to-quickbooks.html</loc></url>
 
-  <!-- Resources -->
-  <url>
-    <loc>https://countrights.com/resources/</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/why-small-businesses-need-professional-bookkeeping-services.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/bookkeeping-vs-accounting.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/5-signs-your-business-needs-a-bookkeeper.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/bank-reconciliation-explained.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/how-ap-ar-affect-cash-flow.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/chart-of-accounts-explained.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/small-business-payroll-guide.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/tax-preparation-checklist-for-small-businesses.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/top-tax-deductions-for-small-businesses.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/accrual-vs-cash-basis-accounting.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/understanding-financial-statements.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/resources/choosing-the-best-accounting-software.html</loc>
-  </url>
+  <!-- Resources / Knowledge Hub -->
+  <url><loc>https://countrights.com/resources/</loc></url>
+  <url><loc>https://countrights.com/resources/5-signs-your-business-needs-a-bookkeeper.html</loc></url>
+  <url><loc>https://countrights.com/resources/accrual-vs-cash-basis-accounting.html</loc></url>
+  <url><loc>https://countrights.com/resources/bank-reconciliation-explained.html</loc></url>
+  <url><loc>https://countrights.com/resources/bookkeeping-vs-accounting.html</loc></url>
+  <url><loc>https://countrights.com/resources/business-expense-checklist.html</loc></url>
+  <url><loc>https://countrights.com/resources/chart-of-accounts-explained.html</loc></url>
+  <url><loc>https://countrights.com/resources/choosing-the-best-accounting-software.html</loc></url>
+  <url><loc>https://countrights.com/resources/debits-and-credits-explained.html</loc></url>
+  <url><loc>https://countrights.com/resources/home-office-deduction-guide.html</loc></url>
+  <url><loc>https://countrights.com/resources/how-ap-ar-affect-cash-flow.html</loc></url>
+  <url><loc>https://countrights.com/resources/how-to-categorize-business-expenses.html</loc></url>
+  <url><loc>https://countrights.com/resources/how-to-organize-receipts-taxes.html</loc></url>
+  <url><loc>https://countrights.com/resources/how-to-pay-yourself-llc-owner.html</loc></url>
+  <url><loc>https://countrights.com/resources/how-to-separate-business-personal-finances.html</loc></url>
+  <url><loc>https://countrights.com/resources/meals-entertainment-deduction-rules.html</loc></url>
+  <url><loc>https://countrights.com/resources/quarterly-tax-deadlines-guide.html</loc></url>
+  <url><loc>https://countrights.com/resources/quickbooks-online-vs-desktop.html</loc></url>
+  <url><loc>https://countrights.com/resources/small-business-payroll-guide.html</loc></url>
+  <url><loc>https://countrights.com/resources/tax-preparation-checklist-for-small-businesses.html</loc></url>
+  <url><loc>https://countrights.com/resources/top-tax-deductions-for-small-businesses.html</loc></url>
+  <url><loc>https://countrights.com/resources/understanding-financial-statements.html</loc></url>
+  <url><loc>https://countrights.com/resources/vehicle-mileage-deduction-guide.html</loc></url>
+  <url><loc>https://countrights.com/resources/what-is-owners-draw.html</loc></url>
+  <url><loc>https://countrights.com/resources/why-small-businesses-need-professional-bookkeeping-services.html</loc></url>
 
-  <!-- Legal Pages -->
-  <url>
-    <loc>https://countrights.com/privacy-policy.html</loc>
-  </url>
-  <url>
-    <loc>https://countrights.com/terms-of-service.html</loc>
-  </url>
+  <!-- Legal -->
+  <url><loc>https://countrights.com/privacy-policy.html</loc></url>
+  <url><loc>https://countrights.com/terms-of-service.html</loc></url>
 
 </urlset>
